@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище DB_Model" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="entity6">
+          <Key>
+            <PropertyRef Name="id" />
+            <PropertyRef Name="id_set" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id_set" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="nomenclature">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="text" />
+          <Property Name="unit" Type="char" MaxLength="20" />
+          <Property Name="renewal_method" Type="char" MaxLength="20" />
+          <Property Name="marriage_rate" Type="int" />
+          <Property Name="additional_order_level" Type="int" />
+          <Property Name="additional_order_value" Type="int" />
+          <Property Name="waiting_period" Type="time" Precision="0" />
+          <Property Name="production_route" Type="int" />
+          <Property Name="specification" Type="int" Nullable="false" />
+          <Property Name="material_write_off_mode" Type="int" />
+        </EntityType>
+        <EntityType Name="operations">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="work_center_id" Type="int" Nullable="false" />
+          <Property Name="setup_time" Type="int" />
+          <Property Name="processing_time" Type="int" />
+          <Property Name="transit_time" Type="int" />
+          <Property Name="description" Type="text" />
+          <Property Name="next_operation_id" Type="int" />
+        </EntityType>
+        <EntityType Name="output_log">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="working_order_id" Type="int" />
+          <Property Name="work_center_id" Type="int" Nullable="false" />
+          <Property Name="elapsed_time" Type="int" />
+        </EntityType>
+        <EntityType Name="set_of_components">
+          <Key>
+            <PropertyRef Name="id_set" />
+          </Key>
+          <Property Name="id_set" Type="int" Nullable="false" />
+          <Property Name="nomenclature" Type="int" Nullable="false" />
+          <Property Name="value" Type="int" />
+        </EntityType>
+        <EntityType Name="specification">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="status" Type="char" MaxLength="40" />
+          <Property Name="set_of_components" Type="int" />
+          <Property Name="discription" Type="text" />
+        </EntityType>
+        <EntityType Name="stock">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id_warehouse" Type="int" Nullable="false" />
+          <Property Name="id_nomenclature" Type="int" Nullable="false" />
+          <Property Name="value" Type="int" />
+        </EntityType>
+        <EntityType Name="technolog_map">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="status" Type="char" MaxLength="20" />
+          <Property Name="id_initial_operation" Type="int" Nullable="false" />
+          <Property Name="description" Type="text" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="id_user" />
+          </Key>
+          <Property Name="id_user" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="login" Type="char" MaxLength="20" Nullable="false" />
+          <Property Name="password" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="warehouse">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="discription" Type="text" />
+        </EntityType>
+        <EntityType Name="work_center">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="power" Type="int" />
+          <Property Name="description" Type="text" />
+        </EntityType>
+        <EntityType Name="working_order">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="nomenclature" Type="int" Nullable="false" />
+          <Property Name="user_id" Type="int" Nullable="false" />
+          <Property Name="status" Type="char" MaxLength="20" />
+          <Property Name="start_date" Type="datetime" Precision="0" />
+          <Property Name="end_date" Type="datetime" Precision="0" />
+          <Property Name="value" Type="int" />
+          <Property Name="description" Type="text" />
+        </EntityType>
+        <Association Name="Relationship12">
+          <End Role="nomenclature" Type="Self.nomenclature" Multiplicity="1" />
+          <End Role="entity6" Type="Self.entity6" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="nomenclature">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="entity6">
+              <PropertyRef Name="id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship14">
+          <End Role="set_of_components" Type="Self.set_of_components" Multiplicity="1" />
+          <End Role="entity6" Type="Self.entity6" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="set_of_components">
+              <PropertyRef Name="id_set" />
+            </Principal>
+            <Dependent Role="entity6">
+              <PropertyRef Name="id_set" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship16">
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stock" Type="Self.stock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="stock">
+              <PropertyRef Name="id_warehouse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship17">
+          <End Role="nomenclature" Type="Self.nomenclature" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stock" Type="Self.stock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="nomenclature">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="stock">
+              <PropertyRef Name="id_nomenclature" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship19">
+          <End Role="work_center" Type="Self.work_center" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="output_log" Type="Self.output_log" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="work_center">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="output_log">
+              <PropertyRef Name="work_center_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship2">
+          <End Role="specification" Type="Self.specification" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="nomenclature" Type="Self.nomenclature" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="specification">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="nomenclature">
+              <PropertyRef Name="specification" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship20">
+          <End Role="nomenclature" Type="Self.nomenclature" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="working_order" Type="Self.working_order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="nomenclature">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="working_order">
+              <PropertyRef Name="nomenclature" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship21">
+          <End Role="users" Type="Self.users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="working_order" Type="Self.working_order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id_user" />
+            </Principal>
+            <Dependent Role="working_order">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship22">
+          <End Role="work_center" Type="Self.work_center" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="operations" Type="Self.operations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="work_center">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="operations">
+              <PropertyRef Name="work_center_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship24">
+          <End Role="operations" Type="Self.operations" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="technolog_map" Type="Self.technolog_map" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="operations">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="technolog_map">
+              <PropertyRef Name="id_initial_operation" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище DB_ModelContainer">
+          <EntitySet Name="entity6" EntityType="Self.entity6" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="nomenclature" EntityType="Self.nomenclature" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="operations" EntityType="Self.operations" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="output_log" EntityType="Self.output_log" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="set_of_components" EntityType="Self.set_of_components" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="specification" EntityType="Self.specification" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="stock" EntityType="Self.stock" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="technolog_map" EntityType="Self.technolog_map" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="users" EntityType="Self.users" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="warehouse" EntityType="Self.warehouse" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="work_center" EntityType="Self.work_center" Schema="db_kurs" store:Type="Tables" />
+          <EntitySet Name="working_order" EntityType="Self.working_order" Schema="db_kurs" store:Type="Tables" />
+          <AssociationSet Name="Relationship12" Association="Self.Relationship12">
+            <End Role="nomenclature" EntitySet="nomenclature" />
+            <End Role="entity6" EntitySet="entity6" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship14" Association="Self.Relationship14">
+            <End Role="set_of_components" EntitySet="set_of_components" />
+            <End Role="entity6" EntitySet="entity6" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship16" Association="Self.Relationship16">
+            <End Role="warehouse" EntitySet="warehouse" />
+            <End Role="stock" EntitySet="stock" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship17" Association="Self.Relationship17">
+            <End Role="nomenclature" EntitySet="nomenclature" />
+            <End Role="stock" EntitySet="stock" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship19" Association="Self.Relationship19">
+            <End Role="work_center" EntitySet="work_center" />
+            <End Role="output_log" EntitySet="output_log" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship2" Association="Self.Relationship2">
+            <End Role="specification" EntitySet="specification" />
+            <End Role="nomenclature" EntitySet="nomenclature" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship20" Association="Self.Relationship20">
+            <End Role="nomenclature" EntitySet="nomenclature" />
+            <End Role="working_order" EntitySet="working_order" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship21" Association="Self.Relationship21">
+            <End Role="users" EntitySet="users" />
+            <End Role="working_order" EntitySet="working_order" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship22" Association="Self.Relationship22">
+            <End Role="work_center" EntitySet="work_center" />
+            <End Role="operations" EntitySet="operations" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship24" Association="Self.Relationship24">
+            <End Role="operations" EntitySet="operations" />
+            <End Role="technolog_map" EntitySet="technolog_map" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DB_Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="nomenclature">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="unit" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="renewal_method" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="marriage_rate" Type="Int32" />
+          <Property Name="additional_order_level" Type="Int32" />
+          <Property Name="additional_order_value" Type="Int32" />
+          <Property Name="waiting_period" Type="Time" />
+          <Property Name="production_route" Type="Int32" />
+          <Property Name="specification" Type="Int32" Nullable="false" />
+          <Property Name="material_write_off_mode" Type="Int32" />
+          <NavigationProperty Name="stock" Relationship="Self.Relationship17" FromRole="nomenclature" ToRole="stock" />
+          <NavigationProperty Name="specification1" Relationship="Self.Relationship2" FromRole="nomenclature" ToRole="specification" />
+          <NavigationProperty Name="working_order" Relationship="Self.Relationship20" FromRole="nomenclature" ToRole="working_order" />
+          <NavigationProperty Name="set_of_components" Relationship="Self.entity6" FromRole="nomenclature" ToRole="set_of_components" />
+        </EntityType>
+        <EntityType Name="operations">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="work_center_id" Type="Int32" Nullable="false" />
+          <Property Name="setup_time" Type="Int32" />
+          <Property Name="processing_time" Type="Int32" />
+          <Property Name="transit_time" Type="Int32" />
+          <Property Name="description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <Property Name="next_operation_id" Type="Int32" />
+          <NavigationProperty Name="work_center" Relationship="Self.Relationship22" FromRole="operations" ToRole="work_center" />
+          <NavigationProperty Name="technolog_map" Relationship="Self.Relationship24" FromRole="operations" ToRole="technolog_map" />
+        </EntityType>
+        <EntityType Name="output_log">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="working_order_id" Type="Int32" />
+          <Property Name="work_center_id" Type="Int32" Nullable="false" />
+          <Property Name="elapsed_time" Type="Int32" />
+          <NavigationProperty Name="work_center" Relationship="Self.Relationship19" FromRole="output_log" ToRole="work_center" />
+        </EntityType>
+        <EntityType Name="set_of_components">
+          <Key>
+            <PropertyRef Name="id_set" />
+          </Key>
+          <Property Name="id_set" Type="Int32" Nullable="false" />
+          <Property Name="nomenclature" Type="Int32" Nullable="false" />
+          <Property Name="value" Type="Int32" />
+          <NavigationProperty Name="nomenclature1" Relationship="Self.entity6" FromRole="set_of_components" ToRole="nomenclature" />
+        </EntityType>
+        <EntityType Name="specification">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="status" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="set_of_components" Type="Int32" />
+          <Property Name="discription" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="nomenclature" Relationship="Self.Relationship2" FromRole="specification" ToRole="nomenclature" />
+        </EntityType>
+        <EntityType Name="stock">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="id_warehouse" Type="Int32" Nullable="false" />
+          <Property Name="id_nomenclature" Type="Int32" Nullable="false" />
+          <Property Name="value" Type="Int32" />
+          <NavigationProperty Name="nomenclature" Relationship="Self.Relationship17" FromRole="stock" ToRole="nomenclature" />
+          <NavigationProperty Name="warehouse" Relationship="Self.Relationship16" FromRole="stock" ToRole="warehouse" />
+        </EntityType>
+        <EntityType Name="technolog_map">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="id_initial_operation" Type="Int32" Nullable="false" />
+          <Property Name="description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="operations" Relationship="Self.Relationship24" FromRole="technolog_map" ToRole="operations" />
+        </EntityType>
+        <EntityType Name="users">
+          <Key>
+            <PropertyRef Name="id_user" />
+          </Key>
+          <Property Name="id_user" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="login" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="working_order" Relationship="Self.Relationship21" FromRole="users" ToRole="working_order" />
+        </EntityType>
+        <EntityType Name="warehouse">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="discription" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="stock" Relationship="Self.Relationship16" FromRole="warehouse" ToRole="stock" />
+        </EntityType>
+        <EntityType Name="work_center">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="power" Type="Int32" />
+          <Property Name="description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="operations" Relationship="Self.Relationship22" FromRole="work_center" ToRole="operations" />
+          <NavigationProperty Name="output_log" Relationship="Self.Relationship19" FromRole="work_center" ToRole="output_log" />
+        </EntityType>
+        <EntityType Name="working_order">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="nomenclature" Type="Int32" Nullable="false" />
+          <Property Name="user_id" Type="Int32" Nullable="false" />
+          <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="start_date" Type="DateTime" />
+          <Property Name="end_date" Type="DateTime" />
+          <Property Name="value" Type="Int32" />
+          <Property Name="description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="nomenclature1" Relationship="Self.Relationship20" FromRole="working_order" ToRole="nomenclature" />
+          <NavigationProperty Name="users" Relationship="Self.Relationship21" FromRole="working_order" ToRole="users" />
+        </EntityType>
+        <Association Name="Relationship17">
+          <End Role="nomenclature" Type="Self.nomenclature" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stock" Type="Self.stock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="nomenclature">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="stock">
+              <PropertyRef Name="id_nomenclature" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship2">
+          <End Role="specification" Type="Self.specification" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="nomenclature" Type="Self.nomenclature" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="specification">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="nomenclature">
+              <PropertyRef Name="specification" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship20">
+          <End Role="nomenclature" Type="Self.nomenclature" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="working_order" Type="Self.working_order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="nomenclature">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="working_order">
+              <PropertyRef Name="nomenclature" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship22">
+          <End Role="work_center" Type="Self.work_center" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="operations" Type="Self.operations" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="work_center">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="operations">
+              <PropertyRef Name="work_center_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship24">
+          <End Role="operations" Type="Self.operations" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="technolog_map" Type="Self.technolog_map" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="operations">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="technolog_map">
+              <PropertyRef Name="id_initial_operation" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship19">
+          <End Role="work_center" Type="Self.work_center" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="output_log" Type="Self.output_log" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="work_center">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="output_log">
+              <PropertyRef Name="work_center_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship16">
+          <End Role="warehouse" Type="Self.warehouse" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="stock" Type="Self.stock" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="warehouse">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="stock">
+              <PropertyRef Name="id_warehouse" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Relationship21">
+          <End Role="users" Type="Self.users" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="working_order" Type="Self.working_order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="users">
+              <PropertyRef Name="id_user" />
+            </Principal>
+            <Dependent Role="working_order">
+              <PropertyRef Name="user_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="entity6">
+          <End Role="nomenclature" Type="Self.nomenclature" Multiplicity="*" />
+          <End Role="set_of_components" Type="Self.set_of_components" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="ConnectionString" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="nomenclature" EntityType="Self.nomenclature" />
+          <EntitySet Name="operations" EntityType="Self.operations" />
+          <EntitySet Name="output_log" EntityType="Self.output_log" />
+          <EntitySet Name="set_of_components" EntityType="Self.set_of_components" />
+          <EntitySet Name="specification" EntityType="Self.specification" />
+          <EntitySet Name="stock" EntityType="Self.stock" />
+          <EntitySet Name="technolog_map" EntityType="Self.technolog_map" />
+          <EntitySet Name="users" EntityType="Self.users" />
+          <EntitySet Name="warehouse" EntityType="Self.warehouse" />
+          <EntitySet Name="work_center" EntityType="Self.work_center" />
+          <EntitySet Name="working_order" EntityType="Self.working_order" />
+          <AssociationSet Name="Relationship17" Association="Self.Relationship17">
+            <End Role="nomenclature" EntitySet="nomenclature" />
+            <End Role="stock" EntitySet="stock" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship2" Association="Self.Relationship2">
+            <End Role="specification" EntitySet="specification" />
+            <End Role="nomenclature" EntitySet="nomenclature" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship20" Association="Self.Relationship20">
+            <End Role="nomenclature" EntitySet="nomenclature" />
+            <End Role="working_order" EntitySet="working_order" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship22" Association="Self.Relationship22">
+            <End Role="work_center" EntitySet="work_center" />
+            <End Role="operations" EntitySet="operations" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship24" Association="Self.Relationship24">
+            <End Role="operations" EntitySet="operations" />
+            <End Role="technolog_map" EntitySet="technolog_map" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship19" Association="Self.Relationship19">
+            <End Role="work_center" EntitySet="work_center" />
+            <End Role="output_log" EntitySet="output_log" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship16" Association="Self.Relationship16">
+            <End Role="warehouse" EntitySet="warehouse" />
+            <End Role="stock" EntitySet="stock" />
+          </AssociationSet>
+          <AssociationSet Name="Relationship21" Association="Self.Relationship21">
+            <End Role="users" EntitySet="users" />
+            <End Role="working_order" EntitySet="working_order" />
+          </AssociationSet>
+          <AssociationSet Name="entity6" Association="Self.entity6">
+            <End Role="nomenclature" EntitySet="nomenclature" />
+            <End Role="set_of_components" EntitySet="set_of_components" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище DB_ModelContainer" CdmEntityContainer="ConnectionString">
+          <EntitySetMapping Name="nomenclature">
+            <EntityTypeMapping TypeName="DB_Model.nomenclature">
+              <MappingFragment StoreEntitySet="nomenclature">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="unit" ColumnName="unit" />
+                <ScalarProperty Name="renewal_method" ColumnName="renewal_method" />
+                <ScalarProperty Name="marriage_rate" ColumnName="marriage_rate" />
+                <ScalarProperty Name="additional_order_level" ColumnName="additional_order_level" />
+                <ScalarProperty Name="additional_order_value" ColumnName="additional_order_value" />
+                <ScalarProperty Name="waiting_period" ColumnName="waiting_period" />
+                <ScalarProperty Name="production_route" ColumnName="production_route" />
+                <ScalarProperty Name="specification" ColumnName="specification" />
+                <ScalarProperty Name="material_write_off_mode" ColumnName="material_write_off_mode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="operations">
+            <EntityTypeMapping TypeName="DB_Model.operations">
+              <MappingFragment StoreEntitySet="operations">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="work_center_id" ColumnName="work_center_id" />
+                <ScalarProperty Name="setup_time" ColumnName="setup_time" />
+                <ScalarProperty Name="processing_time" ColumnName="processing_time" />
+                <ScalarProperty Name="transit_time" ColumnName="transit_time" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="next_operation_id" ColumnName="next_operation_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="output_log">
+            <EntityTypeMapping TypeName="DB_Model.output_log">
+              <MappingFragment StoreEntitySet="output_log">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="working_order_id" ColumnName="working_order_id" />
+                <ScalarProperty Name="work_center_id" ColumnName="work_center_id" />
+                <ScalarProperty Name="elapsed_time" ColumnName="elapsed_time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="set_of_components">
+            <EntityTypeMapping TypeName="DB_Model.set_of_components">
+              <MappingFragment StoreEntitySet="set_of_components">
+                <ScalarProperty Name="id_set" ColumnName="id_set" />
+                <ScalarProperty Name="nomenclature" ColumnName="nomenclature" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="specification">
+            <EntityTypeMapping TypeName="DB_Model.specification">
+              <MappingFragment StoreEntitySet="specification">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="set_of_components" ColumnName="set_of_components" />
+                <ScalarProperty Name="discription" ColumnName="discription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="stock">
+            <EntityTypeMapping TypeName="DB_Model.stock">
+              <MappingFragment StoreEntitySet="stock">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="id_warehouse" ColumnName="id_warehouse" />
+                <ScalarProperty Name="id_nomenclature" ColumnName="id_nomenclature" />
+                <ScalarProperty Name="value" ColumnName="value" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="technolog_map">
+            <EntityTypeMapping TypeName="DB_Model.technolog_map">
+              <MappingFragment StoreEntitySet="technolog_map">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="id_initial_operation" ColumnName="id_initial_operation" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="users">
+            <EntityTypeMapping TypeName="DB_Model.users">
+              <MappingFragment StoreEntitySet="users">
+                <ScalarProperty Name="id_user" ColumnName="id_user" />
+                <ScalarProperty Name="login" ColumnName="login" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="warehouse">
+            <EntityTypeMapping TypeName="DB_Model.warehouse">
+              <MappingFragment StoreEntitySet="warehouse">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="discription" ColumnName="discription" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="work_center">
+            <EntityTypeMapping TypeName="DB_Model.work_center">
+              <MappingFragment StoreEntitySet="work_center">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="power" ColumnName="power" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="working_order">
+            <EntityTypeMapping TypeName="DB_Model.working_order">
+              <MappingFragment StoreEntitySet="working_order">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="nomenclature" ColumnName="nomenclature" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="start_date" ColumnName="start_date" />
+                <ScalarProperty Name="end_date" ColumnName="end_date" />
+                <ScalarProperty Name="value" ColumnName="value" />
+                <ScalarProperty Name="description" ColumnName="description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="entity6" TypeName="DB_Model.entity6" StoreEntitySet="entity6">
+            <EndProperty Name="nomenclature">
+              <ScalarProperty Name="id" ColumnName="id" />
+            </EndProperty>
+            <EndProperty Name="set_of_components">
+              <ScalarProperty Name="id_set" ColumnName="id_set" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

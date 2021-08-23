@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5268ababce074f0d95a12d95c1594709" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_Model.nomenclature" Width="1.5" PointX="2.375" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Model.operations" Width="1.5" PointX="6" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Model.output_log" Width="1.5" PointX="6" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Model.set_of_components" Width="1.5" PointX="4.125" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Model.specification" Width="1.5" PointX="0.5" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Model.stock" Width="1.5" PointX="2.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Model.technolog_map" Width="1.5" PointX="9" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Model.users" Width="1.5" PointX="5.875" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Model.warehouse" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Model.work_center" Width="1.5" PointX="7.875" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_Model.working_order" Width="1.5" PointX="4.125" PointY="1.875" IsExpanded="true" />
+        <AssociationConnector Association="DB_Model.Relationship17" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Model.Relationship2" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Model.Relationship20" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Model.Relationship22" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Model.Relationship24" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Model.Relationship19" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Model.Relationship16" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Model.Relationship21" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_Model.entity6" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
