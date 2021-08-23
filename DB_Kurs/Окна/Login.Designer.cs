@@ -100,6 +100,7 @@ namespace DB_Kurs
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.BackColor = System.Drawing.SystemColors.AppWorkspace;
       this.ClientSize = new System.Drawing.Size(294, 154);
       this.Controls.Add(this.panel1);
       this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

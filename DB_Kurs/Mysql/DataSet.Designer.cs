@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace DB_Kurs {
+namespace DB_Kurs.Mysql {
     
     
     /// <summary>
@@ -6021,7 +6021,7 @@ namespace DB_Kurs {
         }
     }
 }
-namespace DB_Kurs.DataSetTableAdapters {
+namespace DB_Kurs.Mysql.DataSetTableAdapters {
     
     
     /// <summary>

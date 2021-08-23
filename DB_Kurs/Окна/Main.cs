@@ -41,5 +41,10 @@ namespace DB_Kurs.Формы
       this.nomenclatureTableAdapter.Fill(this.dataSet.nomenclature);
 
     }
+
+    private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
+    {
+
+    }
   }
 }
