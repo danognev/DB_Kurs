@@ -29,44 +29,10 @@ namespace DB_Kurs.Формы
     /// </summary>
     private void InitializeComponent()
     {
-      this.components = new System.ComponentModel.Container();
-      this.nomenclatureBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.dataSet = new DB_Kurs.Mysql.DataSet();
-      this.specificationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.dataSet1 = new DB_Kurs.Mysql.DataSet();
-      this.setofcomponentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.operationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.outputlogBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.stockBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.technologmapBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.warehouseBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.workcenterBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.workingorderBindingSource = new System.Windows.Forms.BindingSource(this.components);
-      this.nomenclatureTableAdapter = new DB_Kurs.Mysql.DataSetTableAdapters.nomenclatureTableAdapter();
-      this.specificationTableAdapter = new DB_Kurs.Mysql.DataSetTableAdapters.specificationTableAdapter();
-      this.set_of_componentsTableAdapter = new DB_Kurs.Mysql.DataSetTableAdapters.set_of_componentsTableAdapter();
-      this.operationsTableAdapter = new DB_Kurs.Mysql.DataSetTableAdapters.operationsTableAdapter();
-      this.output_logTableAdapter = new DB_Kurs.Mysql.DataSetTableAdapters.output_logTableAdapter();
-      this.stockTableAdapter = new DB_Kurs.Mysql.DataSetTableAdapters.stockTableAdapter();
-      this.technolog_mapTableAdapter = new DB_Kurs.Mysql.DataSetTableAdapters.technolog_mapTableAdapter();
-      this.warehouseTableAdapter = new DB_Kurs.Mysql.DataSetTableAdapters.warehouseTableAdapter();
-      this.work_centerTableAdapter = new DB_Kurs.Mysql.DataSetTableAdapters.work_centerTableAdapter();
-      this.working_orderTableAdapter = new DB_Kurs.Mysql.DataSetTableAdapters.working_orderTableAdapter();
       this.tabControl = new System.Windows.Forms.TabControl();
       this.tabPage1 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
       this.dataGridView1 = new System.Windows.Forms.DataGridView();
-      this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.renewalmethodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.marriagerateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.additionalorderlevelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.additionalordervalueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.waitingperiodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.productionrouteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.specificationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.materialwriteoffmodeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox12 = new System.Windows.Forms.GroupBox();
       this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -91,114 +57,66 @@ namespace DB_Kurs.Формы
       this.groupBox11 = new System.Windows.Forms.GroupBox();
       this.comboBox2 = new System.Windows.Forms.ComboBox();
       this.tabPage2 = new System.Windows.Forms.TabPage();
-      this.dataGridView2 = new System.Windows.Forms.DataGridView();
-      this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.setofcomponentsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.discriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.tabPage3 = new System.Windows.Forms.TabPage();
-      this.dataGridView3 = new System.Windows.Forms.DataGridView();
-      this.idsetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.nomenclatureDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.valueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.tabPage4 = new System.Windows.Forms.TabPage();
-      this.dataGridView4 = new System.Windows.Forms.DataGridView();
-      this.idDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.workcenteridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.setuptimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.processingtimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.transittimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.nextoperationidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.tabPage5 = new System.Windows.Forms.TabPage();
-      this.dataGridView5 = new System.Windows.Forms.DataGridView();
-      this.idDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.workingorderidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.workcenteridDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.elapsedtimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.tabPage6 = new System.Windows.Forms.TabPage();
-      this.dataGridView6 = new System.Windows.Forms.DataGridView();
-      this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.id_warehouse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.id_nomenclature = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.value = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.tabPage7 = new System.Windows.Forms.TabPage();
-      this.dataGridView7 = new System.Windows.Forms.DataGridView();
-      this.idDataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.statusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.idinitialoperationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.descriptionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.tabPage8 = new System.Windows.Forms.TabPage();
-      this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-      this.dataGridView8 = new System.Windows.Forms.DataGridView();
-      this.idDataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.discriptionDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-      this.button2 = new System.Windows.Forms.Button();
-      this.groupBox2 = new System.Windows.Forms.GroupBox();
-      this.textBox2 = new System.Windows.Forms.TextBox();
-      this.groupBox1 = new System.Windows.Forms.GroupBox();
-      this.textBox1 = new System.Windows.Forms.TextBox();
-      this.button1 = new System.Windows.Forms.Button();
-      this.tabPage9 = new System.Windows.Forms.TabPage();
-      this.dataGridView9 = new System.Windows.Forms.DataGridView();
-      this.idDataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.powerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.descriptionDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.tabPage10 = new System.Windows.Forms.TabPage();
-      this.dataGridView10 = new System.Windows.Forms.DataGridView();
       this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox13 = new System.Windows.Forms.GroupBox();
+      this.textBox10 = new System.Windows.Forms.TextBox();
       this.groupBox19 = new System.Windows.Forms.GroupBox();
+      this.comboBox8 = new System.Windows.Forms.ComboBox();
       this.button5 = new System.Windows.Forms.Button();
       this.groupBox20 = new System.Windows.Forms.GroupBox();
+      this.comboBox7 = new System.Windows.Forms.ComboBox();
       this.groupBox21 = new System.Windows.Forms.GroupBox();
       this.textBox16 = new System.Windows.Forms.TextBox();
       this.button6 = new System.Windows.Forms.Button();
-      this.comboBox7 = new System.Windows.Forms.ComboBox();
-      this.comboBox8 = new System.Windows.Forms.ComboBox();
-      this.textBox10 = new System.Windows.Forms.TextBox();
+      this.dataGridView2 = new System.Windows.Forms.DataGridView();
+      this.tabPage3 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
-      this.textBox11 = new System.Windows.Forms.TextBox();
       this.groupBox15 = new System.Windows.Forms.GroupBox();
+      this.textBox11 = new System.Windows.Forms.TextBox();
       this.button7 = new System.Windows.Forms.Button();
       this.groupBox16 = new System.Windows.Forms.GroupBox();
       this.comboBox5 = new System.Windows.Forms.ComboBox();
       this.groupBox17 = new System.Windows.Forms.GroupBox();
       this.textBox12 = new System.Windows.Forms.TextBox();
       this.button8 = new System.Windows.Forms.Button();
+      this.dataGridView3 = new System.Windows.Forms.DataGridView();
+      this.tabPage4 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
+      this.groupBox22 = new System.Windows.Forms.GroupBox();
+      this.comboBox6 = new System.Windows.Forms.ComboBox();
       this.groupBox23 = new System.Windows.Forms.GroupBox();
       this.textBox15 = new System.Windows.Forms.TextBox();
       this.groupBox24 = new System.Windows.Forms.GroupBox();
       this.textBox17 = new System.Windows.Forms.TextBox();
       this.groupBox25 = new System.Windows.Forms.GroupBox();
+      this.textBox14 = new System.Windows.Forms.TextBox();
       this.groupBox26 = new System.Windows.Forms.GroupBox();
       this.textBox18 = new System.Windows.Forms.TextBox();
       this.button9 = new System.Windows.Forms.Button();
       this.groupBox27 = new System.Windows.Forms.GroupBox();
+      this.comboBox4 = new System.Windows.Forms.ComboBox();
       this.groupBox28 = new System.Windows.Forms.GroupBox();
       this.textBox20 = new System.Windows.Forms.TextBox();
       this.button10 = new System.Windows.Forms.Button();
-      this.textBox14 = new System.Windows.Forms.TextBox();
-      this.comboBox4 = new System.Windows.Forms.ComboBox();
-      this.comboBox6 = new System.Windows.Forms.ComboBox();
-      this.groupBox22 = new System.Windows.Forms.GroupBox();
+      this.dataGridView4 = new System.Windows.Forms.DataGridView();
+      this.tabPage5 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox14 = new System.Windows.Forms.GroupBox();
+      this.comboBox10 = new System.Windows.Forms.ComboBox();
       this.button11 = new System.Windows.Forms.Button();
       this.groupBox18 = new System.Windows.Forms.GroupBox();
       this.comboBox9 = new System.Windows.Forms.ComboBox();
       this.groupBox29 = new System.Windows.Forms.GroupBox();
       this.textBox19 = new System.Windows.Forms.TextBox();
       this.button12 = new System.Windows.Forms.Button();
-      this.comboBox10 = new System.Windows.Forms.ComboBox();
       this.groupBox30 = new System.Windows.Forms.GroupBox();
       this.textBox13 = new System.Windows.Forms.TextBox();
+      this.dataGridView5 = new System.Windows.Forms.DataGridView();
+      this.tabPage6 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox31 = new System.Windows.Forms.GroupBox();
@@ -211,6 +129,11 @@ namespace DB_Kurs.Формы
       this.button14 = new System.Windows.Forms.Button();
       this.groupBox34 = new System.Windows.Forms.GroupBox();
       this.textBox22 = new System.Windows.Forms.TextBox();
+      this.dataGridView6 = new System.Windows.Forms.DataGridView();
+      this.id_warehouse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.id_nomenclature = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.tabPage7 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox35 = new System.Windows.Forms.GroupBox();
@@ -223,6 +146,18 @@ namespace DB_Kurs.Формы
       this.groupBox38 = new System.Windows.Forms.GroupBox();
       this.textBox24 = new System.Windows.Forms.TextBox();
       this.button16 = new System.Windows.Forms.Button();
+      this.dataGridView7 = new System.Windows.Forms.DataGridView();
+      this.tabPage8 = new System.Windows.Forms.TabPage();
+      this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+      this.warehouse_datagrid = new System.Windows.Forms.DataGridView();
+      this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+      this.warehouse_delete_btn = new System.Windows.Forms.Button();
+      this.groupBox2 = new System.Windows.Forms.GroupBox();
+      this.warehouse_discription_textbox = new System.Windows.Forms.TextBox();
+      this.groupBox1 = new System.Windows.Forms.GroupBox();
+      this.warehouse_id_textbox = new System.Windows.Forms.TextBox();
+      this.warehouse_add_btn = new System.Windows.Forms.Button();
+      this.tabPage9 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
       this.button17 = new System.Windows.Forms.Button();
@@ -233,6 +168,8 @@ namespace DB_Kurs.Формы
       this.button18 = new System.Windows.Forms.Button();
       this.groupBox41 = new System.Windows.Forms.GroupBox();
       this.textBox27 = new System.Windows.Forms.TextBox();
+      this.dataGridView9 = new System.Windows.Forms.DataGridView();
+      this.tabPage10 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox43 = new System.Windows.Forms.GroupBox();
@@ -240,39 +177,22 @@ namespace DB_Kurs.Формы
       this.groupBox44 = new System.Windows.Forms.GroupBox();
       this.textBox29 = new System.Windows.Forms.TextBox();
       this.groupBox45 = new System.Windows.Forms.GroupBox();
+      this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
       this.groupBox46 = new System.Windows.Forms.GroupBox();
+      this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
       this.groupBox47 = new System.Windows.Forms.GroupBox();
       this.comboBox16 = new System.Windows.Forms.ComboBox();
       this.groupBox48 = new System.Windows.Forms.GroupBox();
+      this.comboBox19 = new System.Windows.Forms.ComboBox();
       this.button19 = new System.Windows.Forms.Button();
       this.groupBox49 = new System.Windows.Forms.GroupBox();
+      this.comboBox18 = new System.Windows.Forms.ComboBox();
       this.groupBox50 = new System.Windows.Forms.GroupBox();
       this.textBox34 = new System.Windows.Forms.TextBox();
       this.button20 = new System.Windows.Forms.Button();
-      this.comboBox18 = new System.Windows.Forms.ComboBox();
-      this.comboBox19 = new System.Windows.Forms.ComboBox();
-      this.idDataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.nomenclatureDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.useridDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.statusDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.startdateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.enddateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.valueDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.descriptionDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-      this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-      ((System.ComponentModel.ISupportInitialize)(this.nomenclatureBindingSource)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.dataSet)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.specificationBindingSource)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.setofcomponentsBindingSource)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.operationsBindingSource)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.outputlogBindingSource)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.technologmapBindingSource)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.warehouseBindingSource)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.workcenterBindingSource)).BeginInit();
-      ((System.ComponentModel.ISupportInitialize)(this.workingorderBindingSource)).BeginInit();
+      this.dataGridView10 = new System.Windows.Forms.DataGridView();
+      this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tabControl.SuspendLayout();
       this.tabPage1.SuspendLayout();
       this.tableLayoutPanel3.SuspendLayout();
@@ -289,70 +209,69 @@ namespace DB_Kurs.Формы
       this.groupBox4.SuspendLayout();
       this.groupBox11.SuspendLayout();
       this.tabPage2.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-      this.tabPage3.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-      this.tabPage4.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-      this.tabPage5.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-      this.tabPage6.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
-      this.tabPage7.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
-      this.tabPage8.SuspendLayout();
-      this.tableLayoutPanel2.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).BeginInit();
-      this.tableLayoutPanel1.SuspendLayout();
-      this.groupBox2.SuspendLayout();
-      this.groupBox1.SuspendLayout();
-      this.tabPage9.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
-      this.tabPage10.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
       this.tableLayoutPanel5.SuspendLayout();
       this.tableLayoutPanel6.SuspendLayout();
       this.groupBox13.SuspendLayout();
       this.groupBox19.SuspendLayout();
       this.groupBox20.SuspendLayout();
       this.groupBox21.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+      this.tabPage3.SuspendLayout();
       this.tableLayoutPanel7.SuspendLayout();
       this.tableLayoutPanel8.SuspendLayout();
       this.groupBox15.SuspendLayout();
       this.groupBox16.SuspendLayout();
       this.groupBox17.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+      this.tabPage4.SuspendLayout();
       this.tableLayoutPanel9.SuspendLayout();
       this.tableLayoutPanel10.SuspendLayout();
+      this.groupBox22.SuspendLayout();
       this.groupBox23.SuspendLayout();
       this.groupBox24.SuspendLayout();
       this.groupBox25.SuspendLayout();
       this.groupBox26.SuspendLayout();
       this.groupBox27.SuspendLayout();
       this.groupBox28.SuspendLayout();
-      this.groupBox22.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+      this.tabPage5.SuspendLayout();
       this.tableLayoutPanel11.SuspendLayout();
       this.tableLayoutPanel12.SuspendLayout();
       this.groupBox14.SuspendLayout();
       this.groupBox18.SuspendLayout();
       this.groupBox29.SuspendLayout();
       this.groupBox30.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+      this.tabPage6.SuspendLayout();
       this.tableLayoutPanel13.SuspendLayout();
       this.tableLayoutPanel14.SuspendLayout();
       this.groupBox31.SuspendLayout();
       this.groupBox32.SuspendLayout();
       this.groupBox33.SuspendLayout();
       this.groupBox34.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+      this.tabPage7.SuspendLayout();
       this.tableLayoutPanel15.SuspendLayout();
       this.tableLayoutPanel16.SuspendLayout();
       this.groupBox35.SuspendLayout();
       this.groupBox36.SuspendLayout();
       this.groupBox37.SuspendLayout();
       this.groupBox38.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+      this.tabPage8.SuspendLayout();
+      this.tableLayoutPanel2.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.warehouse_datagrid)).BeginInit();
+      this.tableLayoutPanel1.SuspendLayout();
+      this.groupBox2.SuspendLayout();
+      this.groupBox1.SuspendLayout();
+      this.tabPage9.SuspendLayout();
       this.tableLayoutPanel17.SuspendLayout();
       this.tableLayoutPanel18.SuspendLayout();
       this.groupBox39.SuspendLayout();
       this.groupBox40.SuspendLayout();
       this.groupBox41.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
+      this.tabPage10.SuspendLayout();
       this.tableLayoutPanel19.SuspendLayout();
       this.tableLayoutPanel20.SuspendLayout();
       this.groupBox43.SuspendLayout();
@@ -363,109 +282,8 @@ namespace DB_Kurs.Формы
       this.groupBox48.SuspendLayout();
       this.groupBox49.SuspendLayout();
       this.groupBox50.SuspendLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
       this.SuspendLayout();
-      // 
-      // nomenclatureBindingSource
-      // 
-      this.nomenclatureBindingSource.AllowNew = false;
-      this.nomenclatureBindingSource.DataMember = "nomenclature";
-      this.nomenclatureBindingSource.DataSource = this.dataSet;
-      // 
-      // dataSet
-      // 
-      this.dataSet.DataSetName = "DataSet";
-      this.dataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-      // 
-      // specificationBindingSource
-      // 
-      this.specificationBindingSource.AllowNew = false;
-      this.specificationBindingSource.DataMember = "specification";
-      this.specificationBindingSource.DataSource = this.dataSet1;
-      // 
-      // dataSet1
-      // 
-      this.dataSet1.DataSetName = "DataSet";
-      this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-      // 
-      // setofcomponentsBindingSource
-      // 
-      this.setofcomponentsBindingSource.DataMember = "set_of_components";
-      this.setofcomponentsBindingSource.DataSource = this.dataSet;
-      // 
-      // operationsBindingSource
-      // 
-      this.operationsBindingSource.DataMember = "operations";
-      this.operationsBindingSource.DataSource = this.dataSet;
-      // 
-      // outputlogBindingSource
-      // 
-      this.outputlogBindingSource.DataMember = "output_log";
-      this.outputlogBindingSource.DataSource = this.dataSet;
-      // 
-      // stockBindingSource
-      // 
-      this.stockBindingSource.DataMember = "stock";
-      this.stockBindingSource.DataSource = this.dataSet;
-      // 
-      // technologmapBindingSource
-      // 
-      this.technologmapBindingSource.DataMember = "technolog_map";
-      this.technologmapBindingSource.DataSource = this.dataSet;
-      // 
-      // warehouseBindingSource
-      // 
-      this.warehouseBindingSource.DataMember = "warehouse";
-      this.warehouseBindingSource.DataSource = this.dataSet;
-      // 
-      // workcenterBindingSource
-      // 
-      this.workcenterBindingSource.DataMember = "work_center";
-      this.workcenterBindingSource.DataSource = this.dataSet;
-      // 
-      // workingorderBindingSource
-      // 
-      this.workingorderBindingSource.DataMember = "working_order";
-      this.workingorderBindingSource.DataSource = this.dataSet;
-      // 
-      // nomenclatureTableAdapter
-      // 
-      this.nomenclatureTableAdapter.ClearBeforeFill = true;
-      // 
-      // specificationTableAdapter
-      // 
-      this.specificationTableAdapter.ClearBeforeFill = true;
-      // 
-      // set_of_componentsTableAdapter
-      // 
-      this.set_of_componentsTableAdapter.ClearBeforeFill = true;
-      // 
-      // operationsTableAdapter
-      // 
-      this.operationsTableAdapter.ClearBeforeFill = true;
-      // 
-      // output_logTableAdapter
-      // 
-      this.output_logTableAdapter.ClearBeforeFill = true;
-      // 
-      // stockTableAdapter
-      // 
-      this.stockTableAdapter.ClearBeforeFill = true;
-      // 
-      // technolog_mapTableAdapter
-      // 
-      this.technolog_mapTableAdapter.ClearBeforeFill = true;
-      // 
-      // warehouseTableAdapter
-      // 
-      this.warehouseTableAdapter.ClearBeforeFill = true;
-      // 
-      // work_centerTableAdapter
-      // 
-      this.work_centerTableAdapter.ClearBeforeFill = true;
-      // 
-      // working_orderTableAdapter
-      // 
-      this.working_orderTableAdapter.ClearBeforeFill = true;
       // 
       // tabControl
       // 
@@ -517,21 +335,7 @@ namespace DB_Kurs.Формы
       // 
       this.dataGridView1.AllowUserToAddRows = false;
       this.dataGridView1.AllowUserToDeleteRows = false;
-      this.dataGridView1.AutoGenerateColumns = false;
       this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn1,
-            this.nameDataGridViewTextBoxColumn,
-            this.unitDataGridViewTextBoxColumn,
-            this.renewalmethodDataGridViewTextBoxColumn,
-            this.marriagerateDataGridViewTextBoxColumn,
-            this.additionalorderlevelDataGridViewTextBoxColumn,
-            this.additionalordervalueDataGridViewTextBoxColumn,
-            this.waitingperiodDataGridViewTextBoxColumn,
-            this.productionrouteDataGridViewTextBoxColumn,
-            this.specificationDataGridViewTextBoxColumn,
-            this.materialwriteoffmodeDataGridViewTextBoxColumn});
-      this.dataGridView1.DataSource = this.nomenclatureBindingSource;
       this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
       this.dataGridView1.Location = new System.Drawing.Point(0, 0);
       this.dataGridView1.Margin = new System.Windows.Forms.Padding(0);
@@ -540,94 +344,6 @@ namespace DB_Kurs.Формы
       this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
       this.dataGridView1.Size = new System.Drawing.Size(1043, 595);
       this.dataGridView1.TabIndex = 0;
-      // 
-      // idDataGridViewTextBoxColumn1
-      // 
-      this.idDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.idDataGridViewTextBoxColumn1.DataPropertyName = "id";
-      this.idDataGridViewTextBoxColumn1.HeaderText = "Код";
-      this.idDataGridViewTextBoxColumn1.Name = "idDataGridViewTextBoxColumn1";
-      this.idDataGridViewTextBoxColumn1.ReadOnly = true;
-      // 
-      // nameDataGridViewTextBoxColumn
-      // 
-      this.nameDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-      this.nameDataGridViewTextBoxColumn.HeaderText = "Наименование";
-      this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-      this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // unitDataGridViewTextBoxColumn
-      // 
-      this.unitDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.unitDataGridViewTextBoxColumn.DataPropertyName = "unit";
-      this.unitDataGridViewTextBoxColumn.HeaderText = "Единицы измерения";
-      this.unitDataGridViewTextBoxColumn.Name = "unitDataGridViewTextBoxColumn";
-      this.unitDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // renewalmethodDataGridViewTextBoxColumn
-      // 
-      this.renewalmethodDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.renewalmethodDataGridViewTextBoxColumn.DataPropertyName = "renewal_method";
-      this.renewalmethodDataGridViewTextBoxColumn.HeaderText = "Метод возобновления";
-      this.renewalmethodDataGridViewTextBoxColumn.Name = "renewalmethodDataGridViewTextBoxColumn";
-      this.renewalmethodDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // marriagerateDataGridViewTextBoxColumn
-      // 
-      this.marriagerateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.marriagerateDataGridViewTextBoxColumn.DataPropertyName = "marriage_rate";
-      this.marriagerateDataGridViewTextBoxColumn.HeaderText = "Процент брака";
-      this.marriagerateDataGridViewTextBoxColumn.Name = "marriagerateDataGridViewTextBoxColumn";
-      this.marriagerateDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // additionalorderlevelDataGridViewTextBoxColumn
-      // 
-      this.additionalorderlevelDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.additionalorderlevelDataGridViewTextBoxColumn.DataPropertyName = "additional_order_level";
-      this.additionalorderlevelDataGridViewTextBoxColumn.HeaderText = "Точка дозаказа";
-      this.additionalorderlevelDataGridViewTextBoxColumn.Name = "additionalorderlevelDataGridViewTextBoxColumn";
-      this.additionalorderlevelDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // additionalordervalueDataGridViewTextBoxColumn
-      // 
-      this.additionalordervalueDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.additionalordervalueDataGridViewTextBoxColumn.DataPropertyName = "additional_order_value";
-      this.additionalordervalueDataGridViewTextBoxColumn.HeaderText = "Количество для дозаказа";
-      this.additionalordervalueDataGridViewTextBoxColumn.Name = "additionalordervalueDataGridViewTextBoxColumn";
-      this.additionalordervalueDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // waitingperiodDataGridViewTextBoxColumn
-      // 
-      this.waitingperiodDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.waitingperiodDataGridViewTextBoxColumn.DataPropertyName = "waiting_period";
-      this.waitingperiodDataGridViewTextBoxColumn.HeaderText = "Период ожидания";
-      this.waitingperiodDataGridViewTextBoxColumn.Name = "waitingperiodDataGridViewTextBoxColumn";
-      this.waitingperiodDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // productionrouteDataGridViewTextBoxColumn
-      // 
-      this.productionrouteDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.productionrouteDataGridViewTextBoxColumn.DataPropertyName = "production_route";
-      this.productionrouteDataGridViewTextBoxColumn.HeaderText = "Маршрут производства";
-      this.productionrouteDataGridViewTextBoxColumn.Name = "productionrouteDataGridViewTextBoxColumn";
-      this.productionrouteDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // specificationDataGridViewTextBoxColumn
-      // 
-      this.specificationDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.specificationDataGridViewTextBoxColumn.DataPropertyName = "specification";
-      this.specificationDataGridViewTextBoxColumn.HeaderText = "Спецификация";
-      this.specificationDataGridViewTextBoxColumn.Name = "specificationDataGridViewTextBoxColumn";
-      this.specificationDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // materialwriteoffmodeDataGridViewTextBoxColumn
-      // 
-      this.materialwriteoffmodeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.materialwriteoffmodeDataGridViewTextBoxColumn.DataPropertyName = "material_write_off_mode";
-      this.materialwriteoffmodeDataGridViewTextBoxColumn.HeaderText = "Метод списания";
-      this.materialwriteoffmodeDataGridViewTextBoxColumn.Name = "materialwriteoffmodeDataGridViewTextBoxColumn";
-      this.materialwriteoffmodeDataGridViewTextBoxColumn.ReadOnly = true;
       // 
       // tableLayoutPanel4
       // 
@@ -904,617 +620,6 @@ namespace DB_Kurs.Формы
       this.tabPage2.Text = "Спецификация";
       this.tabPage2.UseVisualStyleBackColor = true;
       // 
-      // dataGridView2
-      // 
-      this.dataGridView2.AllowUserToAddRows = false;
-      this.dataGridView2.AllowUserToDeleteRows = false;
-      this.dataGridView2.AutoGenerateColumns = false;
-      this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn,
-            this.setofcomponentsDataGridViewTextBoxColumn,
-            this.discriptionDataGridViewTextBoxColumn});
-      this.dataGridView2.DataSource = this.specificationBindingSource;
-      this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView2.Name = "dataGridView2";
-      this.dataGridView2.ReadOnly = true;
-      this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView2.Size = new System.Drawing.Size(1037, 589);
-      this.dataGridView2.TabIndex = 1;
-      // 
-      // idDataGridViewTextBoxColumn
-      // 
-      this.idDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
-      this.idDataGridViewTextBoxColumn.HeaderText = "Код";
-      this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-      this.idDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // statusDataGridViewTextBoxColumn
-      // 
-      this.statusDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.statusDataGridViewTextBoxColumn.DataPropertyName = "status";
-      this.statusDataGridViewTextBoxColumn.HeaderText = "Состояние";
-      this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
-      this.statusDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // setofcomponentsDataGridViewTextBoxColumn
-      // 
-      this.setofcomponentsDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.setofcomponentsDataGridViewTextBoxColumn.DataPropertyName = "set_of_components";
-      this.setofcomponentsDataGridViewTextBoxColumn.HeaderText = "Набор компонентов";
-      this.setofcomponentsDataGridViewTextBoxColumn.Name = "setofcomponentsDataGridViewTextBoxColumn";
-      this.setofcomponentsDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // discriptionDataGridViewTextBoxColumn
-      // 
-      this.discriptionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.discriptionDataGridViewTextBoxColumn.DataPropertyName = "discription";
-      this.discriptionDataGridViewTextBoxColumn.HeaderText = "Описание";
-      this.discriptionDataGridViewTextBoxColumn.Name = "discriptionDataGridViewTextBoxColumn";
-      this.discriptionDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // tabPage3
-      // 
-      this.tabPage3.Controls.Add(this.tableLayoutPanel7);
-      this.tabPage3.Location = new System.Drawing.Point(4, 22);
-      this.tabPage3.Name = "tabPage3";
-      this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPage3.Size = new System.Drawing.Size(1310, 601);
-      this.tabPage3.TabIndex = 2;
-      this.tabPage3.Text = "Набор компонентов";
-      this.tabPage3.UseVisualStyleBackColor = true;
-      // 
-      // dataGridView3
-      // 
-      this.dataGridView3.AllowUserToAddRows = false;
-      this.dataGridView3.AllowUserToDeleteRows = false;
-      this.dataGridView3.AutoGenerateColumns = false;
-      this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idsetDataGridViewTextBoxColumn,
-            this.nomenclatureDataGridViewTextBoxColumn,
-            this.valueDataGridViewTextBoxColumn});
-      this.dataGridView3.DataSource = this.setofcomponentsBindingSource;
-      this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView3.Name = "dataGridView3";
-      this.dataGridView3.ReadOnly = true;
-      this.dataGridView3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView3.Size = new System.Drawing.Size(1037, 589);
-      this.dataGridView3.TabIndex = 2;
-      // 
-      // idsetDataGridViewTextBoxColumn
-      // 
-      this.idsetDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.idsetDataGridViewTextBoxColumn.DataPropertyName = "id_set";
-      this.idsetDataGridViewTextBoxColumn.HeaderText = "Код компонента";
-      this.idsetDataGridViewTextBoxColumn.Name = "idsetDataGridViewTextBoxColumn";
-      this.idsetDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // nomenclatureDataGridViewTextBoxColumn
-      // 
-      this.nomenclatureDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.nomenclatureDataGridViewTextBoxColumn.DataPropertyName = "nomenclature";
-      this.nomenclatureDataGridViewTextBoxColumn.HeaderText = "Код номенклатурной позиции";
-      this.nomenclatureDataGridViewTextBoxColumn.Name = "nomenclatureDataGridViewTextBoxColumn";
-      this.nomenclatureDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // valueDataGridViewTextBoxColumn
-      // 
-      this.valueDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.valueDataGridViewTextBoxColumn.DataPropertyName = "value";
-      this.valueDataGridViewTextBoxColumn.HeaderText = "Количество";
-      this.valueDataGridViewTextBoxColumn.Name = "valueDataGridViewTextBoxColumn";
-      this.valueDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // tabPage4
-      // 
-      this.tabPage4.Controls.Add(this.tableLayoutPanel9);
-      this.tabPage4.Location = new System.Drawing.Point(4, 22);
-      this.tabPage4.Name = "tabPage4";
-      this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPage4.Size = new System.Drawing.Size(1310, 601);
-      this.tabPage4.TabIndex = 3;
-      this.tabPage4.Text = "Операции";
-      this.tabPage4.UseVisualStyleBackColor = true;
-      // 
-      // dataGridView4
-      // 
-      this.dataGridView4.AllowUserToAddRows = false;
-      this.dataGridView4.AllowUserToDeleteRows = false;
-      this.dataGridView4.AutoGenerateColumns = false;
-      this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn2,
-            this.workcenteridDataGridViewTextBoxColumn,
-            this.setuptimeDataGridViewTextBoxColumn,
-            this.processingtimeDataGridViewTextBoxColumn,
-            this.transittimeDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.nextoperationidDataGridViewTextBoxColumn});
-      this.dataGridView4.DataSource = this.operationsBindingSource;
-      this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView4.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView4.Name = "dataGridView4";
-      this.dataGridView4.ReadOnly = true;
-      this.dataGridView4.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView4.Size = new System.Drawing.Size(1037, 589);
-      this.dataGridView4.TabIndex = 3;
-      // 
-      // idDataGridViewTextBoxColumn2
-      // 
-      this.idDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.idDataGridViewTextBoxColumn2.DataPropertyName = "id";
-      this.idDataGridViewTextBoxColumn2.HeaderText = "Код";
-      this.idDataGridViewTextBoxColumn2.Name = "idDataGridViewTextBoxColumn2";
-      this.idDataGridViewTextBoxColumn2.ReadOnly = true;
-      // 
-      // workcenteridDataGridViewTextBoxColumn
-      // 
-      this.workcenteridDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.workcenteridDataGridViewTextBoxColumn.DataPropertyName = "work_center_id";
-      this.workcenteridDataGridViewTextBoxColumn.HeaderText = "Код рабочего центра";
-      this.workcenteridDataGridViewTextBoxColumn.Name = "workcenteridDataGridViewTextBoxColumn";
-      this.workcenteridDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // setuptimeDataGridViewTextBoxColumn
-      // 
-      this.setuptimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.setuptimeDataGridViewTextBoxColumn.DataPropertyName = "setup_time";
-      this.setuptimeDataGridViewTextBoxColumn.HeaderText = "Время наладки";
-      this.setuptimeDataGridViewTextBoxColumn.Name = "setuptimeDataGridViewTextBoxColumn";
-      this.setuptimeDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // processingtimeDataGridViewTextBoxColumn
-      // 
-      this.processingtimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.processingtimeDataGridViewTextBoxColumn.DataPropertyName = "processing_time";
-      this.processingtimeDataGridViewTextBoxColumn.HeaderText = "Время обработки";
-      this.processingtimeDataGridViewTextBoxColumn.Name = "processingtimeDataGridViewTextBoxColumn";
-      this.processingtimeDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // transittimeDataGridViewTextBoxColumn
-      // 
-      this.transittimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.transittimeDataGridViewTextBoxColumn.DataPropertyName = "transit_time";
-      this.transittimeDataGridViewTextBoxColumn.HeaderText = "Время перехода";
-      this.transittimeDataGridViewTextBoxColumn.Name = "transittimeDataGridViewTextBoxColumn";
-      this.transittimeDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // descriptionDataGridViewTextBoxColumn
-      // 
-      this.descriptionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
-      this.descriptionDataGridViewTextBoxColumn.HeaderText = "Описание";
-      this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-      this.descriptionDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // nextoperationidDataGridViewTextBoxColumn
-      // 
-      this.nextoperationidDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.nextoperationidDataGridViewTextBoxColumn.DataPropertyName = "next_operation_id";
-      this.nextoperationidDataGridViewTextBoxColumn.HeaderText = "Код следующей операции";
-      this.nextoperationidDataGridViewTextBoxColumn.Name = "nextoperationidDataGridViewTextBoxColumn";
-      this.nextoperationidDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // tabPage5
-      // 
-      this.tabPage5.Controls.Add(this.tableLayoutPanel11);
-      this.tabPage5.Location = new System.Drawing.Point(4, 22);
-      this.tabPage5.Name = "tabPage5";
-      this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPage5.Size = new System.Drawing.Size(1310, 601);
-      this.tabPage5.TabIndex = 4;
-      this.tabPage5.Text = "Журнал учета выхода";
-      this.tabPage5.UseVisualStyleBackColor = true;
-      // 
-      // dataGridView5
-      // 
-      this.dataGridView5.AllowUserToAddRows = false;
-      this.dataGridView5.AllowUserToDeleteRows = false;
-      this.dataGridView5.AutoGenerateColumns = false;
-      this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn3,
-            this.workingorderidDataGridViewTextBoxColumn,
-            this.workcenteridDataGridViewTextBoxColumn1,
-            this.elapsedtimeDataGridViewTextBoxColumn});
-      this.dataGridView5.DataSource = this.outputlogBindingSource;
-      this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView5.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView5.Name = "dataGridView5";
-      this.dataGridView5.ReadOnly = true;
-      this.dataGridView5.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView5.Size = new System.Drawing.Size(1037, 589);
-      this.dataGridView5.TabIndex = 3;
-      // 
-      // idDataGridViewTextBoxColumn3
-      // 
-      this.idDataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.idDataGridViewTextBoxColumn3.DataPropertyName = "id";
-      this.idDataGridViewTextBoxColumn3.HeaderText = "Код";
-      this.idDataGridViewTextBoxColumn3.Name = "idDataGridViewTextBoxColumn3";
-      this.idDataGridViewTextBoxColumn3.ReadOnly = true;
-      // 
-      // workingorderidDataGridViewTextBoxColumn
-      // 
-      this.workingorderidDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.workingorderidDataGridViewTextBoxColumn.DataPropertyName = "working_order_id";
-      this.workingorderidDataGridViewTextBoxColumn.HeaderText = "Код производственного заказа";
-      this.workingorderidDataGridViewTextBoxColumn.Name = "workingorderidDataGridViewTextBoxColumn";
-      this.workingorderidDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // workcenteridDataGridViewTextBoxColumn1
-      // 
-      this.workcenteridDataGridViewTextBoxColumn1.DataPropertyName = "work_center_id";
-      this.workcenteridDataGridViewTextBoxColumn1.HeaderText = "Код рабочего центра";
-      this.workcenteridDataGridViewTextBoxColumn1.Name = "workcenteridDataGridViewTextBoxColumn1";
-      this.workcenteridDataGridViewTextBoxColumn1.ReadOnly = true;
-      // 
-      // elapsedtimeDataGridViewTextBoxColumn
-      // 
-      this.elapsedtimeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.elapsedtimeDataGridViewTextBoxColumn.DataPropertyName = "elapsed_time";
-      this.elapsedtimeDataGridViewTextBoxColumn.HeaderText = "Затраченное время";
-      this.elapsedtimeDataGridViewTextBoxColumn.Name = "elapsedtimeDataGridViewTextBoxColumn";
-      this.elapsedtimeDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // tabPage6
-      // 
-      this.tabPage6.Controls.Add(this.tableLayoutPanel13);
-      this.tabPage6.Location = new System.Drawing.Point(4, 22);
-      this.tabPage6.Name = "tabPage6";
-      this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-      this.tabPage6.Size = new System.Drawing.Size(1310, 601);
-      this.tabPage6.TabIndex = 5;
-      this.tabPage6.Text = "Запас";
-      this.tabPage6.UseVisualStyleBackColor = true;
-      // 
-      // dataGridView6
-      // 
-      this.dataGridView6.AllowUserToAddRows = false;
-      this.dataGridView6.AllowUserToDeleteRows = false;
-      this.dataGridView6.AutoGenerateColumns = false;
-      this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn3,
-            this.id_warehouse,
-            this.id_nomenclature,
-            this.value});
-      this.dataGridView6.DataSource = this.stockBindingSource;
-      this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView6.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView6.Name = "dataGridView6";
-      this.dataGridView6.ReadOnly = true;
-      this.dataGridView6.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView6.Size = new System.Drawing.Size(1037, 589);
-      this.dataGridView6.TabIndex = 3;
-      // 
-      // dataGridViewTextBoxColumn3
-      // 
-      this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.dataGridViewTextBoxColumn3.DataPropertyName = "id";
-      this.dataGridViewTextBoxColumn3.HeaderText = "Код";
-      this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-      this.dataGridViewTextBoxColumn3.ReadOnly = true;
-      // 
-      // id_warehouse
-      // 
-      this.id_warehouse.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.id_warehouse.DataPropertyName = "id_warehouse";
-      this.id_warehouse.HeaderText = "Код склада";
-      this.id_warehouse.Name = "id_warehouse";
-      this.id_warehouse.ReadOnly = true;
-      // 
-      // id_nomenclature
-      // 
-      this.id_nomenclature.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.id_nomenclature.DataPropertyName = "id_nomenclature";
-      this.id_nomenclature.HeaderText = "Код номенклатуры";
-      this.id_nomenclature.Name = "id_nomenclature";
-      this.id_nomenclature.ReadOnly = true;
-      // 
-      // value
-      // 
-      this.value.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.value.DataPropertyName = "value";
-      this.value.HeaderText = "Количество";
-      this.value.Name = "value";
-      this.value.ReadOnly = true;
-      // 
-      // tabPage7
-      // 
-      this.tabPage7.Controls.Add(this.tableLayoutPanel15);
-      this.tabPage7.Location = new System.Drawing.Point(4, 22);
-      this.tabPage7.Name = "tabPage7";
-      this.tabPage7.Size = new System.Drawing.Size(1310, 601);
-      this.tabPage7.TabIndex = 6;
-      this.tabPage7.Text = "Технологическая карта";
-      this.tabPage7.UseVisualStyleBackColor = true;
-      // 
-      // dataGridView7
-      // 
-      this.dataGridView7.AllowUserToAddRows = false;
-      this.dataGridView7.AllowUserToDeleteRows = false;
-      this.dataGridView7.AutoGenerateColumns = false;
-      this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView7.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn4,
-            this.statusDataGridViewTextBoxColumn1,
-            this.idinitialoperationDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn1});
-      this.dataGridView7.DataSource = this.technologmapBindingSource;
-      this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView7.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView7.Name = "dataGridView7";
-      this.dataGridView7.ReadOnly = true;
-      this.dataGridView7.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView7.Size = new System.Drawing.Size(1042, 595);
-      this.dataGridView7.TabIndex = 3;
-      // 
-      // idDataGridViewTextBoxColumn4
-      // 
-      this.idDataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.idDataGridViewTextBoxColumn4.DataPropertyName = "id";
-      this.idDataGridViewTextBoxColumn4.HeaderText = "Код";
-      this.idDataGridViewTextBoxColumn4.Name = "idDataGridViewTextBoxColumn4";
-      this.idDataGridViewTextBoxColumn4.ReadOnly = true;
-      // 
-      // statusDataGridViewTextBoxColumn1
-      // 
-      this.statusDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.statusDataGridViewTextBoxColumn1.DataPropertyName = "status";
-      this.statusDataGridViewTextBoxColumn1.HeaderText = "Состояние";
-      this.statusDataGridViewTextBoxColumn1.Name = "statusDataGridViewTextBoxColumn1";
-      this.statusDataGridViewTextBoxColumn1.ReadOnly = true;
-      // 
-      // idinitialoperationDataGridViewTextBoxColumn
-      // 
-      this.idinitialoperationDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.idinitialoperationDataGridViewTextBoxColumn.DataPropertyName = "id_initial_operation";
-      this.idinitialoperationDataGridViewTextBoxColumn.HeaderText = "Код начальной операции";
-      this.idinitialoperationDataGridViewTextBoxColumn.Name = "idinitialoperationDataGridViewTextBoxColumn";
-      this.idinitialoperationDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // descriptionDataGridViewTextBoxColumn1
-      // 
-      this.descriptionDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.descriptionDataGridViewTextBoxColumn1.DataPropertyName = "description";
-      this.descriptionDataGridViewTextBoxColumn1.HeaderText = "Описание";
-      this.descriptionDataGridViewTextBoxColumn1.Name = "descriptionDataGridViewTextBoxColumn1";
-      this.descriptionDataGridViewTextBoxColumn1.ReadOnly = true;
-      // 
-      // tabPage8
-      // 
-      this.tabPage8.Controls.Add(this.tableLayoutPanel2);
-      this.tabPage8.Location = new System.Drawing.Point(4, 22);
-      this.tabPage8.Name = "tabPage8";
-      this.tabPage8.Size = new System.Drawing.Size(1310, 601);
-      this.tabPage8.TabIndex = 7;
-      this.tabPage8.Text = "Склад";
-      this.tabPage8.UseVisualStyleBackColor = true;
-      // 
-      // tableLayoutPanel2
-      // 
-      this.tableLayoutPanel2.ColumnCount = 2;
-      this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
-      this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
-      this.tableLayoutPanel2.Controls.Add(this.dataGridView8, 0, 0);
-      this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 1, 0);
-      this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
-      this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-      this.tableLayoutPanel2.RowCount = 1;
-      this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-      this.tableLayoutPanel2.Size = new System.Drawing.Size(1310, 601);
-      this.tableLayoutPanel2.TabIndex = 4;
-      // 
-      // dataGridView8
-      // 
-      this.dataGridView8.AllowUserToAddRows = false;
-      this.dataGridView8.AllowUserToDeleteRows = false;
-      this.dataGridView8.AutoGenerateColumns = false;
-      this.dataGridView8.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView8.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn5,
-            this.discriptionDataGridViewTextBoxColumn1});
-      this.dataGridView8.DataSource = this.warehouseBindingSource;
-      this.dataGridView8.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView8.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView8.Name = "dataGridView8";
-      this.dataGridView8.ReadOnly = true;
-      this.dataGridView8.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView8.Size = new System.Drawing.Size(1042, 595);
-      this.dataGridView8.TabIndex = 3;
-      // 
-      // idDataGridViewTextBoxColumn5
-      // 
-      this.idDataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.idDataGridViewTextBoxColumn5.DataPropertyName = "id";
-      this.idDataGridViewTextBoxColumn5.HeaderText = "Код";
-      this.idDataGridViewTextBoxColumn5.Name = "idDataGridViewTextBoxColumn5";
-      this.idDataGridViewTextBoxColumn5.ReadOnly = true;
-      // 
-      // discriptionDataGridViewTextBoxColumn1
-      // 
-      this.discriptionDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.discriptionDataGridViewTextBoxColumn1.DataPropertyName = "discription";
-      this.discriptionDataGridViewTextBoxColumn1.HeaderText = "Описание";
-      this.discriptionDataGridViewTextBoxColumn1.Name = "discriptionDataGridViewTextBoxColumn1";
-      this.discriptionDataGridViewTextBoxColumn1.ReadOnly = true;
-      // 
-      // tableLayoutPanel1
-      // 
-      this.tableLayoutPanel1.AutoScroll = true;
-      this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-      this.tableLayoutPanel1.ColumnCount = 2;
-      this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-      this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-      this.tableLayoutPanel1.Controls.Add(this.button2, 1, 2);
-      this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 1);
-      this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
-      this.tableLayoutPanel1.Controls.Add(this.button1, 0, 2);
-      this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.tableLayoutPanel1.Location = new System.Drawing.Point(1051, 3);
-      this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-      this.tableLayoutPanel1.RowCount = 3;
-      this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-      this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-      this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-      this.tableLayoutPanel1.Size = new System.Drawing.Size(256, 595);
-      this.tableLayoutPanel1.TabIndex = 4;
-      // 
-      // button2
-      // 
-      this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button2.Location = new System.Drawing.Point(131, 528);
-      this.button2.Name = "button2";
-      this.button2.Size = new System.Drawing.Size(122, 64);
-      this.button2.TabIndex = 3;
-      this.button2.Text = "Удалить";
-      this.button2.UseVisualStyleBackColor = true;
-      // 
-      // groupBox2
-      // 
-      this.tableLayoutPanel1.SetColumnSpan(this.groupBox2, 2);
-      this.groupBox2.Controls.Add(this.textBox2);
-      this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.groupBox2.Location = new System.Drawing.Point(3, 53);
-      this.groupBox2.Name = "groupBox2";
-      this.groupBox2.Size = new System.Drawing.Size(250, 469);
-      this.groupBox2.TabIndex = 1;
-      this.groupBox2.TabStop = false;
-      this.groupBox2.Text = "Описание:";
-      // 
-      // textBox2
-      // 
-      this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox2.Location = new System.Drawing.Point(3, 16);
-      this.textBox2.Multiline = true;
-      this.textBox2.Name = "textBox2";
-      this.textBox2.Size = new System.Drawing.Size(244, 450);
-      this.textBox2.TabIndex = 0;
-      // 
-      // groupBox1
-      // 
-      this.tableLayoutPanel1.SetColumnSpan(this.groupBox1, 2);
-      this.groupBox1.Controls.Add(this.textBox1);
-      this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.groupBox1.Location = new System.Drawing.Point(3, 3);
-      this.groupBox1.Name = "groupBox1";
-      this.groupBox1.Size = new System.Drawing.Size(250, 44);
-      this.groupBox1.TabIndex = 0;
-      this.groupBox1.TabStop = false;
-      this.groupBox1.Text = "Код склада:";
-      // 
-      // textBox1
-      // 
-      this.textBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox1.Location = new System.Drawing.Point(3, 16);
-      this.textBox1.Name = "textBox1";
-      this.textBox1.Size = new System.Drawing.Size(244, 20);
-      this.textBox1.TabIndex = 0;
-      // 
-      // button1
-      // 
-      this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button1.Location = new System.Drawing.Point(3, 528);
-      this.button1.Name = "button1";
-      this.button1.Size = new System.Drawing.Size(122, 64);
-      this.button1.TabIndex = 2;
-      this.button1.Text = "Добавить";
-      this.button1.UseVisualStyleBackColor = true;
-      // 
-      // tabPage9
-      // 
-      this.tabPage9.Controls.Add(this.tableLayoutPanel17);
-      this.tabPage9.Location = new System.Drawing.Point(4, 22);
-      this.tabPage9.Name = "tabPage9";
-      this.tabPage9.Size = new System.Drawing.Size(1310, 601);
-      this.tabPage9.TabIndex = 8;
-      this.tabPage9.Text = "Рабочий центр";
-      this.tabPage9.UseVisualStyleBackColor = true;
-      // 
-      // dataGridView9
-      // 
-      this.dataGridView9.AllowUserToAddRows = false;
-      this.dataGridView9.AllowUserToDeleteRows = false;
-      this.dataGridView9.AutoGenerateColumns = false;
-      this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView9.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn6,
-            this.powerDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn2});
-      this.dataGridView9.DataSource = this.workcenterBindingSource;
-      this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView9.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView9.Name = "dataGridView9";
-      this.dataGridView9.ReadOnly = true;
-      this.dataGridView9.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView9.Size = new System.Drawing.Size(1042, 595);
-      this.dataGridView9.TabIndex = 3;
-      // 
-      // idDataGridViewTextBoxColumn6
-      // 
-      this.idDataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.idDataGridViewTextBoxColumn6.DataPropertyName = "id";
-      this.idDataGridViewTextBoxColumn6.HeaderText = "Код";
-      this.idDataGridViewTextBoxColumn6.Name = "idDataGridViewTextBoxColumn6";
-      this.idDataGridViewTextBoxColumn6.ReadOnly = true;
-      // 
-      // powerDataGridViewTextBoxColumn
-      // 
-      this.powerDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.powerDataGridViewTextBoxColumn.DataPropertyName = "power";
-      this.powerDataGridViewTextBoxColumn.HeaderText = "Мощность";
-      this.powerDataGridViewTextBoxColumn.Name = "powerDataGridViewTextBoxColumn";
-      this.powerDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // descriptionDataGridViewTextBoxColumn2
-      // 
-      this.descriptionDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.descriptionDataGridViewTextBoxColumn2.DataPropertyName = "description";
-      this.descriptionDataGridViewTextBoxColumn2.HeaderText = "Описание";
-      this.descriptionDataGridViewTextBoxColumn2.Name = "descriptionDataGridViewTextBoxColumn2";
-      this.descriptionDataGridViewTextBoxColumn2.ReadOnly = true;
-      // 
-      // tabPage10
-      // 
-      this.tabPage10.Controls.Add(this.tableLayoutPanel19);
-      this.tabPage10.Location = new System.Drawing.Point(4, 22);
-      this.tabPage10.Name = "tabPage10";
-      this.tabPage10.Size = new System.Drawing.Size(1310, 601);
-      this.tabPage10.TabIndex = 9;
-      this.tabPage10.Text = "Производственный заказ";
-      this.tabPage10.UseVisualStyleBackColor = true;
-      // 
-      // dataGridView10
-      // 
-      this.dataGridView10.AllowUserToAddRows = false;
-      this.dataGridView10.AllowUserToDeleteRows = false;
-      this.dataGridView10.AutoGenerateColumns = false;
-      this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView10.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idDataGridViewTextBoxColumn7,
-            this.nomenclatureDataGridViewTextBoxColumn1,
-            this.useridDataGridViewTextBoxColumn,
-            this.statusDataGridViewTextBoxColumn2,
-            this.startdateDataGridViewTextBoxColumn,
-            this.enddateDataGridViewTextBoxColumn,
-            this.valueDataGridViewTextBoxColumn1,
-            this.descriptionDataGridViewTextBoxColumn3});
-      this.dataGridView10.DataSource = this.workingorderBindingSource;
-      this.dataGridView10.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView10.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView10.Name = "dataGridView10";
-      this.dataGridView10.ReadOnly = true;
-      this.dataGridView10.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView10.Size = new System.Drawing.Size(1042, 595);
-      this.dataGridView10.TabIndex = 3;
-      // 
       // tableLayoutPanel5
       // 
       this.tableLayoutPanel5.ColumnCount = 2;
@@ -1566,6 +671,15 @@ namespace DB_Kurs.Формы
       this.groupBox13.TabStop = false;
       this.groupBox13.Text = "Описание";
       // 
+      // textBox10
+      // 
+      this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.textBox10.Location = new System.Drawing.Point(3, 16);
+      this.textBox10.Multiline = true;
+      this.textBox10.Name = "textBox10";
+      this.textBox10.Size = new System.Drawing.Size(243, 344);
+      this.textBox10.TabIndex = 1;
+      // 
       // groupBox19
       // 
       this.tableLayoutPanel6.SetColumnSpan(this.groupBox19, 2);
@@ -1577,6 +691,15 @@ namespace DB_Kurs.Формы
       this.groupBox19.TabIndex = 4;
       this.groupBox19.TabStop = false;
       this.groupBox19.Text = "Набор компонентов";
+      // 
+      // comboBox8
+      // 
+      this.comboBox8.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.comboBox8.FormattingEnabled = true;
+      this.comboBox8.Location = new System.Drawing.Point(3, 16);
+      this.comboBox8.Name = "comboBox8";
+      this.comboBox8.Size = new System.Drawing.Size(243, 21);
+      this.comboBox8.TabIndex = 1;
       // 
       // button5
       // 
@@ -1599,6 +722,19 @@ namespace DB_Kurs.Формы
       this.groupBox20.TabIndex = 1;
       this.groupBox20.TabStop = false;
       this.groupBox20.Text = "Состояние";
+      // 
+      // comboBox7
+      // 
+      this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.comboBox7.FormattingEnabled = true;
+      this.comboBox7.Items.AddRange(new object[] {
+            "В разработке",
+            "Сертифицирована",
+            "Закрыта"});
+      this.comboBox7.Location = new System.Drawing.Point(3, 16);
+      this.comboBox7.Name = "comboBox7";
+      this.comboBox7.Size = new System.Drawing.Size(243, 21);
+      this.comboBox7.TabIndex = 1;
       // 
       // groupBox21
       // 
@@ -1630,36 +766,29 @@ namespace DB_Kurs.Формы
       this.button6.Text = "Добавить";
       this.button6.UseVisualStyleBackColor = true;
       // 
-      // comboBox7
+      // dataGridView2
       // 
-      this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox7.FormattingEnabled = true;
-      this.comboBox7.Items.AddRange(new object[] {
-            "В разработке",
-            "Сертифицирована",
-            "Закрыта"});
-      this.comboBox7.Location = new System.Drawing.Point(3, 16);
-      this.comboBox7.Name = "comboBox7";
-      this.comboBox7.Size = new System.Drawing.Size(243, 21);
-      this.comboBox7.TabIndex = 1;
+      this.dataGridView2.AllowUserToAddRows = false;
+      this.dataGridView2.AllowUserToDeleteRows = false;
+      this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+      this.dataGridView2.Name = "dataGridView2";
+      this.dataGridView2.ReadOnly = true;
+      this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.dataGridView2.Size = new System.Drawing.Size(1037, 589);
+      this.dataGridView2.TabIndex = 1;
       // 
-      // comboBox8
+      // tabPage3
       // 
-      this.comboBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox8.FormattingEnabled = true;
-      this.comboBox8.Location = new System.Drawing.Point(3, 16);
-      this.comboBox8.Name = "comboBox8";
-      this.comboBox8.Size = new System.Drawing.Size(243, 21);
-      this.comboBox8.TabIndex = 1;
-      // 
-      // textBox10
-      // 
-      this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox10.Location = new System.Drawing.Point(3, 16);
-      this.textBox10.Multiline = true;
-      this.textBox10.Name = "textBox10";
-      this.textBox10.Size = new System.Drawing.Size(243, 344);
-      this.textBox10.TabIndex = 1;
+      this.tabPage3.Controls.Add(this.tableLayoutPanel7);
+      this.tabPage3.Location = new System.Drawing.Point(4, 22);
+      this.tabPage3.Name = "tabPage3";
+      this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+      this.tabPage3.Size = new System.Drawing.Size(1310, 601);
+      this.tabPage3.TabIndex = 2;
+      this.tabPage3.Text = "Набор компонентов";
+      this.tabPage3.UseVisualStyleBackColor = true;
       // 
       // tableLayoutPanel7
       // 
@@ -1699,14 +828,6 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel8.Size = new System.Drawing.Size(255, 589);
       this.tableLayoutPanel8.TabIndex = 6;
       // 
-      // textBox11
-      // 
-      this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox11.Location = new System.Drawing.Point(3, 16);
-      this.textBox11.Name = "textBox11";
-      this.textBox11.Size = new System.Drawing.Size(243, 20);
-      this.textBox11.TabIndex = 1;
-      // 
       // groupBox15
       // 
       this.tableLayoutPanel8.SetColumnSpan(this.groupBox15, 2);
@@ -1718,6 +839,14 @@ namespace DB_Kurs.Формы
       this.groupBox15.TabIndex = 4;
       this.groupBox15.TabStop = false;
       this.groupBox15.Text = "Количество";
+      // 
+      // textBox11
+      // 
+      this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.textBox11.Location = new System.Drawing.Point(3, 16);
+      this.textBox11.Name = "textBox11";
+      this.textBox11.Size = new System.Drawing.Size(243, 20);
+      this.textBox11.TabIndex = 1;
       // 
       // button7
       // 
@@ -1780,6 +909,30 @@ namespace DB_Kurs.Формы
       this.button8.Text = "Добавить";
       this.button8.UseVisualStyleBackColor = true;
       // 
+      // dataGridView3
+      // 
+      this.dataGridView3.AllowUserToAddRows = false;
+      this.dataGridView3.AllowUserToDeleteRows = false;
+      this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.dataGridView3.Location = new System.Drawing.Point(3, 3);
+      this.dataGridView3.Name = "dataGridView3";
+      this.dataGridView3.ReadOnly = true;
+      this.dataGridView3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.dataGridView3.Size = new System.Drawing.Size(1037, 589);
+      this.dataGridView3.TabIndex = 2;
+      // 
+      // tabPage4
+      // 
+      this.tabPage4.Controls.Add(this.tableLayoutPanel9);
+      this.tabPage4.Location = new System.Drawing.Point(4, 22);
+      this.tabPage4.Name = "tabPage4";
+      this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+      this.tabPage4.Size = new System.Drawing.Size(1310, 601);
+      this.tabPage4.TabIndex = 3;
+      this.tabPage4.Text = "Операции";
+      this.tabPage4.UseVisualStyleBackColor = true;
+      // 
       // tableLayoutPanel9
       // 
       this.tableLayoutPanel9.ColumnCount = 2;
@@ -1824,6 +977,27 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel10.Size = new System.Drawing.Size(255, 589);
       this.tableLayoutPanel10.TabIndex = 5;
+      // 
+      // groupBox22
+      // 
+      this.tableLayoutPanel10.SetColumnSpan(this.groupBox22, 2);
+      this.groupBox22.Controls.Add(this.comboBox6);
+      this.groupBox22.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.groupBox22.Location = new System.Drawing.Point(3, 472);
+      this.groupBox22.Name = "groupBox22";
+      this.groupBox22.Size = new System.Drawing.Size(249, 44);
+      this.groupBox22.TabIndex = 8;
+      this.groupBox22.TabStop = false;
+      this.groupBox22.Text = "Код следующей операции";
+      // 
+      // comboBox6
+      // 
+      this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.comboBox6.FormattingEnabled = true;
+      this.comboBox6.Location = new System.Drawing.Point(3, 16);
+      this.comboBox6.Name = "comboBox6";
+      this.comboBox6.Size = new System.Drawing.Size(243, 21);
+      this.comboBox6.TabIndex = 1;
       // 
       // groupBox23
       // 
@@ -1878,6 +1052,14 @@ namespace DB_Kurs.Формы
       this.groupBox25.TabStop = false;
       this.groupBox25.Text = "Время обработки(часов)";
       // 
+      // textBox14
+      // 
+      this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.textBox14.Location = new System.Drawing.Point(3, 16);
+      this.textBox14.Name = "textBox14";
+      this.textBox14.Size = new System.Drawing.Size(243, 20);
+      this.textBox14.TabIndex = 1;
+      // 
       // groupBox26
       // 
       this.tableLayoutPanel10.SetColumnSpan(this.groupBox26, 2);
@@ -1920,6 +1102,15 @@ namespace DB_Kurs.Формы
       this.groupBox27.TabStop = false;
       this.groupBox27.Text = "Код рабочего центра";
       // 
+      // comboBox4
+      // 
+      this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.comboBox4.FormattingEnabled = true;
+      this.comboBox4.Location = new System.Drawing.Point(3, 16);
+      this.comboBox4.Name = "comboBox4";
+      this.comboBox4.Size = new System.Drawing.Size(243, 21);
+      this.comboBox4.TabIndex = 0;
+      // 
       // groupBox28
       // 
       this.tableLayoutPanel10.SetColumnSpan(this.groupBox28, 2);
@@ -1950,43 +1141,29 @@ namespace DB_Kurs.Формы
       this.button10.Text = "Добавить";
       this.button10.UseVisualStyleBackColor = true;
       // 
-      // textBox14
+      // dataGridView4
       // 
-      this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox14.Location = new System.Drawing.Point(3, 16);
-      this.textBox14.Name = "textBox14";
-      this.textBox14.Size = new System.Drawing.Size(243, 20);
-      this.textBox14.TabIndex = 1;
+      this.dataGridView4.AllowUserToAddRows = false;
+      this.dataGridView4.AllowUserToDeleteRows = false;
+      this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.dataGridView4.Location = new System.Drawing.Point(3, 3);
+      this.dataGridView4.Name = "dataGridView4";
+      this.dataGridView4.ReadOnly = true;
+      this.dataGridView4.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.dataGridView4.Size = new System.Drawing.Size(1037, 589);
+      this.dataGridView4.TabIndex = 3;
       // 
-      // comboBox4
+      // tabPage5
       // 
-      this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox4.FormattingEnabled = true;
-      this.comboBox4.Location = new System.Drawing.Point(3, 16);
-      this.comboBox4.Name = "comboBox4";
-      this.comboBox4.Size = new System.Drawing.Size(243, 21);
-      this.comboBox4.TabIndex = 0;
-      // 
-      // comboBox6
-      // 
-      this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox6.FormattingEnabled = true;
-      this.comboBox6.Location = new System.Drawing.Point(3, 16);
-      this.comboBox6.Name = "comboBox6";
-      this.comboBox6.Size = new System.Drawing.Size(243, 21);
-      this.comboBox6.TabIndex = 1;
-      // 
-      // groupBox22
-      // 
-      this.tableLayoutPanel10.SetColumnSpan(this.groupBox22, 2);
-      this.groupBox22.Controls.Add(this.comboBox6);
-      this.groupBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.groupBox22.Location = new System.Drawing.Point(3, 472);
-      this.groupBox22.Name = "groupBox22";
-      this.groupBox22.Size = new System.Drawing.Size(249, 44);
-      this.groupBox22.TabIndex = 8;
-      this.groupBox22.TabStop = false;
-      this.groupBox22.Text = "Код следующей операции";
+      this.tabPage5.Controls.Add(this.tableLayoutPanel11);
+      this.tabPage5.Location = new System.Drawing.Point(4, 22);
+      this.tabPage5.Name = "tabPage5";
+      this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+      this.tabPage5.Size = new System.Drawing.Size(1310, 601);
+      this.tabPage5.TabIndex = 4;
+      this.tabPage5.Text = "Журнал учета выхода";
+      this.tabPage5.UseVisualStyleBackColor = true;
       // 
       // tableLayoutPanel11
       // 
@@ -2000,7 +1177,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel11.Name = "tableLayoutPanel11";
       this.tableLayoutPanel11.RowCount = 1;
       this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-      this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+      this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 595F));
       this.tableLayoutPanel11.Size = new System.Drawing.Size(1304, 595);
       this.tableLayoutPanel11.TabIndex = 4;
       // 
@@ -2040,6 +1217,15 @@ namespace DB_Kurs.Формы
       this.groupBox14.TabIndex = 4;
       this.groupBox14.TabStop = false;
       this.groupBox14.Text = "Код рабочего центра";
+      // 
+      // comboBox10
+      // 
+      this.comboBox10.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.comboBox10.FormattingEnabled = true;
+      this.comboBox10.Location = new System.Drawing.Point(3, 16);
+      this.comboBox10.Name = "comboBox10";
+      this.comboBox10.Size = new System.Drawing.Size(243, 21);
+      this.comboBox10.TabIndex = 2;
       // 
       // button11
       // 
@@ -2102,15 +1288,6 @@ namespace DB_Kurs.Формы
       this.button12.Text = "Добавить";
       this.button12.UseVisualStyleBackColor = true;
       // 
-      // comboBox10
-      // 
-      this.comboBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox10.FormattingEnabled = true;
-      this.comboBox10.Location = new System.Drawing.Point(3, 16);
-      this.comboBox10.Name = "comboBox10";
-      this.comboBox10.Size = new System.Drawing.Size(243, 21);
-      this.comboBox10.TabIndex = 2;
-      // 
       // groupBox30
       // 
       this.tableLayoutPanel12.SetColumnSpan(this.groupBox30, 2);
@@ -2131,6 +1308,30 @@ namespace DB_Kurs.Формы
       this.textBox13.Size = new System.Drawing.Size(243, 20);
       this.textBox13.TabIndex = 1;
       // 
+      // dataGridView5
+      // 
+      this.dataGridView5.AllowUserToAddRows = false;
+      this.dataGridView5.AllowUserToDeleteRows = false;
+      this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.dataGridView5.Location = new System.Drawing.Point(3, 3);
+      this.dataGridView5.Name = "dataGridView5";
+      this.dataGridView5.ReadOnly = true;
+      this.dataGridView5.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.dataGridView5.Size = new System.Drawing.Size(1037, 589);
+      this.dataGridView5.TabIndex = 3;
+      // 
+      // tabPage6
+      // 
+      this.tabPage6.Controls.Add(this.tableLayoutPanel13);
+      this.tabPage6.Location = new System.Drawing.Point(4, 22);
+      this.tabPage6.Name = "tabPage6";
+      this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+      this.tabPage6.Size = new System.Drawing.Size(1310, 601);
+      this.tabPage6.TabIndex = 5;
+      this.tabPage6.Text = "Запас";
+      this.tabPage6.UseVisualStyleBackColor = true;
+      // 
       // tableLayoutPanel13
       // 
       this.tableLayoutPanel13.ColumnCount = 2;
@@ -2143,7 +1344,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel13.Name = "tableLayoutPanel13";
       this.tableLayoutPanel13.RowCount = 1;
       this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-      this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+      this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 595F));
       this.tableLayoutPanel13.Size = new System.Drawing.Size(1304, 595);
       this.tableLayoutPanel13.TabIndex = 5;
       // 
@@ -2273,6 +1474,57 @@ namespace DB_Kurs.Формы
       this.textBox22.Name = "textBox22";
       this.textBox22.Size = new System.Drawing.Size(243, 20);
       this.textBox22.TabIndex = 1;
+      // 
+      // dataGridView6
+      // 
+      this.dataGridView6.AllowUserToAddRows = false;
+      this.dataGridView6.AllowUserToDeleteRows = false;
+      this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_warehouse,
+            this.id_nomenclature,
+            this.value});
+      this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.dataGridView6.Location = new System.Drawing.Point(3, 3);
+      this.dataGridView6.Name = "dataGridView6";
+      this.dataGridView6.ReadOnly = true;
+      this.dataGridView6.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.dataGridView6.Size = new System.Drawing.Size(1037, 589);
+      this.dataGridView6.TabIndex = 3;
+      // 
+      // id_warehouse
+      // 
+      this.id_warehouse.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.id_warehouse.DataPropertyName = "id_warehouse";
+      this.id_warehouse.HeaderText = "Код склада";
+      this.id_warehouse.Name = "id_warehouse";
+      this.id_warehouse.ReadOnly = true;
+      // 
+      // id_nomenclature
+      // 
+      this.id_nomenclature.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.id_nomenclature.DataPropertyName = "id_nomenclature";
+      this.id_nomenclature.HeaderText = "Код номенклатуры";
+      this.id_nomenclature.Name = "id_nomenclature";
+      this.id_nomenclature.ReadOnly = true;
+      // 
+      // value
+      // 
+      this.value.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.value.DataPropertyName = "value";
+      this.value.HeaderText = "Количество";
+      this.value.Name = "value";
+      this.value.ReadOnly = true;
+      // 
+      // tabPage7
+      // 
+      this.tabPage7.Controls.Add(this.tableLayoutPanel15);
+      this.tabPage7.Location = new System.Drawing.Point(4, 22);
+      this.tabPage7.Name = "tabPage7";
+      this.tabPage7.Size = new System.Drawing.Size(1310, 601);
+      this.tabPage7.TabIndex = 6;
+      this.tabPage7.Text = "Технологическая карта";
+      this.tabPage7.UseVisualStyleBackColor = true;
       // 
       // tableLayoutPanel15
       // 
@@ -2420,6 +1672,154 @@ namespace DB_Kurs.Формы
       this.button16.Text = "Добавить";
       this.button16.UseVisualStyleBackColor = true;
       // 
+      // dataGridView7
+      // 
+      this.dataGridView7.AllowUserToAddRows = false;
+      this.dataGridView7.AllowUserToDeleteRows = false;
+      this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.dataGridView7.Location = new System.Drawing.Point(3, 3);
+      this.dataGridView7.Name = "dataGridView7";
+      this.dataGridView7.ReadOnly = true;
+      this.dataGridView7.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.dataGridView7.Size = new System.Drawing.Size(1042, 595);
+      this.dataGridView7.TabIndex = 3;
+      // 
+      // tabPage8
+      // 
+      this.tabPage8.Controls.Add(this.tableLayoutPanel2);
+      this.tabPage8.Location = new System.Drawing.Point(4, 22);
+      this.tabPage8.Name = "tabPage8";
+      this.tabPage8.Size = new System.Drawing.Size(1310, 601);
+      this.tabPage8.TabIndex = 7;
+      this.tabPage8.Text = "Склад";
+      this.tabPage8.UseVisualStyleBackColor = true;
+      // 
+      // tableLayoutPanel2
+      // 
+      this.tableLayoutPanel2.ColumnCount = 2;
+      this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
+      this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+      this.tableLayoutPanel2.Controls.Add(this.warehouse_datagrid, 0, 0);
+      this.tableLayoutPanel2.Controls.Add(this.tableLayoutPanel1, 1, 0);
+      this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+      this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+      this.tableLayoutPanel2.RowCount = 1;
+      this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+      this.tableLayoutPanel2.Size = new System.Drawing.Size(1310, 601);
+      this.tableLayoutPanel2.TabIndex = 4;
+      // 
+      // warehouse_datagrid
+      // 
+      this.warehouse_datagrid.AllowUserToAddRows = false;
+      this.warehouse_datagrid.AllowUserToDeleteRows = false;
+      this.warehouse_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.warehouse_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id,
+            this.description});
+      this.warehouse_datagrid.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.warehouse_datagrid.Location = new System.Drawing.Point(3, 3);
+      this.warehouse_datagrid.Name = "warehouse_datagrid";
+      this.warehouse_datagrid.ReadOnly = true;
+      this.warehouse_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.warehouse_datagrid.Size = new System.Drawing.Size(1042, 595);
+      this.warehouse_datagrid.TabIndex = 3;
+      // 
+      // tableLayoutPanel1
+      // 
+      this.tableLayoutPanel1.AutoScroll = true;
+      this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+      this.tableLayoutPanel1.ColumnCount = 2;
+      this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+      this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+      this.tableLayoutPanel1.Controls.Add(this.warehouse_delete_btn, 1, 2);
+      this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 1);
+      this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
+      this.tableLayoutPanel1.Controls.Add(this.warehouse_add_btn, 0, 2);
+      this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tableLayoutPanel1.Location = new System.Drawing.Point(1051, 3);
+      this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+      this.tableLayoutPanel1.RowCount = 3;
+      this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+      this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+      this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+      this.tableLayoutPanel1.Size = new System.Drawing.Size(256, 595);
+      this.tableLayoutPanel1.TabIndex = 4;
+      // 
+      // warehouse_delete_btn
+      // 
+      this.warehouse_delete_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.warehouse_delete_btn.Location = new System.Drawing.Point(131, 528);
+      this.warehouse_delete_btn.Name = "warehouse_delete_btn";
+      this.warehouse_delete_btn.Size = new System.Drawing.Size(122, 64);
+      this.warehouse_delete_btn.TabIndex = 3;
+      this.warehouse_delete_btn.Text = "Удалить";
+      this.warehouse_delete_btn.UseVisualStyleBackColor = true;
+      // 
+      // groupBox2
+      // 
+      this.tableLayoutPanel1.SetColumnSpan(this.groupBox2, 2);
+      this.groupBox2.Controls.Add(this.warehouse_discription_textbox);
+      this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.groupBox2.Location = new System.Drawing.Point(3, 53);
+      this.groupBox2.Name = "groupBox2";
+      this.groupBox2.Size = new System.Drawing.Size(250, 469);
+      this.groupBox2.TabIndex = 1;
+      this.groupBox2.TabStop = false;
+      this.groupBox2.Text = "Описание";
+      // 
+      // warehouse_discription_textbox
+      // 
+      this.warehouse_discription_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.warehouse_discription_textbox.Location = new System.Drawing.Point(3, 16);
+      this.warehouse_discription_textbox.Multiline = true;
+      this.warehouse_discription_textbox.Name = "warehouse_discription_textbox";
+      this.warehouse_discription_textbox.Size = new System.Drawing.Size(244, 450);
+      this.warehouse_discription_textbox.TabIndex = 0;
+      // 
+      // groupBox1
+      // 
+      this.tableLayoutPanel1.SetColumnSpan(this.groupBox1, 2);
+      this.groupBox1.Controls.Add(this.warehouse_id_textbox);
+      this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.groupBox1.Location = new System.Drawing.Point(3, 3);
+      this.groupBox1.Name = "groupBox1";
+      this.groupBox1.Size = new System.Drawing.Size(250, 44);
+      this.groupBox1.TabIndex = 0;
+      this.groupBox1.TabStop = false;
+      this.groupBox1.Text = "Код склада";
+      // 
+      // warehouse_id_textbox
+      // 
+      this.warehouse_id_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.warehouse_id_textbox.Location = new System.Drawing.Point(3, 16);
+      this.warehouse_id_textbox.Name = "warehouse_id_textbox";
+      this.warehouse_id_textbox.ReadOnly = true;
+      this.warehouse_id_textbox.Size = new System.Drawing.Size(244, 20);
+      this.warehouse_id_textbox.TabIndex = 0;
+      // 
+      // warehouse_add_btn
+      // 
+      this.warehouse_add_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.warehouse_add_btn.Location = new System.Drawing.Point(3, 528);
+      this.warehouse_add_btn.Name = "warehouse_add_btn";
+      this.warehouse_add_btn.Size = new System.Drawing.Size(122, 64);
+      this.warehouse_add_btn.TabIndex = 2;
+      this.warehouse_add_btn.Text = "Добавить";
+      this.warehouse_add_btn.UseVisualStyleBackColor = true;
+      this.warehouse_add_btn.Click += new System.EventHandler(this.WarehouseAddClick);
+      // 
+      // tabPage9
+      // 
+      this.tabPage9.Controls.Add(this.tableLayoutPanel17);
+      this.tabPage9.Location = new System.Drawing.Point(4, 22);
+      this.tabPage9.Name = "tabPage9";
+      this.tabPage9.Size = new System.Drawing.Size(1310, 601);
+      this.tabPage9.TabIndex = 8;
+      this.tabPage9.Text = "Рабочий центр";
+      this.tabPage9.UseVisualStyleBackColor = true;
+      // 
       // tableLayoutPanel17
       // 
       this.tableLayoutPanel17.ColumnCount = 2;
@@ -2461,7 +1861,7 @@ namespace DB_Kurs.Формы
       // button17
       // 
       this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button17.Location = new System.Drawing.Point(131, 768);
+      this.button17.Location = new System.Drawing.Point(131, 528);
       this.button17.Name = "button17";
       this.button17.Size = new System.Drawing.Size(122, 64);
       this.button17.TabIndex = 3;
@@ -2475,7 +1875,7 @@ namespace DB_Kurs.Формы
       this.groupBox39.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox39.Location = new System.Drawing.Point(3, 103);
       this.groupBox39.Name = "groupBox39";
-      this.groupBox39.Size = new System.Drawing.Size(250, 659);
+      this.groupBox39.Size = new System.Drawing.Size(250, 419);
       this.groupBox39.TabIndex = 1;
       this.groupBox39.TabStop = false;
       this.groupBox39.Text = "Описание:";
@@ -2486,7 +1886,7 @@ namespace DB_Kurs.Формы
       this.textBox25.Location = new System.Drawing.Point(3, 16);
       this.textBox25.Multiline = true;
       this.textBox25.Name = "textBox25";
-      this.textBox25.Size = new System.Drawing.Size(244, 640);
+      this.textBox25.Size = new System.Drawing.Size(244, 400);
       this.textBox25.TabIndex = 0;
       // 
       // groupBox40
@@ -2512,7 +1912,7 @@ namespace DB_Kurs.Формы
       // button18
       // 
       this.button18.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button18.Location = new System.Drawing.Point(3, 768);
+      this.button18.Location = new System.Drawing.Point(3, 528);
       this.button18.Name = "button18";
       this.button18.Size = new System.Drawing.Size(122, 64);
       this.button18.TabIndex = 2;
@@ -2538,6 +1938,29 @@ namespace DB_Kurs.Формы
       this.textBox27.Name = "textBox27";
       this.textBox27.Size = new System.Drawing.Size(244, 20);
       this.textBox27.TabIndex = 1;
+      // 
+      // dataGridView9
+      // 
+      this.dataGridView9.AllowUserToAddRows = false;
+      this.dataGridView9.AllowUserToDeleteRows = false;
+      this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.dataGridView9.Location = new System.Drawing.Point(3, 3);
+      this.dataGridView9.Name = "dataGridView9";
+      this.dataGridView9.ReadOnly = true;
+      this.dataGridView9.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.dataGridView9.Size = new System.Drawing.Size(1042, 595);
+      this.dataGridView9.TabIndex = 3;
+      // 
+      // tabPage10
+      // 
+      this.tabPage10.Controls.Add(this.tableLayoutPanel19);
+      this.tabPage10.Location = new System.Drawing.Point(4, 22);
+      this.tabPage10.Name = "tabPage10";
+      this.tabPage10.Size = new System.Drawing.Size(1310, 601);
+      this.tabPage10.TabIndex = 9;
+      this.tabPage10.Text = "Производственный заказ";
+      this.tabPage10.UseVisualStyleBackColor = true;
       // 
       // tableLayoutPanel19
       // 
@@ -2641,6 +2064,14 @@ namespace DB_Kurs.Формы
       this.groupBox45.TabStop = false;
       this.groupBox45.Text = "Дата окончания";
       // 
+      // dateTimePicker2
+      // 
+      this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.dateTimePicker2.Location = new System.Drawing.Point(3, 16);
+      this.dateTimePicker2.Name = "dateTimePicker2";
+      this.dateTimePicker2.Size = new System.Drawing.Size(244, 20);
+      this.dateTimePicker2.TabIndex = 1;
+      // 
       // groupBox46
       // 
       this.tableLayoutPanel20.SetColumnSpan(this.groupBox46, 2);
@@ -2652,6 +2083,14 @@ namespace DB_Kurs.Формы
       this.groupBox46.TabIndex = 6;
       this.groupBox46.TabStop = false;
       this.groupBox46.Text = "Дата начала";
+      // 
+      // dateTimePicker1
+      // 
+      this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.dateTimePicker1.Location = new System.Drawing.Point(3, 16);
+      this.dateTimePicker1.Name = "dateTimePicker1";
+      this.dateTimePicker1.Size = new System.Drawing.Size(244, 20);
+      this.dateTimePicker1.TabIndex = 0;
       // 
       // groupBox47
       // 
@@ -2691,6 +2130,15 @@ namespace DB_Kurs.Формы
       this.groupBox48.TabStop = false;
       this.groupBox48.Text = "Код сотрудника";
       // 
+      // comboBox19
+      // 
+      this.comboBox19.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.comboBox19.FormattingEnabled = true;
+      this.comboBox19.Location = new System.Drawing.Point(3, 16);
+      this.comboBox19.Name = "comboBox19";
+      this.comboBox19.Size = new System.Drawing.Size(244, 21);
+      this.comboBox19.TabIndex = 2;
+      // 
       // button19
       // 
       this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -2712,6 +2160,15 @@ namespace DB_Kurs.Формы
       this.groupBox49.TabIndex = 1;
       this.groupBox49.TabStop = false;
       this.groupBox49.Text = "Номенклатурная позиция";
+      // 
+      // comboBox18
+      // 
+      this.comboBox18.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.comboBox18.FormattingEnabled = true;
+      this.comboBox18.Location = new System.Drawing.Point(3, 16);
+      this.comboBox18.Name = "comboBox18";
+      this.comboBox18.Size = new System.Drawing.Size(244, 21);
+      this.comboBox18.TabIndex = 2;
       // 
       // groupBox50
       // 
@@ -2743,103 +2200,32 @@ namespace DB_Kurs.Формы
       this.button20.Text = "Добавить";
       this.button20.UseVisualStyleBackColor = true;
       // 
-      // comboBox18
+      // dataGridView10
       // 
-      this.comboBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox18.FormattingEnabled = true;
-      this.comboBox18.Location = new System.Drawing.Point(3, 16);
-      this.comboBox18.Name = "comboBox18";
-      this.comboBox18.Size = new System.Drawing.Size(244, 21);
-      this.comboBox18.TabIndex = 2;
+      this.dataGridView10.AllowUserToAddRows = false;
+      this.dataGridView10.AllowUserToDeleteRows = false;
+      this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.dataGridView10.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.dataGridView10.Location = new System.Drawing.Point(3, 3);
+      this.dataGridView10.Name = "dataGridView10";
+      this.dataGridView10.ReadOnly = true;
+      this.dataGridView10.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.dataGridView10.Size = new System.Drawing.Size(1042, 595);
+      this.dataGridView10.TabIndex = 3;
       // 
-      // comboBox19
+      // id
       // 
-      this.comboBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox19.FormattingEnabled = true;
-      this.comboBox19.Location = new System.Drawing.Point(3, 16);
-      this.comboBox19.Name = "comboBox19";
-      this.comboBox19.Size = new System.Drawing.Size(244, 21);
-      this.comboBox19.TabIndex = 2;
+      this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.id.HeaderText = "Код склада";
+      this.id.Name = "id";
+      this.id.ReadOnly = true;
       // 
-      // idDataGridViewTextBoxColumn7
+      // description
       // 
-      this.idDataGridViewTextBoxColumn7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.idDataGridViewTextBoxColumn7.DataPropertyName = "id";
-      this.idDataGridViewTextBoxColumn7.HeaderText = "Код";
-      this.idDataGridViewTextBoxColumn7.Name = "idDataGridViewTextBoxColumn7";
-      this.idDataGridViewTextBoxColumn7.ReadOnly = true;
-      // 
-      // nomenclatureDataGridViewTextBoxColumn1
-      // 
-      this.nomenclatureDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.nomenclatureDataGridViewTextBoxColumn1.DataPropertyName = "nomenclature";
-      this.nomenclatureDataGridViewTextBoxColumn1.HeaderText = "Номенклатурная позиция";
-      this.nomenclatureDataGridViewTextBoxColumn1.Name = "nomenclatureDataGridViewTextBoxColumn1";
-      this.nomenclatureDataGridViewTextBoxColumn1.ReadOnly = true;
-      // 
-      // useridDataGridViewTextBoxColumn
-      // 
-      this.useridDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.useridDataGridViewTextBoxColumn.DataPropertyName = "user_id";
-      this.useridDataGridViewTextBoxColumn.HeaderText = "Код сотрудника";
-      this.useridDataGridViewTextBoxColumn.Name = "useridDataGridViewTextBoxColumn";
-      this.useridDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // statusDataGridViewTextBoxColumn2
-      // 
-      this.statusDataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.statusDataGridViewTextBoxColumn2.DataPropertyName = "status";
-      this.statusDataGridViewTextBoxColumn2.HeaderText = "Состояние";
-      this.statusDataGridViewTextBoxColumn2.Name = "statusDataGridViewTextBoxColumn2";
-      this.statusDataGridViewTextBoxColumn2.ReadOnly = true;
-      // 
-      // startdateDataGridViewTextBoxColumn
-      // 
-      this.startdateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.startdateDataGridViewTextBoxColumn.DataPropertyName = "start_date";
-      this.startdateDataGridViewTextBoxColumn.HeaderText = "Дата начала";
-      this.startdateDataGridViewTextBoxColumn.Name = "startdateDataGridViewTextBoxColumn";
-      this.startdateDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // enddateDataGridViewTextBoxColumn
-      // 
-      this.enddateDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.enddateDataGridViewTextBoxColumn.DataPropertyName = "end_date";
-      this.enddateDataGridViewTextBoxColumn.HeaderText = "Дата окончания";
-      this.enddateDataGridViewTextBoxColumn.Name = "enddateDataGridViewTextBoxColumn";
-      this.enddateDataGridViewTextBoxColumn.ReadOnly = true;
-      // 
-      // valueDataGridViewTextBoxColumn1
-      // 
-      this.valueDataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.valueDataGridViewTextBoxColumn1.DataPropertyName = "value";
-      this.valueDataGridViewTextBoxColumn1.HeaderText = "Количество";
-      this.valueDataGridViewTextBoxColumn1.Name = "valueDataGridViewTextBoxColumn1";
-      this.valueDataGridViewTextBoxColumn1.ReadOnly = true;
-      // 
-      // descriptionDataGridViewTextBoxColumn3
-      // 
-      this.descriptionDataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.descriptionDataGridViewTextBoxColumn3.DataPropertyName = "description";
-      this.descriptionDataGridViewTextBoxColumn3.HeaderText = "Описание";
-      this.descriptionDataGridViewTextBoxColumn3.Name = "descriptionDataGridViewTextBoxColumn3";
-      this.descriptionDataGridViewTextBoxColumn3.ReadOnly = true;
-      // 
-      // dateTimePicker1
-      // 
-      this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dateTimePicker1.Location = new System.Drawing.Point(3, 16);
-      this.dateTimePicker1.Name = "dateTimePicker1";
-      this.dateTimePicker1.Size = new System.Drawing.Size(244, 20);
-      this.dateTimePicker1.TabIndex = 0;
-      // 
-      // dateTimePicker2
-      // 
-      this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dateTimePicker2.Location = new System.Drawing.Point(3, 16);
-      this.dateTimePicker2.Name = "dateTimePicker2";
-      this.dateTimePicker2.Size = new System.Drawing.Size(244, 20);
-      this.dateTimePicker2.TabIndex = 1;
+      this.description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.description.HeaderText = "Описание";
+      this.description.Name = "description";
+      this.description.ReadOnly = true;
       // 
       // Main
       // 
@@ -2855,18 +2241,6 @@ namespace DB_Kurs.Формы
       this.Text = "Сборка легковых автомобилей";
       this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
       this.Load += new System.EventHandler(this.Main_Load);
-      ((System.ComponentModel.ISupportInitialize)(this.nomenclatureBindingSource)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.dataSet)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.specificationBindingSource)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.setofcomponentsBindingSource)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.operationsBindingSource)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.outputlogBindingSource)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.stockBindingSource)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.technologmapBindingSource)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.warehouseBindingSource)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.workcenterBindingSource)).EndInit();
-      ((System.ComponentModel.ISupportInitialize)(this.workingorderBindingSource)).EndInit();
       this.tabControl.ResumeLayout(false);
       this.tabPage1.ResumeLayout(false);
       this.tableLayoutPanel3.ResumeLayout(false);
@@ -2890,29 +2264,6 @@ namespace DB_Kurs.Формы
       this.groupBox4.PerformLayout();
       this.groupBox11.ResumeLayout(false);
       this.tabPage2.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-      this.tabPage3.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-      this.tabPage4.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-      this.tabPage5.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-      this.tabPage6.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
-      this.tabPage7.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
-      this.tabPage8.ResumeLayout(false);
-      this.tableLayoutPanel2.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView8)).EndInit();
-      this.tableLayoutPanel1.ResumeLayout(false);
-      this.groupBox2.ResumeLayout(false);
-      this.groupBox2.PerformLayout();
-      this.groupBox1.ResumeLayout(false);
-      this.groupBox1.PerformLayout();
-      this.tabPage9.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
-      this.tabPage10.ResumeLayout(false);
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
       this.tableLayoutPanel5.ResumeLayout(false);
       this.tableLayoutPanel6.ResumeLayout(false);
       this.groupBox13.ResumeLayout(false);
@@ -2921,6 +2272,8 @@ namespace DB_Kurs.Формы
       this.groupBox20.ResumeLayout(false);
       this.groupBox21.ResumeLayout(false);
       this.groupBox21.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+      this.tabPage3.ResumeLayout(false);
       this.tableLayoutPanel7.ResumeLayout(false);
       this.tableLayoutPanel8.ResumeLayout(false);
       this.groupBox15.ResumeLayout(false);
@@ -2928,8 +2281,11 @@ namespace DB_Kurs.Формы
       this.groupBox16.ResumeLayout(false);
       this.groupBox17.ResumeLayout(false);
       this.groupBox17.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+      this.tabPage4.ResumeLayout(false);
       this.tableLayoutPanel9.ResumeLayout(false);
       this.tableLayoutPanel10.ResumeLayout(false);
+      this.groupBox22.ResumeLayout(false);
       this.groupBox23.ResumeLayout(false);
       this.groupBox23.PerformLayout();
       this.groupBox24.ResumeLayout(false);
@@ -2941,7 +2297,8 @@ namespace DB_Kurs.Формы
       this.groupBox27.ResumeLayout(false);
       this.groupBox28.ResumeLayout(false);
       this.groupBox28.PerformLayout();
-      this.groupBox22.ResumeLayout(false);
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+      this.tabPage5.ResumeLayout(false);
       this.tableLayoutPanel11.ResumeLayout(false);
       this.tableLayoutPanel12.ResumeLayout(false);
       this.groupBox14.ResumeLayout(false);
@@ -2950,6 +2307,8 @@ namespace DB_Kurs.Формы
       this.groupBox29.PerformLayout();
       this.groupBox30.ResumeLayout(false);
       this.groupBox30.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+      this.tabPage6.ResumeLayout(false);
       this.tableLayoutPanel13.ResumeLayout(false);
       this.tableLayoutPanel14.ResumeLayout(false);
       this.groupBox31.ResumeLayout(false);
@@ -2958,6 +2317,8 @@ namespace DB_Kurs.Формы
       this.groupBox33.PerformLayout();
       this.groupBox34.ResumeLayout(false);
       this.groupBox34.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+      this.tabPage7.ResumeLayout(false);
       this.tableLayoutPanel15.ResumeLayout(false);
       this.tableLayoutPanel16.ResumeLayout(false);
       this.groupBox35.ResumeLayout(false);
@@ -2966,6 +2327,16 @@ namespace DB_Kurs.Формы
       this.groupBox37.ResumeLayout(false);
       this.groupBox38.ResumeLayout(false);
       this.groupBox38.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+      this.tabPage8.ResumeLayout(false);
+      this.tableLayoutPanel2.ResumeLayout(false);
+      ((System.ComponentModel.ISupportInitialize)(this.warehouse_datagrid)).EndInit();
+      this.tableLayoutPanel1.ResumeLayout(false);
+      this.groupBox2.ResumeLayout(false);
+      this.groupBox2.PerformLayout();
+      this.groupBox1.ResumeLayout(false);
+      this.groupBox1.PerformLayout();
+      this.tabPage9.ResumeLayout(false);
       this.tableLayoutPanel17.ResumeLayout(false);
       this.tableLayoutPanel18.ResumeLayout(false);
       this.groupBox39.ResumeLayout(false);
@@ -2974,6 +2345,8 @@ namespace DB_Kurs.Формы
       this.groupBox40.PerformLayout();
       this.groupBox41.ResumeLayout(false);
       this.groupBox41.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
+      this.tabPage10.ResumeLayout(false);
       this.tableLayoutPanel19.ResumeLayout(false);
       this.tableLayoutPanel20.ResumeLayout(false);
       this.groupBox43.ResumeLayout(false);
@@ -2987,104 +2360,44 @@ namespace DB_Kurs.Формы
       this.groupBox49.ResumeLayout(false);
       this.groupBox50.ResumeLayout(false);
       this.groupBox50.PerformLayout();
+      ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
       this.ResumeLayout(false);
 
     }
 
     #endregion
-    private Mysql.DataSet dataSet;
-    private System.Windows.Forms.BindingSource nomenclatureBindingSource;
-    private Mysql.DataSetTableAdapters.nomenclatureTableAdapter nomenclatureTableAdapter;
-    private Mysql.DataSet dataSet1;
-    private System.Windows.Forms.BindingSource specificationBindingSource;
-    private Mysql.DataSetTableAdapters.specificationTableAdapter specificationTableAdapter;
-    private System.Windows.Forms.BindingSource setofcomponentsBindingSource;
-    private Mysql.DataSetTableAdapters.set_of_componentsTableAdapter set_of_componentsTableAdapter;
-    private System.Windows.Forms.BindingSource operationsBindingSource;
-    private Mysql.DataSetTableAdapters.operationsTableAdapter operationsTableAdapter;
-    private System.Windows.Forms.BindingSource outputlogBindingSource;
-    private Mysql.DataSetTableAdapters.output_logTableAdapter output_logTableAdapter;
-    private System.Windows.Forms.BindingSource stockBindingSource;
-    private Mysql.DataSetTableAdapters.stockTableAdapter stockTableAdapter;
-    private System.Windows.Forms.BindingSource technologmapBindingSource;
-    private Mysql.DataSetTableAdapters.technolog_mapTableAdapter technolog_mapTableAdapter;
-    private System.Windows.Forms.BindingSource warehouseBindingSource;
-    private Mysql.DataSetTableAdapters.warehouseTableAdapter warehouseTableAdapter;
-    private System.Windows.Forms.BindingSource workcenterBindingSource;
-    private Mysql.DataSetTableAdapters.work_centerTableAdapter work_centerTableAdapter;
-    private System.Windows.Forms.BindingSource workingorderBindingSource;
-    private Mysql.DataSetTableAdapters.working_orderTableAdapter working_orderTableAdapter;
     private System.Windows.Forms.TabControl tabControl;
     private System.Windows.Forms.TabPage tabPage1;
     private System.Windows.Forms.DataGridView dataGridView1;
-    private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn1;
-    private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn unitDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn renewalmethodDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn marriagerateDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn additionalorderlevelDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn additionalordervalueDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn waitingperiodDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn productionrouteDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn specificationDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn materialwriteoffmodeDataGridViewTextBoxColumn;
     private System.Windows.Forms.TabPage tabPage2;
     private System.Windows.Forms.DataGridView dataGridView2;
-    private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn setofcomponentsDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn discriptionDataGridViewTextBoxColumn;
     private System.Windows.Forms.TabPage tabPage3;
     private System.Windows.Forms.DataGridView dataGridView3;
-    private System.Windows.Forms.DataGridViewTextBoxColumn idsetDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn nomenclatureDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn valueDataGridViewTextBoxColumn;
     private System.Windows.Forms.TabPage tabPage4;
     private System.Windows.Forms.DataGridView dataGridView4;
-    private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn2;
-    private System.Windows.Forms.DataGridViewTextBoxColumn workcenteridDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn setuptimeDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn processingtimeDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn transittimeDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn nextoperationidDataGridViewTextBoxColumn;
     private System.Windows.Forms.TabPage tabPage5;
     private System.Windows.Forms.DataGridView dataGridView5;
-    private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn3;
-    private System.Windows.Forms.DataGridViewTextBoxColumn workingorderidDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn workcenteridDataGridViewTextBoxColumn1;
-    private System.Windows.Forms.DataGridViewTextBoxColumn elapsedtimeDataGridViewTextBoxColumn;
     private System.Windows.Forms.TabPage tabPage6;
     private System.Windows.Forms.DataGridView dataGridView6;
-    private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     private System.Windows.Forms.DataGridViewTextBoxColumn id_warehouse;
     private System.Windows.Forms.DataGridViewTextBoxColumn id_nomenclature;
     private System.Windows.Forms.DataGridViewTextBoxColumn value;
     private System.Windows.Forms.TabPage tabPage7;
     private System.Windows.Forms.DataGridView dataGridView7;
-    private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn4;
-    private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn1;
-    private System.Windows.Forms.DataGridViewTextBoxColumn idinitialoperationDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn1;
     private System.Windows.Forms.TabPage tabPage8;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-    private System.Windows.Forms.DataGridView dataGridView8;
-    private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn5;
-    private System.Windows.Forms.DataGridViewTextBoxColumn discriptionDataGridViewTextBoxColumn1;
+    private System.Windows.Forms.DataGridView warehouse_datagrid;
     private System.Windows.Forms.TabPage tabPage9;
     private System.Windows.Forms.DataGridView dataGridView9;
-    private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn6;
-    private System.Windows.Forms.DataGridViewTextBoxColumn powerDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn2;
     private System.Windows.Forms.TabPage tabPage10;
     private System.Windows.Forms.DataGridView dataGridView10;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-    private System.Windows.Forms.Button button2;
+    private System.Windows.Forms.Button warehouse_delete_btn;
     private System.Windows.Forms.GroupBox groupBox2;
-    private System.Windows.Forms.TextBox textBox2;
+    private System.Windows.Forms.TextBox warehouse_discription_textbox;
     private System.Windows.Forms.GroupBox groupBox1;
-    private System.Windows.Forms.TextBox textBox1;
-    private System.Windows.Forms.Button button1;
+    private System.Windows.Forms.TextBox warehouse_id_textbox;
+    private System.Windows.Forms.Button warehouse_add_btn;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
     private System.Windows.Forms.Button button3;
     private System.Windows.Forms.GroupBox groupBox3;
@@ -3215,13 +2528,7 @@ namespace DB_Kurs.Формы
     private System.Windows.Forms.GroupBox groupBox50;
     private System.Windows.Forms.TextBox textBox34;
     private System.Windows.Forms.Button button20;
-    private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn7;
-    private System.Windows.Forms.DataGridViewTextBoxColumn nomenclatureDataGridViewTextBoxColumn1;
-    private System.Windows.Forms.DataGridViewTextBoxColumn useridDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn2;
-    private System.Windows.Forms.DataGridViewTextBoxColumn startdateDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn enddateDataGridViewTextBoxColumn;
-    private System.Windows.Forms.DataGridViewTextBoxColumn valueDataGridViewTextBoxColumn1;
-    private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn3;
+    private System.Windows.Forms.DataGridViewTextBoxColumn id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn description;
   }
 }
