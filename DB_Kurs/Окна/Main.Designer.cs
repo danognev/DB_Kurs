@@ -29,7 +29,7 @@ namespace DB_Kurs.Формы
     /// </summary>
     private void InitializeComponent()
     {
-      this.tabControl = new System.Windows.Forms.TabControl();
+      this.main_tab_control = new System.Windows.Forms.TabControl();
       this.tabPage1 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
       this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -120,19 +120,21 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox31 = new System.Windows.Forms.GroupBox();
-      this.comboBox11 = new System.Windows.Forms.ComboBox();
-      this.button13 = new System.Windows.Forms.Button();
+      this.stock_id_nomenclature_combobox = new System.Windows.Forms.ComboBox();
+      this.stock_delete_btn = new System.Windows.Forms.Button();
       this.groupBox32 = new System.Windows.Forms.GroupBox();
-      this.comboBox12 = new System.Windows.Forms.ComboBox();
+      this.stock_id_warehouse_combobox = new System.Windows.Forms.ComboBox();
       this.groupBox33 = new System.Windows.Forms.GroupBox();
-      this.textBox21 = new System.Windows.Forms.TextBox();
-      this.button14 = new System.Windows.Forms.Button();
+      this.stock_id_textbox = new System.Windows.Forms.TextBox();
+      this.stock_add_btn = new System.Windows.Forms.Button();
       this.groupBox34 = new System.Windows.Forms.GroupBox();
-      this.textBox22 = new System.Windows.Forms.TextBox();
-      this.dataGridView6 = new System.Windows.Forms.DataGridView();
-      this.id_warehouse = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.id_nomenclature = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.stock_value_textbox = new System.Windows.Forms.TextBox();
+      this.stock_save_btn = new System.Windows.Forms.Button();
+      this.stock_datagrid = new System.Windows.Forms.DataGridView();
+      this.stock_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.stock_id_warehouse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.stock_id_nomenclature = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.stock_value = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tabPage7 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
@@ -150,6 +152,8 @@ namespace DB_Kurs.Формы
       this.tabPage8 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
       this.warehouse_datagrid = new System.Windows.Forms.DataGridView();
+      this.id_warehouse = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.description_warehouse = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
       this.warehouse_delete_btn = new System.Windows.Forms.Button();
       this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -157,6 +161,7 @@ namespace DB_Kurs.Формы
       this.groupBox1 = new System.Windows.Forms.GroupBox();
       this.warehouse_id_textbox = new System.Windows.Forms.TextBox();
       this.warehouse_add_btn = new System.Windows.Forms.Button();
+      this.warehouse_save_btn = new System.Windows.Forms.Button();
       this.tabPage9 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
@@ -191,9 +196,7 @@ namespace DB_Kurs.Формы
       this.textBox34 = new System.Windows.Forms.TextBox();
       this.button20 = new System.Windows.Forms.Button();
       this.dataGridView10 = new System.Windows.Forms.DataGridView();
-      this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-      this.tabControl.SuspendLayout();
+      this.main_tab_control.SuspendLayout();
       this.tabPage1.SuspendLayout();
       this.tableLayoutPanel3.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -249,7 +252,7 @@ namespace DB_Kurs.Формы
       this.groupBox32.SuspendLayout();
       this.groupBox33.SuspendLayout();
       this.groupBox34.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.stock_datagrid)).BeginInit();
       this.tabPage7.SuspendLayout();
       this.tableLayoutPanel15.SuspendLayout();
       this.tableLayoutPanel16.SuspendLayout();
@@ -285,24 +288,25 @@ namespace DB_Kurs.Формы
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
       this.SuspendLayout();
       // 
-      // tabControl
+      // main_tab_control
       // 
-      this.tabControl.Controls.Add(this.tabPage1);
-      this.tabControl.Controls.Add(this.tabPage2);
-      this.tabControl.Controls.Add(this.tabPage3);
-      this.tabControl.Controls.Add(this.tabPage4);
-      this.tabControl.Controls.Add(this.tabPage5);
-      this.tabControl.Controls.Add(this.tabPage6);
-      this.tabControl.Controls.Add(this.tabPage7);
-      this.tabControl.Controls.Add(this.tabPage8);
-      this.tabControl.Controls.Add(this.tabPage9);
-      this.tabControl.Controls.Add(this.tabPage10);
-      this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.tabControl.Location = new System.Drawing.Point(0, 0);
-      this.tabControl.Name = "tabControl";
-      this.tabControl.SelectedIndex = 0;
-      this.tabControl.Size = new System.Drawing.Size(1318, 627);
-      this.tabControl.TabIndex = 0;
+      this.main_tab_control.Controls.Add(this.tabPage1);
+      this.main_tab_control.Controls.Add(this.tabPage2);
+      this.main_tab_control.Controls.Add(this.tabPage3);
+      this.main_tab_control.Controls.Add(this.tabPage4);
+      this.main_tab_control.Controls.Add(this.tabPage5);
+      this.main_tab_control.Controls.Add(this.tabPage6);
+      this.main_tab_control.Controls.Add(this.tabPage7);
+      this.main_tab_control.Controls.Add(this.tabPage8);
+      this.main_tab_control.Controls.Add(this.tabPage9);
+      this.main_tab_control.Controls.Add(this.tabPage10);
+      this.main_tab_control.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.main_tab_control.Location = new System.Drawing.Point(0, 0);
+      this.main_tab_control.Name = "main_tab_control";
+      this.main_tab_control.SelectedIndex = 0;
+      this.main_tab_control.Size = new System.Drawing.Size(1318, 627);
+      this.main_tab_control.TabIndex = 0;
+      this.main_tab_control.SelectedIndexChanged += new System.EventHandler(this.MainFormTabIndexChanged);
       // 
       // tabPage1
       // 
@@ -1338,7 +1342,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
       this.tableLayoutPanel13.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
       this.tableLayoutPanel13.Controls.Add(this.tableLayoutPanel14, 1, 0);
-      this.tableLayoutPanel13.Controls.Add(this.dataGridView6, 0, 0);
+      this.tableLayoutPanel13.Controls.Add(this.stock_datagrid, 0, 0);
       this.tableLayoutPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel13.Location = new System.Drawing.Point(3, 3);
       this.tableLayoutPanel13.Name = "tableLayoutPanel13";
@@ -1355,20 +1359,22 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
       this.tableLayoutPanel14.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
       this.tableLayoutPanel14.Controls.Add(this.groupBox31, 0, 2);
-      this.tableLayoutPanel14.Controls.Add(this.button13, 1, 5);
+      this.tableLayoutPanel14.Controls.Add(this.stock_delete_btn, 1, 6);
       this.tableLayoutPanel14.Controls.Add(this.groupBox32, 0, 1);
       this.tableLayoutPanel14.Controls.Add(this.groupBox33, 0, 0);
-      this.tableLayoutPanel14.Controls.Add(this.button14, 0, 5);
+      this.tableLayoutPanel14.Controls.Add(this.stock_add_btn, 0, 6);
       this.tableLayoutPanel14.Controls.Add(this.groupBox34, 0, 3);
+      this.tableLayoutPanel14.Controls.Add(this.stock_save_btn, 0, 5);
       this.tableLayoutPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel14.Location = new System.Drawing.Point(1046, 3);
       this.tableLayoutPanel14.Name = "tableLayoutPanel14";
-      this.tableLayoutPanel14.RowCount = 6;
+      this.tableLayoutPanel14.RowCount = 7;
       this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+      this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel14.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel14.Size = new System.Drawing.Size(255, 589);
       this.tableLayoutPanel14.TabIndex = 6;
@@ -1376,7 +1382,7 @@ namespace DB_Kurs.Формы
       // groupBox31
       // 
       this.tableLayoutPanel14.SetColumnSpan(this.groupBox31, 2);
-      this.groupBox31.Controls.Add(this.comboBox11);
+      this.groupBox31.Controls.Add(this.stock_id_nomenclature_combobox);
       this.groupBox31.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox31.Location = new System.Drawing.Point(3, 103);
       this.groupBox31.Name = "groupBox31";
@@ -1385,29 +1391,30 @@ namespace DB_Kurs.Формы
       this.groupBox31.TabStop = false;
       this.groupBox31.Text = "Код номенклатуры";
       // 
-      // comboBox11
+      // stock_id_nomenclature_combobox
       // 
-      this.comboBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox11.FormattingEnabled = true;
-      this.comboBox11.Location = new System.Drawing.Point(3, 16);
-      this.comboBox11.Name = "comboBox11";
-      this.comboBox11.Size = new System.Drawing.Size(243, 21);
-      this.comboBox11.TabIndex = 2;
+      this.stock_id_nomenclature_combobox.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.stock_id_nomenclature_combobox.FormattingEnabled = true;
+      this.stock_id_nomenclature_combobox.Location = new System.Drawing.Point(3, 16);
+      this.stock_id_nomenclature_combobox.Name = "stock_id_nomenclature_combobox";
+      this.stock_id_nomenclature_combobox.Size = new System.Drawing.Size(243, 21);
+      this.stock_id_nomenclature_combobox.TabIndex = 2;
       // 
-      // button13
+      // stock_delete_btn
       // 
-      this.button13.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button13.Location = new System.Drawing.Point(130, 522);
-      this.button13.Name = "button13";
-      this.button13.Size = new System.Drawing.Size(122, 64);
-      this.button13.TabIndex = 3;
-      this.button13.Text = "Удалить";
-      this.button13.UseVisualStyleBackColor = true;
+      this.stock_delete_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.stock_delete_btn.Enabled = false;
+      this.stock_delete_btn.Location = new System.Drawing.Point(130, 522);
+      this.stock_delete_btn.Name = "stock_delete_btn";
+      this.stock_delete_btn.Size = new System.Drawing.Size(122, 64);
+      this.stock_delete_btn.TabIndex = 3;
+      this.stock_delete_btn.Text = "Удалить";
+      this.stock_delete_btn.UseVisualStyleBackColor = true;
       // 
       // groupBox32
       // 
       this.tableLayoutPanel14.SetColumnSpan(this.groupBox32, 2);
-      this.groupBox32.Controls.Add(this.comboBox12);
+      this.groupBox32.Controls.Add(this.stock_id_warehouse_combobox);
       this.groupBox32.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox32.Location = new System.Drawing.Point(3, 53);
       this.groupBox32.Name = "groupBox32";
@@ -1416,19 +1423,19 @@ namespace DB_Kurs.Формы
       this.groupBox32.TabStop = false;
       this.groupBox32.Text = "Код склада";
       // 
-      // comboBox12
+      // stock_id_warehouse_combobox
       // 
-      this.comboBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox12.FormattingEnabled = true;
-      this.comboBox12.Location = new System.Drawing.Point(3, 16);
-      this.comboBox12.Name = "comboBox12";
-      this.comboBox12.Size = new System.Drawing.Size(243, 21);
-      this.comboBox12.TabIndex = 1;
+      this.stock_id_warehouse_combobox.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.stock_id_warehouse_combobox.FormattingEnabled = true;
+      this.stock_id_warehouse_combobox.Location = new System.Drawing.Point(3, 16);
+      this.stock_id_warehouse_combobox.Name = "stock_id_warehouse_combobox";
+      this.stock_id_warehouse_combobox.Size = new System.Drawing.Size(243, 21);
+      this.stock_id_warehouse_combobox.TabIndex = 1;
       // 
       // groupBox33
       // 
       this.tableLayoutPanel14.SetColumnSpan(this.groupBox33, 2);
-      this.groupBox33.Controls.Add(this.textBox21);
+      this.groupBox33.Controls.Add(this.stock_id_textbox);
       this.groupBox33.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox33.Location = new System.Drawing.Point(3, 3);
       this.groupBox33.Name = "groupBox33";
@@ -1437,28 +1444,30 @@ namespace DB_Kurs.Формы
       this.groupBox33.TabStop = false;
       this.groupBox33.Text = "Код";
       // 
-      // textBox21
+      // stock_id_textbox
       // 
-      this.textBox21.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox21.Location = new System.Drawing.Point(3, 16);
-      this.textBox21.Name = "textBox21";
-      this.textBox21.Size = new System.Drawing.Size(243, 20);
-      this.textBox21.TabIndex = 0;
+      this.stock_id_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.stock_id_textbox.Location = new System.Drawing.Point(3, 16);
+      this.stock_id_textbox.Name = "stock_id_textbox";
+      this.stock_id_textbox.ReadOnly = true;
+      this.stock_id_textbox.Size = new System.Drawing.Size(243, 20);
+      this.stock_id_textbox.TabIndex = 0;
       // 
-      // button14
+      // stock_add_btn
       // 
-      this.button14.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button14.Location = new System.Drawing.Point(3, 522);
-      this.button14.Name = "button14";
-      this.button14.Size = new System.Drawing.Size(121, 64);
-      this.button14.TabIndex = 2;
-      this.button14.Text = "Добавить";
-      this.button14.UseVisualStyleBackColor = true;
+      this.stock_add_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.stock_add_btn.Enabled = false;
+      this.stock_add_btn.Location = new System.Drawing.Point(3, 522);
+      this.stock_add_btn.Name = "stock_add_btn";
+      this.stock_add_btn.Size = new System.Drawing.Size(121, 64);
+      this.stock_add_btn.TabIndex = 2;
+      this.stock_add_btn.Text = "Добавить запись";
+      this.stock_add_btn.UseVisualStyleBackColor = true;
       // 
       // groupBox34
       // 
       this.tableLayoutPanel14.SetColumnSpan(this.groupBox34, 2);
-      this.groupBox34.Controls.Add(this.textBox22);
+      this.groupBox34.Controls.Add(this.stock_value_textbox);
       this.groupBox34.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox34.Location = new System.Drawing.Point(3, 153);
       this.groupBox34.Name = "groupBox34";
@@ -1467,54 +1476,72 @@ namespace DB_Kurs.Формы
       this.groupBox34.TabStop = false;
       this.groupBox34.Text = "Количество";
       // 
-      // textBox22
+      // stock_value_textbox
       // 
-      this.textBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox22.Location = new System.Drawing.Point(3, 16);
-      this.textBox22.Name = "textBox22";
-      this.textBox22.Size = new System.Drawing.Size(243, 20);
-      this.textBox22.TabIndex = 1;
+      this.stock_value_textbox.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.stock_value_textbox.Location = new System.Drawing.Point(3, 16);
+      this.stock_value_textbox.Name = "stock_value_textbox";
+      this.stock_value_textbox.Size = new System.Drawing.Size(243, 20);
+      this.stock_value_textbox.TabIndex = 1;
       // 
-      // dataGridView6
+      // stock_save_btn
       // 
-      this.dataGridView6.AllowUserToAddRows = false;
-      this.dataGridView6.AllowUserToDeleteRows = false;
-      this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id_warehouse,
-            this.id_nomenclature,
-            this.value});
-      this.dataGridView6.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView6.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView6.Name = "dataGridView6";
-      this.dataGridView6.ReadOnly = true;
-      this.dataGridView6.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView6.Size = new System.Drawing.Size(1037, 589);
-      this.dataGridView6.TabIndex = 3;
+      this.tableLayoutPanel14.SetColumnSpan(this.stock_save_btn, 2);
+      this.stock_save_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.stock_save_btn.Enabled = false;
+      this.stock_save_btn.Location = new System.Drawing.Point(3, 452);
+      this.stock_save_btn.Name = "stock_save_btn";
+      this.stock_save_btn.Size = new System.Drawing.Size(249, 64);
+      this.stock_save_btn.TabIndex = 6;
+      this.stock_save_btn.Text = "Сохранить изменения";
+      this.stock_save_btn.UseVisualStyleBackColor = true;
       // 
-      // id_warehouse
+      // stock_datagrid
       // 
-      this.id_warehouse.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.id_warehouse.DataPropertyName = "id_warehouse";
-      this.id_warehouse.HeaderText = "Код склада";
-      this.id_warehouse.Name = "id_warehouse";
-      this.id_warehouse.ReadOnly = true;
+      this.stock_datagrid.AllowUserToAddRows = false;
+      this.stock_datagrid.AllowUserToDeleteRows = false;
+      this.stock_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.stock_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.stock_id,
+            this.stock_id_warehouse,
+            this.stock_id_nomenclature,
+            this.stock_value});
+      this.stock_datagrid.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.stock_datagrid.Location = new System.Drawing.Point(3, 3);
+      this.stock_datagrid.Name = "stock_datagrid";
+      this.stock_datagrid.ReadOnly = true;
+      this.stock_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.stock_datagrid.Size = new System.Drawing.Size(1037, 589);
+      this.stock_datagrid.TabIndex = 3;
+      this.stock_datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.StockCellClick);
       // 
-      // id_nomenclature
+      // stock_id
       // 
-      this.id_nomenclature.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.id_nomenclature.DataPropertyName = "id_nomenclature";
-      this.id_nomenclature.HeaderText = "Код номенклатуры";
-      this.id_nomenclature.Name = "id_nomenclature";
-      this.id_nomenclature.ReadOnly = true;
+      this.stock_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.stock_id.HeaderText = "Код";
+      this.stock_id.Name = "stock_id";
+      this.stock_id.ReadOnly = true;
       // 
-      // value
+      // stock_id_warehouse
       // 
-      this.value.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.value.DataPropertyName = "value";
-      this.value.HeaderText = "Количество";
-      this.value.Name = "value";
-      this.value.ReadOnly = true;
+      this.stock_id_warehouse.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.stock_id_warehouse.HeaderText = "Код склада";
+      this.stock_id_warehouse.Name = "stock_id_warehouse";
+      this.stock_id_warehouse.ReadOnly = true;
+      // 
+      // stock_id_nomenclature
+      // 
+      this.stock_id_nomenclature.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.stock_id_nomenclature.HeaderText = "Код номенклатуры";
+      this.stock_id_nomenclature.Name = "stock_id_nomenclature";
+      this.stock_id_nomenclature.ReadOnly = true;
+      // 
+      // stock_value
+      // 
+      this.stock_value.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.stock_value.HeaderText = "Количество";
+      this.stock_value.Name = "stock_value";
+      this.stock_value.ReadOnly = true;
       // 
       // tabPage7
       // 
@@ -1707,6 +1734,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel2.Name = "tableLayoutPanel2";
       this.tableLayoutPanel2.RowCount = 1;
       this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+      this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 601F));
       this.tableLayoutPanel2.Size = new System.Drawing.Size(1310, 601);
       this.tableLayoutPanel2.TabIndex = 4;
       // 
@@ -1716,15 +1744,32 @@ namespace DB_Kurs.Формы
       this.warehouse_datagrid.AllowUserToDeleteRows = false;
       this.warehouse_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
       this.warehouse_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.description});
+            this.id_warehouse,
+            this.description_warehouse});
       this.warehouse_datagrid.Dock = System.Windows.Forms.DockStyle.Fill;
       this.warehouse_datagrid.Location = new System.Drawing.Point(3, 3);
+      this.warehouse_datagrid.MultiSelect = false;
       this.warehouse_datagrid.Name = "warehouse_datagrid";
       this.warehouse_datagrid.ReadOnly = true;
       this.warehouse_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.warehouse_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
       this.warehouse_datagrid.Size = new System.Drawing.Size(1042, 595);
       this.warehouse_datagrid.TabIndex = 3;
+      this.warehouse_datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.WarehouseContentClick);
+      // 
+      // id_warehouse
+      // 
+      this.id_warehouse.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.id_warehouse.HeaderText = "Код склада";
+      this.id_warehouse.Name = "id_warehouse";
+      this.id_warehouse.ReadOnly = true;
+      // 
+      // description_warehouse
+      // 
+      this.description_warehouse.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.description_warehouse.HeaderText = "Описание";
+      this.description_warehouse.Name = "description_warehouse";
+      this.description_warehouse.ReadOnly = true;
       // 
       // tableLayoutPanel1
       // 
@@ -1733,29 +1778,34 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel1.ColumnCount = 2;
       this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
       this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-      this.tableLayoutPanel1.Controls.Add(this.warehouse_delete_btn, 1, 2);
+      this.tableLayoutPanel1.Controls.Add(this.warehouse_delete_btn, 1, 3);
       this.tableLayoutPanel1.Controls.Add(this.groupBox2, 0, 1);
       this.tableLayoutPanel1.Controls.Add(this.groupBox1, 0, 0);
-      this.tableLayoutPanel1.Controls.Add(this.warehouse_add_btn, 0, 2);
+      this.tableLayoutPanel1.Controls.Add(this.warehouse_add_btn, 0, 3);
+      this.tableLayoutPanel1.Controls.Add(this.warehouse_save_btn, 0, 2);
       this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel1.Location = new System.Drawing.Point(1051, 3);
       this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-      this.tableLayoutPanel1.RowCount = 3;
+      this.tableLayoutPanel1.RowCount = 4;
       this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
       this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+      this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+      this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
       this.tableLayoutPanel1.Size = new System.Drawing.Size(256, 595);
       this.tableLayoutPanel1.TabIndex = 4;
       // 
       // warehouse_delete_btn
       // 
       this.warehouse_delete_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.warehouse_delete_btn.Enabled = false;
       this.warehouse_delete_btn.Location = new System.Drawing.Point(131, 528);
       this.warehouse_delete_btn.Name = "warehouse_delete_btn";
       this.warehouse_delete_btn.Size = new System.Drawing.Size(122, 64);
       this.warehouse_delete_btn.TabIndex = 3;
       this.warehouse_delete_btn.Text = "Удалить";
       this.warehouse_delete_btn.UseVisualStyleBackColor = true;
+      this.warehouse_delete_btn.Click += new System.EventHandler(this.WarehouseDeleteClick);
       // 
       // groupBox2
       // 
@@ -1764,7 +1814,7 @@ namespace DB_Kurs.Формы
       this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox2.Location = new System.Drawing.Point(3, 53);
       this.groupBox2.Name = "groupBox2";
-      this.groupBox2.Size = new System.Drawing.Size(250, 469);
+      this.groupBox2.Size = new System.Drawing.Size(250, 399);
       this.groupBox2.TabIndex = 1;
       this.groupBox2.TabStop = false;
       this.groupBox2.Text = "Описание";
@@ -1775,8 +1825,10 @@ namespace DB_Kurs.Формы
       this.warehouse_discription_textbox.Location = new System.Drawing.Point(3, 16);
       this.warehouse_discription_textbox.Multiline = true;
       this.warehouse_discription_textbox.Name = "warehouse_discription_textbox";
-      this.warehouse_discription_textbox.Size = new System.Drawing.Size(244, 450);
+      this.warehouse_discription_textbox.Size = new System.Drawing.Size(244, 380);
       this.warehouse_discription_textbox.TabIndex = 0;
+      this.warehouse_discription_textbox.TextChanged += new System.EventHandler(this.WarehouseDiscriptionChanged);
+      this.warehouse_discription_textbox.Enter += new System.EventHandler(this.WarehouseDiscriptionTextBoxEnter);
       // 
       // groupBox1
       // 
@@ -1806,9 +1858,22 @@ namespace DB_Kurs.Формы
       this.warehouse_add_btn.Name = "warehouse_add_btn";
       this.warehouse_add_btn.Size = new System.Drawing.Size(122, 64);
       this.warehouse_add_btn.TabIndex = 2;
-      this.warehouse_add_btn.Text = "Добавить";
+      this.warehouse_add_btn.Text = "Добавить запись";
       this.warehouse_add_btn.UseVisualStyleBackColor = true;
       this.warehouse_add_btn.Click += new System.EventHandler(this.WarehouseAddClick);
+      // 
+      // warehouse_save_btn
+      // 
+      this.tableLayoutPanel1.SetColumnSpan(this.warehouse_save_btn, 2);
+      this.warehouse_save_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.warehouse_save_btn.Enabled = false;
+      this.warehouse_save_btn.Location = new System.Drawing.Point(3, 458);
+      this.warehouse_save_btn.Name = "warehouse_save_btn";
+      this.warehouse_save_btn.Size = new System.Drawing.Size(250, 64);
+      this.warehouse_save_btn.TabIndex = 4;
+      this.warehouse_save_btn.Text = "Сохранить изменения";
+      this.warehouse_save_btn.UseVisualStyleBackColor = true;
+      this.warehouse_save_btn.Click += new System.EventHandler(this.WarehouseSaveBtnClick);
       // 
       // tabPage9
       // 
@@ -2213,35 +2278,22 @@ namespace DB_Kurs.Формы
       this.dataGridView10.Size = new System.Drawing.Size(1042, 595);
       this.dataGridView10.TabIndex = 3;
       // 
-      // id
-      // 
-      this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.id.HeaderText = "Код склада";
-      this.id.Name = "id";
-      this.id.ReadOnly = true;
-      // 
-      // description
-      // 
-      this.description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-      this.description.HeaderText = "Описание";
-      this.description.Name = "description";
-      this.description.ReadOnly = true;
-      // 
       // Main
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.BackColor = System.Drawing.SystemColors.AppWorkspace;
       this.ClientSize = new System.Drawing.Size(1318, 627);
-      this.Controls.Add(this.tabControl);
+      this.Controls.Add(this.main_tab_control);
       this.MinimumSize = new System.Drawing.Size(1200, 300);
       this.Name = "Main";
       this.ShowIcon = false;
       this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
       this.Text = "Сборка легковых автомобилей";
       this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+      this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainFormClosed);
       this.Load += new System.EventHandler(this.Main_Load);
-      this.tabControl.ResumeLayout(false);
+      this.main_tab_control.ResumeLayout(false);
       this.tabPage1.ResumeLayout(false);
       this.tableLayoutPanel3.ResumeLayout(false);
       ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -2317,7 +2369,7 @@ namespace DB_Kurs.Формы
       this.groupBox33.PerformLayout();
       this.groupBox34.ResumeLayout(false);
       this.groupBox34.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.stock_datagrid)).EndInit();
       this.tabPage7.ResumeLayout(false);
       this.tableLayoutPanel15.ResumeLayout(false);
       this.tableLayoutPanel16.ResumeLayout(false);
@@ -2366,7 +2418,7 @@ namespace DB_Kurs.Формы
     }
 
     #endregion
-    private System.Windows.Forms.TabControl tabControl;
+    private System.Windows.Forms.TabControl main_tab_control;
     private System.Windows.Forms.TabPage tabPage1;
     private System.Windows.Forms.DataGridView dataGridView1;
     private System.Windows.Forms.TabPage tabPage2;
@@ -2378,10 +2430,7 @@ namespace DB_Kurs.Формы
     private System.Windows.Forms.TabPage tabPage5;
     private System.Windows.Forms.DataGridView dataGridView5;
     private System.Windows.Forms.TabPage tabPage6;
-    private System.Windows.Forms.DataGridView dataGridView6;
-    private System.Windows.Forms.DataGridViewTextBoxColumn id_warehouse;
-    private System.Windows.Forms.DataGridViewTextBoxColumn id_nomenclature;
-    private System.Windows.Forms.DataGridViewTextBoxColumn value;
+    private System.Windows.Forms.DataGridView stock_datagrid;
     private System.Windows.Forms.TabPage tabPage7;
     private System.Windows.Forms.DataGridView dataGridView7;
     private System.Windows.Forms.TabPage tabPage8;
@@ -2477,15 +2526,15 @@ namespace DB_Kurs.Формы
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
     private System.Windows.Forms.GroupBox groupBox31;
-    private System.Windows.Forms.ComboBox comboBox11;
-    private System.Windows.Forms.Button button13;
+    private System.Windows.Forms.ComboBox stock_id_nomenclature_combobox;
+    private System.Windows.Forms.Button stock_delete_btn;
     private System.Windows.Forms.GroupBox groupBox32;
-    private System.Windows.Forms.ComboBox comboBox12;
+    private System.Windows.Forms.ComboBox stock_id_warehouse_combobox;
     private System.Windows.Forms.GroupBox groupBox33;
-    private System.Windows.Forms.TextBox textBox21;
-    private System.Windows.Forms.Button button14;
+    private System.Windows.Forms.TextBox stock_id_textbox;
+    private System.Windows.Forms.Button stock_add_btn;
     private System.Windows.Forms.GroupBox groupBox34;
-    private System.Windows.Forms.TextBox textBox22;
+    private System.Windows.Forms.TextBox stock_value_textbox;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
     private System.Windows.Forms.GroupBox groupBox35;
@@ -2528,7 +2577,13 @@ namespace DB_Kurs.Формы
     private System.Windows.Forms.GroupBox groupBox50;
     private System.Windows.Forms.TextBox textBox34;
     private System.Windows.Forms.Button button20;
-    private System.Windows.Forms.DataGridViewTextBoxColumn id;
-    private System.Windows.Forms.DataGridViewTextBoxColumn description;
+    private System.Windows.Forms.Button warehouse_save_btn;
+    private System.Windows.Forms.Button stock_save_btn;
+    private System.Windows.Forms.DataGridViewTextBoxColumn stock_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn stock_id_warehouse;
+    private System.Windows.Forms.DataGridViewTextBoxColumn stock_id_nomenclature;
+    private System.Windows.Forms.DataGridViewTextBoxColumn stock_value;
+    private System.Windows.Forms.DataGridViewTextBoxColumn id_warehouse;
+    private System.Windows.Forms.DataGridViewTextBoxColumn description_warehouse;
   }
 }
