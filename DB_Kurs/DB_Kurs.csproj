@@ -153,6 +153,9 @@
     <Compile Include="Mysql\work_center.cs">
       <DependentUpon>DB_Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Взаимодействие\Nomenclature.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Взаимодействие\Stock.cs">
       <SubType>Form</SubType>
     </Compile>
