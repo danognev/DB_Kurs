@@ -17,14 +17,14 @@ namespace DB_Kurs.Mysql
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public set_of_components()
         {
-            this.nomenclature1 = new HashSet<nomenclature>();
+            this.specification = new HashSet<specification>();
         }
     
         public int id_set { get; set; }
-        public int nomenclature { get; set; }
+        public Nullable<int> nomenclature { get; set; }
         public Nullable<int> value { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<nomenclature> nomenclature1 { get; set; }
+        public virtual ICollection<specification> specification { get; set; }
     }
 }

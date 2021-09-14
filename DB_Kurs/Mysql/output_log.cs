@@ -16,9 +16,10 @@ namespace DB_Kurs.Mysql
     {
         public int id { get; set; }
         public Nullable<int> working_order_id { get; set; }
-        public int work_center_id { get; set; }
+        public Nullable<int> work_center_id { get; set; }
         public Nullable<int> elapsed_time { get; set; }
     
         public virtual work_center work_center { get; set; }
+        public virtual working_order working_order { get; set; }
     }
 }

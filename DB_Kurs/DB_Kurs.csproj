@@ -103,63 +103,78 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mysql\DB_Model.Context.cs">
+    <Compile Include="Mysql\DB_Kurs.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB_Model.Context.tt</DependentUpon>
+      <DependentUpon>DB_Kurs.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Mysql\DB_Model.cs">
+    <Compile Include="Mysql\DB_Kurs.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB_Model.tt</DependentUpon>
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
     </Compile>
-    <Compile Include="Mysql\DB_Model.Designer.cs">
+    <Compile Include="Mysql\DB_Kurs.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DB_Model.edmx</DependentUpon>
+      <DependentUpon>DB_Kurs.edmx</DependentUpon>
     </Compile>
     <Compile Include="Mysql\nomenclature.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
     </Compile>
     <Compile Include="Mysql\operations.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
     </Compile>
     <Compile Include="Mysql\output_log.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mysql\set_of_components.cs">
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mysql\specification.cs">
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mysql\stock.cs">
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mysql\technolog_map.cs">
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mysql\users.cs">
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mysql\warehouse.cs">
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mysql\working_order.cs">
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Mysql\work_center.cs">
+      <DependentUpon>DB_Kurs.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Mysql\set_of_components.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Mysql\specification.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Mysql\stock.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Mysql\technolog_map.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Mysql\users.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Mysql\warehouse.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Mysql\working_order.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Mysql\work_center.cs">
-      <DependentUpon>DB_Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Взаимодействие\Nomenclature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Взаимодействие\Operations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Взаимодействие\SetOfComponents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Взаимодействие\Specification.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Взаимодействие\Stock.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Взаимодействие\TechnologMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Взаимодействие\Warehouses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Взаимодействие\WorkCenter.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Окна\Login.cs">
@@ -189,12 +204,12 @@
     <EmbeddedResource Include="Окна\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Mysql\DB_Model.edmx">
+    <EntityDeploy Include="Mysql\DB_Kurs.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DB_Model.Designer.cs</LastGenOutput>
+      <LastGenOutput>DB_Kurs.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Mysql\DB_Model.edmx.diagram">
-      <DependentUpon>DB_Model.edmx</DependentUpon>
+    <None Include="Mysql\DB_Kurs.edmx.diagram">
+      <DependentUpon>DB_Kurs.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\DB_Kurs.Mysql.warehouse.datasource" />
@@ -212,21 +227,20 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Mysql\DB_Model.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DB_Model.Context.cs</LastGenOutput>
-      <DependentUpon>DB_Model.edmx</DependentUpon>
-    </Content>
-    <Content Include="Mysql\DB_Model.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB_Model.edmx</DependentUpon>
-      <LastGenOutput>DB_Model.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Mysql\DB_Kurs.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DB_Kurs.edmx</DependentUpon>
+      <LastGenOutput>DB_Kurs.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Mysql\DB_Kurs.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DB_Kurs.edmx</DependentUpon>
+      <LastGenOutput>DB_Kurs.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

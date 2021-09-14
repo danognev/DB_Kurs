@@ -16,7 +16,7 @@ namespace DB_Kurs.Mysql
     {
         public int id { get; set; }
         public string status { get; set; }
-        public int id_initial_operation { get; set; }
+        public Nullable<int> id_initial_operation { get; set; }
         public string description { get; set; }
     
         public virtual operations operations { get; set; }

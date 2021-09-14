@@ -18,7 +18,7 @@ namespace DB_Kurs
       InitializeComponent();
 		}
 
-    private void ButtonClick(object sender, EventArgs e)
+		private void ButtonClick(object sender, EventArgs e)
     {
 			bool login = false;
 			using (ConnectionString db = new ConnectionString())

@@ -48,7 +48,7 @@ namespace DB_Kurs.Формы
       this.groupBox12 = new System.Windows.Forms.GroupBox();
       this.nomenclature_specification_cb = new System.Windows.Forms.ComboBox();
       this.groupBox10 = new System.Windows.Forms.GroupBox();
-      this.nomenclature_waiting_period_tb = new System.Windows.Forms.TextBox();
+      this.nomenclature_waiting_period_dp = new System.Windows.Forms.DateTimePicker();
       this.groupBox9 = new System.Windows.Forms.GroupBox();
       this.nomenclature_ado_value_tb = new System.Windows.Forms.TextBox();
       this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -74,62 +74,84 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox13 = new System.Windows.Forms.GroupBox();
-      this.textBox10 = new System.Windows.Forms.TextBox();
+      this.specification_description_tb = new System.Windows.Forms.TextBox();
       this.groupBox19 = new System.Windows.Forms.GroupBox();
-      this.comboBox8 = new System.Windows.Forms.ComboBox();
-      this.button5 = new System.Windows.Forms.Button();
+      this.specification_sof_components_cb = new System.Windows.Forms.ComboBox();
+      this.specification_delete_btn = new System.Windows.Forms.Button();
       this.groupBox20 = new System.Windows.Forms.GroupBox();
-      this.comboBox7 = new System.Windows.Forms.ComboBox();
+      this.specification_status_cb = new System.Windows.Forms.ComboBox();
       this.groupBox21 = new System.Windows.Forms.GroupBox();
-      this.textBox16 = new System.Windows.Forms.TextBox();
-      this.button6 = new System.Windows.Forms.Button();
-      this.dataGridView2 = new System.Windows.Forms.DataGridView();
+      this.specification_id_tb = new System.Windows.Forms.TextBox();
+      this.specification_add_btn = new System.Windows.Forms.Button();
+      this.specification_save_btn = new System.Windows.Forms.Button();
+      this.specification_datagrid = new System.Windows.Forms.DataGridView();
+      this.specification_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.specification_status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.specification_set_of_components = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.specification_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tabPage3 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox15 = new System.Windows.Forms.GroupBox();
-      this.textBox11 = new System.Windows.Forms.TextBox();
-      this.button7 = new System.Windows.Forms.Button();
+      this.sof_components_value_tb = new System.Windows.Forms.TextBox();
+      this.sof_components_delete_btn = new System.Windows.Forms.Button();
       this.groupBox16 = new System.Windows.Forms.GroupBox();
-      this.comboBox5 = new System.Windows.Forms.ComboBox();
+      this.sof_components_id_nomenclature_cb = new System.Windows.Forms.ComboBox();
       this.groupBox17 = new System.Windows.Forms.GroupBox();
-      this.textBox12 = new System.Windows.Forms.TextBox();
-      this.button8 = new System.Windows.Forms.Button();
-      this.dataGridView3 = new System.Windows.Forms.DataGridView();
+      this.sof_components_id_tb = new System.Windows.Forms.TextBox();
+      this.sof_components_add_btn = new System.Windows.Forms.Button();
+      this.sof_components_save_btn = new System.Windows.Forms.Button();
+      this.sof_components_datagrid = new System.Windows.Forms.DataGridView();
+      this.sof_components_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.sof_components_id_nomenclature = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.sof_components_value = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tabPage4 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel10 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox22 = new System.Windows.Forms.GroupBox();
-      this.comboBox6 = new System.Windows.Forms.ComboBox();
+      this.operations_next_id_cb = new System.Windows.Forms.ComboBox();
       this.groupBox23 = new System.Windows.Forms.GroupBox();
-      this.textBox15 = new System.Windows.Forms.TextBox();
+      this.operations_description_tb = new System.Windows.Forms.TextBox();
       this.groupBox24 = new System.Windows.Forms.GroupBox();
-      this.textBox17 = new System.Windows.Forms.TextBox();
+      this.operations_transit_time_tb = new System.Windows.Forms.TextBox();
       this.groupBox25 = new System.Windows.Forms.GroupBox();
-      this.textBox14 = new System.Windows.Forms.TextBox();
+      this.operations_pg_time_tb = new System.Windows.Forms.TextBox();
       this.groupBox26 = new System.Windows.Forms.GroupBox();
-      this.textBox18 = new System.Windows.Forms.TextBox();
-      this.button9 = new System.Windows.Forms.Button();
+      this.operations_setup_time_tb = new System.Windows.Forms.TextBox();
+      this.operations_delete_btn = new System.Windows.Forms.Button();
       this.groupBox27 = new System.Windows.Forms.GroupBox();
-      this.comboBox4 = new System.Windows.Forms.ComboBox();
+      this.operations_wc_id_cb = new System.Windows.Forms.ComboBox();
       this.groupBox28 = new System.Windows.Forms.GroupBox();
-      this.textBox20 = new System.Windows.Forms.TextBox();
-      this.button10 = new System.Windows.Forms.Button();
-      this.dataGridView4 = new System.Windows.Forms.DataGridView();
+      this.operations_id_tb = new System.Windows.Forms.TextBox();
+      this.operations_add_btn = new System.Windows.Forms.Button();
+      this.operations_save_btn = new System.Windows.Forms.Button();
+      this.operations_datagrid = new System.Windows.Forms.DataGridView();
+      this.operations_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.operations_id_wc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.operations_setup_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.operations_pg_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.operations_transit_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.operations_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.operations_next_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tabPage5 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel11 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox14 = new System.Windows.Forms.GroupBox();
-      this.comboBox10 = new System.Windows.Forms.ComboBox();
-      this.button11 = new System.Windows.Forms.Button();
+      this.outlog_wc_id_cb = new System.Windows.Forms.ComboBox();
+      this.outlog_delete_btn = new System.Windows.Forms.Button();
       this.groupBox18 = new System.Windows.Forms.GroupBox();
-      this.comboBox9 = new System.Windows.Forms.ComboBox();
+      this.outlog_worder_id_cb = new System.Windows.Forms.ComboBox();
       this.groupBox29 = new System.Windows.Forms.GroupBox();
-      this.textBox19 = new System.Windows.Forms.TextBox();
-      this.button12 = new System.Windows.Forms.Button();
+      this.outlog_id_tb = new System.Windows.Forms.TextBox();
+      this.outlog_add_btn = new System.Windows.Forms.Button();
       this.groupBox30 = new System.Windows.Forms.GroupBox();
-      this.textBox13 = new System.Windows.Forms.TextBox();
-      this.dataGridView5 = new System.Windows.Forms.DataGridView();
+      this.outlog_time_tb = new System.Windows.Forms.TextBox();
+      this.outlog_save_btn = new System.Windows.Forms.Button();
+      this.outlog_datagrid = new System.Windows.Forms.DataGridView();
+      this.outlog_id_comp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.outlog_worder_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.outlog_wc_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.outlog_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tabPage6 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel13 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel14 = new System.Windows.Forms.TableLayoutPanel();
@@ -153,16 +175,21 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel15 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel16 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox35 = new System.Windows.Forms.GroupBox();
-      this.textBox23 = new System.Windows.Forms.TextBox();
+      this.tmap_description_tb = new System.Windows.Forms.TextBox();
       this.groupBox36 = new System.Windows.Forms.GroupBox();
-      this.comboBox13 = new System.Windows.Forms.ComboBox();
-      this.button15 = new System.Windows.Forms.Button();
+      this.tmap_id_operation_cb = new System.Windows.Forms.ComboBox();
+      this.tmap_delete_btn = new System.Windows.Forms.Button();
       this.groupBox37 = new System.Windows.Forms.GroupBox();
-      this.comboBox14 = new System.Windows.Forms.ComboBox();
+      this.tmap_status_cb = new System.Windows.Forms.ComboBox();
       this.groupBox38 = new System.Windows.Forms.GroupBox();
-      this.textBox24 = new System.Windows.Forms.TextBox();
-      this.button16 = new System.Windows.Forms.Button();
-      this.dataGridView7 = new System.Windows.Forms.DataGridView();
+      this.tmap_id_tb = new System.Windows.Forms.TextBox();
+      this.tmap_add_btn = new System.Windows.Forms.Button();
+      this.tmap_save_btn = new System.Windows.Forms.Button();
+      this.tmap_datagrid = new System.Windows.Forms.DataGridView();
+      this.tmap_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.tmap_status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.tmap_operation_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.tmap_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tabPage8 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
       this.warehouse_datagrid = new System.Windows.Forms.DataGridView();
@@ -179,37 +206,51 @@ namespace DB_Kurs.Формы
       this.tabPage9 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
-      this.button17 = new System.Windows.Forms.Button();
+      this.wcenter_delete_btn = new System.Windows.Forms.Button();
       this.groupBox39 = new System.Windows.Forms.GroupBox();
-      this.textBox25 = new System.Windows.Forms.TextBox();
+      this.wcenter_description_tb = new System.Windows.Forms.TextBox();
       this.groupBox40 = new System.Windows.Forms.GroupBox();
-      this.textBox26 = new System.Windows.Forms.TextBox();
-      this.button18 = new System.Windows.Forms.Button();
+      this.wcenter_id_tb = new System.Windows.Forms.TextBox();
+      this.wcenter_add_btn = new System.Windows.Forms.Button();
       this.groupBox41 = new System.Windows.Forms.GroupBox();
-      this.textBox27 = new System.Windows.Forms.TextBox();
-      this.dataGridView9 = new System.Windows.Forms.DataGridView();
+      this.wcenter_power_tb = new System.Windows.Forms.TextBox();
+      this.wcenter_save_btn = new System.Windows.Forms.Button();
+      this.wcenter_datagrid = new System.Windows.Forms.DataGridView();
+      this.wcenter_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.wcenter_power = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.wcenter_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.tabPage10 = new System.Windows.Forms.TabPage();
       this.tableLayoutPanel19 = new System.Windows.Forms.TableLayoutPanel();
       this.tableLayoutPanel20 = new System.Windows.Forms.TableLayoutPanel();
       this.groupBox43 = new System.Windows.Forms.GroupBox();
-      this.textBox28 = new System.Windows.Forms.TextBox();
+      this.worder_description_tb = new System.Windows.Forms.TextBox();
       this.groupBox44 = new System.Windows.Forms.GroupBox();
-      this.textBox29 = new System.Windows.Forms.TextBox();
+      this.worder_value_tb = new System.Windows.Forms.TextBox();
       this.groupBox45 = new System.Windows.Forms.GroupBox();
-      this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+      this.worder_end_time_dp = new System.Windows.Forms.DateTimePicker();
       this.groupBox46 = new System.Windows.Forms.GroupBox();
-      this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+      this.worder_start_time_dp = new System.Windows.Forms.DateTimePicker();
       this.groupBox47 = new System.Windows.Forms.GroupBox();
-      this.comboBox16 = new System.Windows.Forms.ComboBox();
+      this.worder_status_cb = new System.Windows.Forms.ComboBox();
       this.groupBox48 = new System.Windows.Forms.GroupBox();
-      this.comboBox19 = new System.Windows.Forms.ComboBox();
-      this.button19 = new System.Windows.Forms.Button();
+      this.worder_user_id_cb = new System.Windows.Forms.ComboBox();
+      this.worder_delete_btn = new System.Windows.Forms.Button();
       this.groupBox49 = new System.Windows.Forms.GroupBox();
-      this.comboBox18 = new System.Windows.Forms.ComboBox();
+      this.worder_id_nomenclature_cb = new System.Windows.Forms.ComboBox();
       this.groupBox50 = new System.Windows.Forms.GroupBox();
-      this.textBox34 = new System.Windows.Forms.TextBox();
-      this.button20 = new System.Windows.Forms.Button();
-      this.dataGridView10 = new System.Windows.Forms.DataGridView();
+      this.worder_id_tb = new System.Windows.Forms.TextBox();
+      this.worder_add_btn = new System.Windows.Forms.Button();
+      this.worder_save_btn = new System.Windows.Forms.Button();
+      this.worder_cancel_btn = new System.Windows.Forms.Button();
+      this.worder_datagrid = new System.Windows.Forms.DataGridView();
+      this.worder_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.worder_id_nomenclature = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.worder_user_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.worder_status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.worder_start_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.worder_end_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.worder_value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+      this.worder_description = new System.Windows.Forms.DataGridViewTextBoxColumn();
       this.main_tab_control.SuspendLayout();
       this.tabPage1.SuspendLayout();
       this.tableLayoutPanel3.SuspendLayout();
@@ -233,14 +274,14 @@ namespace DB_Kurs.Формы
       this.groupBox19.SuspendLayout();
       this.groupBox20.SuspendLayout();
       this.groupBox21.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.specification_datagrid)).BeginInit();
       this.tabPage3.SuspendLayout();
       this.tableLayoutPanel7.SuspendLayout();
       this.tableLayoutPanel8.SuspendLayout();
       this.groupBox15.SuspendLayout();
       this.groupBox16.SuspendLayout();
       this.groupBox17.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.sof_components_datagrid)).BeginInit();
       this.tabPage4.SuspendLayout();
       this.tableLayoutPanel9.SuspendLayout();
       this.tableLayoutPanel10.SuspendLayout();
@@ -251,7 +292,7 @@ namespace DB_Kurs.Формы
       this.groupBox26.SuspendLayout();
       this.groupBox27.SuspendLayout();
       this.groupBox28.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.operations_datagrid)).BeginInit();
       this.tabPage5.SuspendLayout();
       this.tableLayoutPanel11.SuspendLayout();
       this.tableLayoutPanel12.SuspendLayout();
@@ -259,7 +300,7 @@ namespace DB_Kurs.Формы
       this.groupBox18.SuspendLayout();
       this.groupBox29.SuspendLayout();
       this.groupBox30.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.outlog_datagrid)).BeginInit();
       this.tabPage6.SuspendLayout();
       this.tableLayoutPanel13.SuspendLayout();
       this.tableLayoutPanel14.SuspendLayout();
@@ -275,7 +316,7 @@ namespace DB_Kurs.Формы
       this.groupBox36.SuspendLayout();
       this.groupBox37.SuspendLayout();
       this.groupBox38.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.tmap_datagrid)).BeginInit();
       this.tabPage8.SuspendLayout();
       this.tableLayoutPanel2.SuspendLayout();
       ((System.ComponentModel.ISupportInitialize)(this.warehouse_datagrid)).BeginInit();
@@ -288,7 +329,7 @@ namespace DB_Kurs.Формы
       this.groupBox39.SuspendLayout();
       this.groupBox40.SuspendLayout();
       this.groupBox41.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.wcenter_datagrid)).BeginInit();
       this.tabPage10.SuspendLayout();
       this.tableLayoutPanel19.SuspendLayout();
       this.tableLayoutPanel20.SuspendLayout();
@@ -300,7 +341,7 @@ namespace DB_Kurs.Формы
       this.groupBox48.SuspendLayout();
       this.groupBox49.SuspendLayout();
       this.groupBox50.SuspendLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).BeginInit();
+      ((System.ComponentModel.ISupportInitialize)(this.worder_datagrid)).BeginInit();
       this.SuspendLayout();
       // 
       // main_tab_control
@@ -515,11 +556,12 @@ namespace DB_Kurs.Формы
       this.nomenclature_specification_cb.Name = "nomenclature_specification_cb";
       this.nomenclature_specification_cb.Size = new System.Drawing.Size(243, 21);
       this.nomenclature_specification_cb.TabIndex = 1;
+      this.nomenclature_specification_cb.SelectedIndexChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox10
       // 
       this.tableLayoutPanel4.SetColumnSpan(this.groupBox10, 2);
-      this.groupBox10.Controls.Add(this.nomenclature_waiting_period_tb);
+      this.groupBox10.Controls.Add(this.nomenclature_waiting_period_dp);
       this.groupBox10.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox10.Location = new System.Drawing.Point(3, 353);
       this.groupBox10.Name = "groupBox10";
@@ -528,13 +570,16 @@ namespace DB_Kurs.Формы
       this.groupBox10.TabStop = false;
       this.groupBox10.Text = "Период ожидания";
       // 
-      // nomenclature_waiting_period_tb
+      // nomenclature_waiting_period_dp
       // 
-      this.nomenclature_waiting_period_tb.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.nomenclature_waiting_period_tb.Location = new System.Drawing.Point(3, 16);
-      this.nomenclature_waiting_period_tb.Name = "nomenclature_waiting_period_tb";
-      this.nomenclature_waiting_period_tb.Size = new System.Drawing.Size(243, 20);
-      this.nomenclature_waiting_period_tb.TabIndex = 0;
+      this.nomenclature_waiting_period_dp.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.nomenclature_waiting_period_dp.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+      this.nomenclature_waiting_period_dp.Location = new System.Drawing.Point(3, 16);
+      this.nomenclature_waiting_period_dp.Name = "nomenclature_waiting_period_dp";
+      this.nomenclature_waiting_period_dp.ShowUpDown = true;
+      this.nomenclature_waiting_period_dp.Size = new System.Drawing.Size(243, 20);
+      this.nomenclature_waiting_period_dp.TabIndex = 0;
+      this.nomenclature_waiting_period_dp.ValueChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox9
       // 
@@ -555,6 +600,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_ado_value_tb.Name = "nomenclature_ado_value_tb";
       this.nomenclature_ado_value_tb.Size = new System.Drawing.Size(243, 20);
       this.nomenclature_ado_value_tb.TabIndex = 0;
+      this.nomenclature_ado_value_tb.TextChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox8
       // 
@@ -575,6 +621,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_ado_level_tb.Name = "nomenclature_ado_level_tb";
       this.nomenclature_ado_level_tb.Size = new System.Drawing.Size(243, 20);
       this.nomenclature_ado_level_tb.TabIndex = 0;
+      this.nomenclature_ado_level_tb.TextChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox7
       // 
@@ -595,6 +642,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_marriage_rate_tb.Name = "nomenclature_marriage_rate_tb";
       this.nomenclature_marriage_rate_tb.Size = new System.Drawing.Size(243, 20);
       this.nomenclature_marriage_rate_tb.TabIndex = 0;
+      this.nomenclature_marriage_rate_tb.TextChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox6
       // 
@@ -620,6 +668,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_rw_method_cb.Name = "nomenclature_rw_method_cb";
       this.nomenclature_rw_method_cb.Size = new System.Drawing.Size(243, 21);
       this.nomenclature_rw_method_cb.TabIndex = 0;
+      this.nomenclature_rw_method_cb.SelectedIndexChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox5
       // 
@@ -640,6 +689,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_unit_tb.Name = "nomenclature_unit_tb";
       this.nomenclature_unit_tb.Size = new System.Drawing.Size(243, 20);
       this.nomenclature_unit_tb.TabIndex = 0;
+      this.nomenclature_unit_tb.TextChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // nomenclature_delete_btn
       // 
@@ -651,6 +701,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_delete_btn.TabIndex = 3;
       this.nomenclature_delete_btn.Text = "Удалить";
       this.nomenclature_delete_btn.UseVisualStyleBackColor = true;
+      this.nomenclature_delete_btn.Click += new System.EventHandler(this.NomenclatureDeleteClick);
       // 
       // groupBox3
       // 
@@ -672,6 +723,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_name_tb.Name = "nomenclature_name_tb";
       this.nomenclature_name_tb.Size = new System.Drawing.Size(243, 25);
       this.nomenclature_name_tb.TabIndex = 0;
+      this.nomenclature_name_tb.TextChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox4
       // 
@@ -703,6 +755,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_add_btn.TabIndex = 2;
       this.nomenclature_add_btn.Text = "Добавить";
       this.nomenclature_add_btn.UseVisualStyleBackColor = true;
+      this.nomenclature_add_btn.Click += new System.EventHandler(this.NomenclatureAddClick);
       // 
       // groupBox11
       // 
@@ -724,6 +777,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_proute_cb.Name = "nomenclature_proute_cb";
       this.nomenclature_proute_cb.Size = new System.Drawing.Size(243, 21);
       this.nomenclature_proute_cb.TabIndex = 1;
+      this.nomenclature_proute_cb.SelectedIndexChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox42
       // 
@@ -748,6 +802,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_woff_method_cb.Name = "nomenclature_woff_method_cb";
       this.nomenclature_woff_method_cb.Size = new System.Drawing.Size(243, 21);
       this.nomenclature_woff_method_cb.TabIndex = 0;
+      this.nomenclature_woff_method_cb.SelectedIndexChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // nomenclature_save_btn
       // 
@@ -760,6 +815,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_save_btn.TabIndex = 13;
       this.nomenclature_save_btn.Text = "Сохранить изменения";
       this.nomenclature_save_btn.UseVisualStyleBackColor = true;
+      this.nomenclature_save_btn.Click += new System.EventHandler(this.NomenclatureSaveClick);
       // 
       // tabPage2
       // 
@@ -778,7 +834,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
       this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
       this.tableLayoutPanel5.Controls.Add(this.tableLayoutPanel6, 1, 0);
-      this.tableLayoutPanel5.Controls.Add(this.dataGridView2, 0, 0);
+      this.tableLayoutPanel5.Controls.Add(this.specification_datagrid, 0, 0);
       this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel5.Location = new System.Drawing.Point(3, 3);
       this.tableLayoutPanel5.Name = "tableLayoutPanel5";
@@ -795,18 +851,20 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel6.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
       this.tableLayoutPanel6.Controls.Add(this.groupBox13, 0, 3);
       this.tableLayoutPanel6.Controls.Add(this.groupBox19, 0, 2);
-      this.tableLayoutPanel6.Controls.Add(this.button5, 1, 4);
+      this.tableLayoutPanel6.Controls.Add(this.specification_delete_btn, 1, 5);
       this.tableLayoutPanel6.Controls.Add(this.groupBox20, 0, 1);
       this.tableLayoutPanel6.Controls.Add(this.groupBox21, 0, 0);
-      this.tableLayoutPanel6.Controls.Add(this.button6, 0, 4);
+      this.tableLayoutPanel6.Controls.Add(this.specification_add_btn, 0, 5);
+      this.tableLayoutPanel6.Controls.Add(this.specification_save_btn, 0, 4);
       this.tableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel6.Location = new System.Drawing.Point(1046, 3);
       this.tableLayoutPanel6.Name = "tableLayoutPanel6";
-      this.tableLayoutPanel6.RowCount = 5;
+      this.tableLayoutPanel6.RowCount = 6;
       this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+      this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel6.Size = new System.Drawing.Size(255, 608);
       this.tableLayoutPanel6.TabIndex = 6;
@@ -814,28 +872,28 @@ namespace DB_Kurs.Формы
       // groupBox13
       // 
       this.tableLayoutPanel6.SetColumnSpan(this.groupBox13, 2);
-      this.groupBox13.Controls.Add(this.textBox10);
+      this.groupBox13.Controls.Add(this.specification_description_tb);
       this.groupBox13.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox13.Location = new System.Drawing.Point(3, 153);
       this.groupBox13.Name = "groupBox13";
-      this.groupBox13.Size = new System.Drawing.Size(249, 382);
+      this.groupBox13.Size = new System.Drawing.Size(249, 312);
       this.groupBox13.TabIndex = 11;
       this.groupBox13.TabStop = false;
       this.groupBox13.Text = "Описание";
       // 
-      // textBox10
+      // specification_description_tb
       // 
-      this.textBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox10.Location = new System.Drawing.Point(3, 16);
-      this.textBox10.Multiline = true;
-      this.textBox10.Name = "textBox10";
-      this.textBox10.Size = new System.Drawing.Size(243, 363);
-      this.textBox10.TabIndex = 1;
+      this.specification_description_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.specification_description_tb.Location = new System.Drawing.Point(3, 16);
+      this.specification_description_tb.Multiline = true;
+      this.specification_description_tb.Name = "specification_description_tb";
+      this.specification_description_tb.Size = new System.Drawing.Size(243, 293);
+      this.specification_description_tb.TabIndex = 1;
       // 
       // groupBox19
       // 
       this.tableLayoutPanel6.SetColumnSpan(this.groupBox19, 2);
-      this.groupBox19.Controls.Add(this.comboBox8);
+      this.groupBox19.Controls.Add(this.specification_sof_components_cb);
       this.groupBox19.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox19.Location = new System.Drawing.Point(3, 103);
       this.groupBox19.Name = "groupBox19";
@@ -844,29 +902,30 @@ namespace DB_Kurs.Формы
       this.groupBox19.TabStop = false;
       this.groupBox19.Text = "Набор компонентов";
       // 
-      // comboBox8
+      // specification_sof_components_cb
       // 
-      this.comboBox8.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox8.FormattingEnabled = true;
-      this.comboBox8.Location = new System.Drawing.Point(3, 16);
-      this.comboBox8.Name = "comboBox8";
-      this.comboBox8.Size = new System.Drawing.Size(243, 21);
-      this.comboBox8.TabIndex = 1;
+      this.specification_sof_components_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.specification_sof_components_cb.FormattingEnabled = true;
+      this.specification_sof_components_cb.Location = new System.Drawing.Point(3, 16);
+      this.specification_sof_components_cb.Name = "specification_sof_components_cb";
+      this.specification_sof_components_cb.Size = new System.Drawing.Size(243, 21);
+      this.specification_sof_components_cb.TabIndex = 1;
       // 
-      // button5
+      // specification_delete_btn
       // 
-      this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button5.Location = new System.Drawing.Point(130, 541);
-      this.button5.Name = "button5";
-      this.button5.Size = new System.Drawing.Size(122, 64);
-      this.button5.TabIndex = 3;
-      this.button5.Text = "Удалить";
-      this.button5.UseVisualStyleBackColor = true;
+      this.specification_delete_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.specification_delete_btn.Enabled = false;
+      this.specification_delete_btn.Location = new System.Drawing.Point(130, 541);
+      this.specification_delete_btn.Name = "specification_delete_btn";
+      this.specification_delete_btn.Size = new System.Drawing.Size(122, 64);
+      this.specification_delete_btn.TabIndex = 3;
+      this.specification_delete_btn.Text = "Удалить";
+      this.specification_delete_btn.UseVisualStyleBackColor = true;
       // 
       // groupBox20
       // 
       this.tableLayoutPanel6.SetColumnSpan(this.groupBox20, 2);
-      this.groupBox20.Controls.Add(this.comboBox7);
+      this.groupBox20.Controls.Add(this.specification_status_cb);
       this.groupBox20.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox20.Location = new System.Drawing.Point(3, 53);
       this.groupBox20.Name = "groupBox20";
@@ -875,23 +934,23 @@ namespace DB_Kurs.Формы
       this.groupBox20.TabStop = false;
       this.groupBox20.Text = "Состояние";
       // 
-      // comboBox7
+      // specification_status_cb
       // 
-      this.comboBox7.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox7.FormattingEnabled = true;
-      this.comboBox7.Items.AddRange(new object[] {
+      this.specification_status_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.specification_status_cb.FormattingEnabled = true;
+      this.specification_status_cb.Items.AddRange(new object[] {
             "В разработке",
             "Сертифицирована",
             "Закрыта"});
-      this.comboBox7.Location = new System.Drawing.Point(3, 16);
-      this.comboBox7.Name = "comboBox7";
-      this.comboBox7.Size = new System.Drawing.Size(243, 21);
-      this.comboBox7.TabIndex = 1;
+      this.specification_status_cb.Location = new System.Drawing.Point(3, 16);
+      this.specification_status_cb.Name = "specification_status_cb";
+      this.specification_status_cb.Size = new System.Drawing.Size(243, 21);
+      this.specification_status_cb.TabIndex = 1;
       // 
       // groupBox21
       // 
       this.tableLayoutPanel6.SetColumnSpan(this.groupBox21, 2);
-      this.groupBox21.Controls.Add(this.textBox16);
+      this.groupBox21.Controls.Add(this.specification_id_tb);
       this.groupBox21.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox21.Location = new System.Drawing.Point(3, 3);
       this.groupBox21.Name = "groupBox21";
@@ -900,36 +959,85 @@ namespace DB_Kurs.Формы
       this.groupBox21.TabStop = false;
       this.groupBox21.Text = "Код:";
       // 
-      // textBox16
+      // specification_id_tb
       // 
-      this.textBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox16.Location = new System.Drawing.Point(3, 16);
-      this.textBox16.Name = "textBox16";
-      this.textBox16.Size = new System.Drawing.Size(243, 20);
-      this.textBox16.TabIndex = 0;
+      this.specification_id_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.specification_id_tb.Location = new System.Drawing.Point(3, 16);
+      this.specification_id_tb.Name = "specification_id_tb";
+      this.specification_id_tb.ReadOnly = true;
+      this.specification_id_tb.Size = new System.Drawing.Size(243, 20);
+      this.specification_id_tb.TabIndex = 0;
       // 
-      // button6
+      // specification_add_btn
       // 
-      this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button6.Location = new System.Drawing.Point(3, 541);
-      this.button6.Name = "button6";
-      this.button6.Size = new System.Drawing.Size(121, 64);
-      this.button6.TabIndex = 2;
-      this.button6.Text = "Добавить";
-      this.button6.UseVisualStyleBackColor = true;
+      this.specification_add_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.specification_add_btn.Location = new System.Drawing.Point(3, 541);
+      this.specification_add_btn.Name = "specification_add_btn";
+      this.specification_add_btn.Size = new System.Drawing.Size(121, 64);
+      this.specification_add_btn.TabIndex = 2;
+      this.specification_add_btn.Text = "Добавить";
+      this.specification_add_btn.UseVisualStyleBackColor = true;
       // 
-      // dataGridView2
+      // specification_save_btn
       // 
-      this.dataGridView2.AllowUserToAddRows = false;
-      this.dataGridView2.AllowUserToDeleteRows = false;
-      this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView2.Name = "dataGridView2";
-      this.dataGridView2.ReadOnly = true;
-      this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView2.Size = new System.Drawing.Size(1037, 608);
-      this.dataGridView2.TabIndex = 1;
+      this.tableLayoutPanel6.SetColumnSpan(this.specification_save_btn, 2);
+      this.specification_save_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.specification_save_btn.Enabled = false;
+      this.specification_save_btn.Location = new System.Drawing.Point(3, 471);
+      this.specification_save_btn.Name = "specification_save_btn";
+      this.specification_save_btn.Size = new System.Drawing.Size(249, 64);
+      this.specification_save_btn.TabIndex = 12;
+      this.specification_save_btn.Text = "Сохранить изменения";
+      this.specification_save_btn.UseVisualStyleBackColor = true;
+      // 
+      // specification_datagrid
+      // 
+      this.specification_datagrid.AllowUserToAddRows = false;
+      this.specification_datagrid.AllowUserToDeleteRows = false;
+      this.specification_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.specification_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.specification_id,
+            this.specification_status,
+            this.specification_set_of_components,
+            this.specification_description});
+      this.specification_datagrid.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.specification_datagrid.Location = new System.Drawing.Point(3, 3);
+      this.specification_datagrid.MultiSelect = false;
+      this.specification_datagrid.Name = "specification_datagrid";
+      this.specification_datagrid.ReadOnly = true;
+      this.specification_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.specification_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+      this.specification_datagrid.Size = new System.Drawing.Size(1037, 608);
+      this.specification_datagrid.TabIndex = 1;
+      this.specification_datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SpecificationCellClick);
+      // 
+      // specification_id
+      // 
+      this.specification_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.specification_id.HeaderText = "Код";
+      this.specification_id.Name = "specification_id";
+      this.specification_id.ReadOnly = true;
+      // 
+      // specification_status
+      // 
+      this.specification_status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.specification_status.HeaderText = "Состояние";
+      this.specification_status.Name = "specification_status";
+      this.specification_status.ReadOnly = true;
+      // 
+      // specification_set_of_components
+      // 
+      this.specification_set_of_components.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.specification_set_of_components.HeaderText = "Набор компонентов";
+      this.specification_set_of_components.Name = "specification_set_of_components";
+      this.specification_set_of_components.ReadOnly = true;
+      // 
+      // specification_description
+      // 
+      this.specification_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.specification_description.HeaderText = "Описание";
+      this.specification_description.Name = "specification_description";
+      this.specification_description.ReadOnly = true;
       // 
       // tabPage3
       // 
@@ -948,7 +1056,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
       this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
       this.tableLayoutPanel7.Controls.Add(this.tableLayoutPanel8, 1, 0);
-      this.tableLayoutPanel7.Controls.Add(this.dataGridView3, 0, 0);
+      this.tableLayoutPanel7.Controls.Add(this.sof_components_datagrid, 0, 0);
       this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 3);
       this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -964,18 +1072,20 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
       this.tableLayoutPanel8.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
       this.tableLayoutPanel8.Controls.Add(this.groupBox15, 0, 2);
-      this.tableLayoutPanel8.Controls.Add(this.button7, 1, 4);
+      this.tableLayoutPanel8.Controls.Add(this.sof_components_delete_btn, 1, 5);
       this.tableLayoutPanel8.Controls.Add(this.groupBox16, 0, 1);
       this.tableLayoutPanel8.Controls.Add(this.groupBox17, 0, 0);
-      this.tableLayoutPanel8.Controls.Add(this.button8, 0, 4);
+      this.tableLayoutPanel8.Controls.Add(this.sof_components_add_btn, 0, 5);
+      this.tableLayoutPanel8.Controls.Add(this.sof_components_save_btn, 0, 4);
       this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel8.Location = new System.Drawing.Point(1046, 3);
       this.tableLayoutPanel8.Name = "tableLayoutPanel8";
-      this.tableLayoutPanel8.RowCount = 5;
+      this.tableLayoutPanel8.RowCount = 6;
       this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+      this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel8.Size = new System.Drawing.Size(255, 608);
       this.tableLayoutPanel8.TabIndex = 6;
@@ -983,7 +1093,7 @@ namespace DB_Kurs.Формы
       // groupBox15
       // 
       this.tableLayoutPanel8.SetColumnSpan(this.groupBox15, 2);
-      this.groupBox15.Controls.Add(this.textBox11);
+      this.groupBox15.Controls.Add(this.sof_components_value_tb);
       this.groupBox15.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox15.Location = new System.Drawing.Point(3, 103);
       this.groupBox15.Name = "groupBox15";
@@ -992,28 +1102,29 @@ namespace DB_Kurs.Формы
       this.groupBox15.TabStop = false;
       this.groupBox15.Text = "Количество";
       // 
-      // textBox11
+      // sof_components_value_tb
       // 
-      this.textBox11.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox11.Location = new System.Drawing.Point(3, 16);
-      this.textBox11.Name = "textBox11";
-      this.textBox11.Size = new System.Drawing.Size(243, 20);
-      this.textBox11.TabIndex = 1;
+      this.sof_components_value_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.sof_components_value_tb.Location = new System.Drawing.Point(3, 16);
+      this.sof_components_value_tb.Name = "sof_components_value_tb";
+      this.sof_components_value_tb.Size = new System.Drawing.Size(243, 20);
+      this.sof_components_value_tb.TabIndex = 1;
       // 
-      // button7
+      // sof_components_delete_btn
       // 
-      this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button7.Location = new System.Drawing.Point(130, 541);
-      this.button7.Name = "button7";
-      this.button7.Size = new System.Drawing.Size(122, 64);
-      this.button7.TabIndex = 3;
-      this.button7.Text = "Удалить";
-      this.button7.UseVisualStyleBackColor = true;
+      this.sof_components_delete_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.sof_components_delete_btn.Enabled = false;
+      this.sof_components_delete_btn.Location = new System.Drawing.Point(130, 541);
+      this.sof_components_delete_btn.Name = "sof_components_delete_btn";
+      this.sof_components_delete_btn.Size = new System.Drawing.Size(122, 64);
+      this.sof_components_delete_btn.TabIndex = 3;
+      this.sof_components_delete_btn.Text = "Удалить";
+      this.sof_components_delete_btn.UseVisualStyleBackColor = true;
       // 
       // groupBox16
       // 
       this.tableLayoutPanel8.SetColumnSpan(this.groupBox16, 2);
-      this.groupBox16.Controls.Add(this.comboBox5);
+      this.groupBox16.Controls.Add(this.sof_components_id_nomenclature_cb);
       this.groupBox16.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox16.Location = new System.Drawing.Point(3, 53);
       this.groupBox16.Name = "groupBox16";
@@ -1022,19 +1133,19 @@ namespace DB_Kurs.Формы
       this.groupBox16.TabStop = false;
       this.groupBox16.Text = "Код номенклатурной позиции";
       // 
-      // comboBox5
+      // sof_components_id_nomenclature_cb
       // 
-      this.comboBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox5.FormattingEnabled = true;
-      this.comboBox5.Location = new System.Drawing.Point(3, 16);
-      this.comboBox5.Name = "comboBox5";
-      this.comboBox5.Size = new System.Drawing.Size(243, 21);
-      this.comboBox5.TabIndex = 1;
+      this.sof_components_id_nomenclature_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.sof_components_id_nomenclature_cb.FormattingEnabled = true;
+      this.sof_components_id_nomenclature_cb.Location = new System.Drawing.Point(3, 16);
+      this.sof_components_id_nomenclature_cb.Name = "sof_components_id_nomenclature_cb";
+      this.sof_components_id_nomenclature_cb.Size = new System.Drawing.Size(243, 21);
+      this.sof_components_id_nomenclature_cb.TabIndex = 1;
       // 
       // groupBox17
       // 
       this.tableLayoutPanel8.SetColumnSpan(this.groupBox17, 2);
-      this.groupBox17.Controls.Add(this.textBox12);
+      this.groupBox17.Controls.Add(this.sof_components_id_tb);
       this.groupBox17.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox17.Location = new System.Drawing.Point(3, 3);
       this.groupBox17.Name = "groupBox17";
@@ -1043,36 +1154,77 @@ namespace DB_Kurs.Формы
       this.groupBox17.TabStop = false;
       this.groupBox17.Text = "Код компонента:";
       // 
-      // textBox12
+      // sof_components_id_tb
       // 
-      this.textBox12.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox12.Location = new System.Drawing.Point(3, 16);
-      this.textBox12.Name = "textBox12";
-      this.textBox12.Size = new System.Drawing.Size(243, 20);
-      this.textBox12.TabIndex = 0;
+      this.sof_components_id_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.sof_components_id_tb.Location = new System.Drawing.Point(3, 16);
+      this.sof_components_id_tb.Name = "sof_components_id_tb";
+      this.sof_components_id_tb.ReadOnly = true;
+      this.sof_components_id_tb.Size = new System.Drawing.Size(243, 20);
+      this.sof_components_id_tb.TabIndex = 0;
       // 
-      // button8
+      // sof_components_add_btn
       // 
-      this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button8.Location = new System.Drawing.Point(3, 541);
-      this.button8.Name = "button8";
-      this.button8.Size = new System.Drawing.Size(121, 64);
-      this.button8.TabIndex = 2;
-      this.button8.Text = "Добавить";
-      this.button8.UseVisualStyleBackColor = true;
+      this.sof_components_add_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.sof_components_add_btn.Location = new System.Drawing.Point(3, 541);
+      this.sof_components_add_btn.Name = "sof_components_add_btn";
+      this.sof_components_add_btn.Size = new System.Drawing.Size(121, 64);
+      this.sof_components_add_btn.TabIndex = 2;
+      this.sof_components_add_btn.Text = "Добавить";
+      this.sof_components_add_btn.UseVisualStyleBackColor = true;
       // 
-      // dataGridView3
+      // sof_components_save_btn
       // 
-      this.dataGridView3.AllowUserToAddRows = false;
-      this.dataGridView3.AllowUserToDeleteRows = false;
-      this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView3.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView3.Name = "dataGridView3";
-      this.dataGridView3.ReadOnly = true;
-      this.dataGridView3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView3.Size = new System.Drawing.Size(1037, 608);
-      this.dataGridView3.TabIndex = 2;
+      this.tableLayoutPanel8.SetColumnSpan(this.sof_components_save_btn, 2);
+      this.sof_components_save_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.sof_components_save_btn.Enabled = false;
+      this.sof_components_save_btn.Location = new System.Drawing.Point(3, 471);
+      this.sof_components_save_btn.Name = "sof_components_save_btn";
+      this.sof_components_save_btn.Size = new System.Drawing.Size(249, 64);
+      this.sof_components_save_btn.TabIndex = 5;
+      this.sof_components_save_btn.Text = "Сохранить изменения";
+      this.sof_components_save_btn.UseVisualStyleBackColor = true;
+      // 
+      // sof_components_datagrid
+      // 
+      this.sof_components_datagrid.AllowUserToAddRows = false;
+      this.sof_components_datagrid.AllowUserToDeleteRows = false;
+      this.sof_components_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.sof_components_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.sof_components_id,
+            this.sof_components_id_nomenclature,
+            this.sof_components_value});
+      this.sof_components_datagrid.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.sof_components_datagrid.Location = new System.Drawing.Point(3, 3);
+      this.sof_components_datagrid.MultiSelect = false;
+      this.sof_components_datagrid.Name = "sof_components_datagrid";
+      this.sof_components_datagrid.ReadOnly = true;
+      this.sof_components_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.sof_components_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+      this.sof_components_datagrid.Size = new System.Drawing.Size(1037, 608);
+      this.sof_components_datagrid.TabIndex = 2;
+      this.sof_components_datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SetOfComponentsCellClick);
+      // 
+      // sof_components_id
+      // 
+      this.sof_components_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.sof_components_id.HeaderText = "Код компонента";
+      this.sof_components_id.Name = "sof_components_id";
+      this.sof_components_id.ReadOnly = true;
+      // 
+      // sof_components_id_nomenclature
+      // 
+      this.sof_components_id_nomenclature.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.sof_components_id_nomenclature.HeaderText = "Код номенклатурной позиции";
+      this.sof_components_id_nomenclature.Name = "sof_components_id_nomenclature";
+      this.sof_components_id_nomenclature.ReadOnly = true;
+      // 
+      // sof_components_value
+      // 
+      this.sof_components_value.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.sof_components_value.HeaderText = "Количество";
+      this.sof_components_value.Name = "sof_components_value";
+      this.sof_components_value.ReadOnly = true;
       // 
       // tabPage4
       // 
@@ -1091,7 +1243,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
       this.tableLayoutPanel9.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
       this.tableLayoutPanel9.Controls.Add(this.tableLayoutPanel10, 1, 0);
-      this.tableLayoutPanel9.Controls.Add(this.dataGridView4, 0, 0);
+      this.tableLayoutPanel9.Controls.Add(this.operations_datagrid, 0, 0);
       this.tableLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel9.Location = new System.Drawing.Point(3, 3);
       this.tableLayoutPanel9.Name = "tableLayoutPanel9";
@@ -1111,14 +1263,15 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel10.Controls.Add(this.groupBox24, 0, 4);
       this.tableLayoutPanel10.Controls.Add(this.groupBox25, 0, 3);
       this.tableLayoutPanel10.Controls.Add(this.groupBox26, 0, 2);
-      this.tableLayoutPanel10.Controls.Add(this.button9, 1, 7);
+      this.tableLayoutPanel10.Controls.Add(this.operations_delete_btn, 1, 8);
       this.tableLayoutPanel10.Controls.Add(this.groupBox27, 0, 1);
       this.tableLayoutPanel10.Controls.Add(this.groupBox28, 0, 0);
-      this.tableLayoutPanel10.Controls.Add(this.button10, 0, 7);
+      this.tableLayoutPanel10.Controls.Add(this.operations_add_btn, 0, 8);
+      this.tableLayoutPanel10.Controls.Add(this.operations_save_btn, 0, 7);
       this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel10.Location = new System.Drawing.Point(1046, 3);
       this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-      this.tableLayoutPanel10.RowCount = 8;
+      this.tableLayoutPanel10.RowCount = 9;
       this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
@@ -1127,55 +1280,56 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
       this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+      this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel10.Size = new System.Drawing.Size(255, 608);
       this.tableLayoutPanel10.TabIndex = 5;
       // 
       // groupBox22
       // 
       this.tableLayoutPanel10.SetColumnSpan(this.groupBox22, 2);
-      this.groupBox22.Controls.Add(this.comboBox6);
+      this.groupBox22.Controls.Add(this.operations_next_id_cb);
       this.groupBox22.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.groupBox22.Location = new System.Drawing.Point(3, 491);
+      this.groupBox22.Location = new System.Drawing.Point(3, 421);
       this.groupBox22.Name = "groupBox22";
       this.groupBox22.Size = new System.Drawing.Size(249, 44);
       this.groupBox22.TabIndex = 8;
       this.groupBox22.TabStop = false;
       this.groupBox22.Text = "Код следующей операции";
       // 
-      // comboBox6
+      // operations_next_id_cb
       // 
-      this.comboBox6.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox6.FormattingEnabled = true;
-      this.comboBox6.Location = new System.Drawing.Point(3, 16);
-      this.comboBox6.Name = "comboBox6";
-      this.comboBox6.Size = new System.Drawing.Size(243, 21);
-      this.comboBox6.TabIndex = 1;
+      this.operations_next_id_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_next_id_cb.FormattingEnabled = true;
+      this.operations_next_id_cb.Location = new System.Drawing.Point(3, 16);
+      this.operations_next_id_cb.Name = "operations_next_id_cb";
+      this.operations_next_id_cb.Size = new System.Drawing.Size(243, 21);
+      this.operations_next_id_cb.TabIndex = 1;
       // 
       // groupBox23
       // 
       this.tableLayoutPanel10.SetColumnSpan(this.groupBox23, 2);
-      this.groupBox23.Controls.Add(this.textBox15);
+      this.groupBox23.Controls.Add(this.operations_description_tb);
       this.groupBox23.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox23.Location = new System.Drawing.Point(3, 253);
       this.groupBox23.Name = "groupBox23";
-      this.groupBox23.Size = new System.Drawing.Size(249, 232);
+      this.groupBox23.Size = new System.Drawing.Size(249, 162);
       this.groupBox23.TabIndex = 7;
       this.groupBox23.TabStop = false;
       this.groupBox23.Text = "Описание";
       // 
-      // textBox15
+      // operations_description_tb
       // 
-      this.textBox15.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox15.Location = new System.Drawing.Point(3, 16);
-      this.textBox15.Multiline = true;
-      this.textBox15.Name = "textBox15";
-      this.textBox15.Size = new System.Drawing.Size(243, 213);
-      this.textBox15.TabIndex = 0;
+      this.operations_description_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_description_tb.Location = new System.Drawing.Point(3, 16);
+      this.operations_description_tb.Multiline = true;
+      this.operations_description_tb.Name = "operations_description_tb";
+      this.operations_description_tb.Size = new System.Drawing.Size(243, 143);
+      this.operations_description_tb.TabIndex = 0;
       // 
       // groupBox24
       // 
       this.tableLayoutPanel10.SetColumnSpan(this.groupBox24, 2);
-      this.groupBox24.Controls.Add(this.textBox17);
+      this.groupBox24.Controls.Add(this.operations_transit_time_tb);
       this.groupBox24.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox24.Location = new System.Drawing.Point(3, 203);
       this.groupBox24.Name = "groupBox24";
@@ -1184,18 +1338,18 @@ namespace DB_Kurs.Формы
       this.groupBox24.TabStop = false;
       this.groupBox24.Text = "Время перехода(часов)";
       // 
-      // textBox17
+      // operations_transit_time_tb
       // 
-      this.textBox17.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox17.Location = new System.Drawing.Point(3, 16);
-      this.textBox17.Name = "textBox17";
-      this.textBox17.Size = new System.Drawing.Size(243, 20);
-      this.textBox17.TabIndex = 0;
+      this.operations_transit_time_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_transit_time_tb.Location = new System.Drawing.Point(3, 16);
+      this.operations_transit_time_tb.Name = "operations_transit_time_tb";
+      this.operations_transit_time_tb.Size = new System.Drawing.Size(243, 20);
+      this.operations_transit_time_tb.TabIndex = 1;
       // 
       // groupBox25
       // 
       this.tableLayoutPanel10.SetColumnSpan(this.groupBox25, 2);
-      this.groupBox25.Controls.Add(this.textBox14);
+      this.groupBox25.Controls.Add(this.operations_pg_time_tb);
       this.groupBox25.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox25.Location = new System.Drawing.Point(3, 153);
       this.groupBox25.Name = "groupBox25";
@@ -1204,18 +1358,18 @@ namespace DB_Kurs.Формы
       this.groupBox25.TabStop = false;
       this.groupBox25.Text = "Время обработки(часов)";
       // 
-      // textBox14
+      // operations_pg_time_tb
       // 
-      this.textBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox14.Location = new System.Drawing.Point(3, 16);
-      this.textBox14.Name = "textBox14";
-      this.textBox14.Size = new System.Drawing.Size(243, 20);
-      this.textBox14.TabIndex = 1;
+      this.operations_pg_time_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_pg_time_tb.Location = new System.Drawing.Point(3, 16);
+      this.operations_pg_time_tb.Name = "operations_pg_time_tb";
+      this.operations_pg_time_tb.Size = new System.Drawing.Size(243, 20);
+      this.operations_pg_time_tb.TabIndex = 1;
       // 
       // groupBox26
       // 
       this.tableLayoutPanel10.SetColumnSpan(this.groupBox26, 2);
-      this.groupBox26.Controls.Add(this.textBox18);
+      this.groupBox26.Controls.Add(this.operations_setup_time_tb);
       this.groupBox26.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox26.Location = new System.Drawing.Point(3, 103);
       this.groupBox26.Name = "groupBox26";
@@ -1224,28 +1378,29 @@ namespace DB_Kurs.Формы
       this.groupBox26.TabStop = false;
       this.groupBox26.Text = "Время наладки(часов)";
       // 
-      // textBox18
+      // operations_setup_time_tb
       // 
-      this.textBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox18.Location = new System.Drawing.Point(3, 16);
-      this.textBox18.Name = "textBox18";
-      this.textBox18.Size = new System.Drawing.Size(243, 20);
-      this.textBox18.TabIndex = 0;
+      this.operations_setup_time_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_setup_time_tb.Location = new System.Drawing.Point(3, 16);
+      this.operations_setup_time_tb.Name = "operations_setup_time_tb";
+      this.operations_setup_time_tb.Size = new System.Drawing.Size(243, 20);
+      this.operations_setup_time_tb.TabIndex = 0;
       // 
-      // button9
+      // operations_delete_btn
       // 
-      this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button9.Location = new System.Drawing.Point(130, 541);
-      this.button9.Name = "button9";
-      this.button9.Size = new System.Drawing.Size(122, 64);
-      this.button9.TabIndex = 3;
-      this.button9.Text = "Удалить";
-      this.button9.UseVisualStyleBackColor = true;
+      this.operations_delete_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_delete_btn.Enabled = false;
+      this.operations_delete_btn.Location = new System.Drawing.Point(130, 541);
+      this.operations_delete_btn.Name = "operations_delete_btn";
+      this.operations_delete_btn.Size = new System.Drawing.Size(122, 64);
+      this.operations_delete_btn.TabIndex = 3;
+      this.operations_delete_btn.Text = "Удалить";
+      this.operations_delete_btn.UseVisualStyleBackColor = true;
       // 
       // groupBox27
       // 
       this.tableLayoutPanel10.SetColumnSpan(this.groupBox27, 2);
-      this.groupBox27.Controls.Add(this.comboBox4);
+      this.groupBox27.Controls.Add(this.operations_wc_id_cb);
       this.groupBox27.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox27.Location = new System.Drawing.Point(3, 53);
       this.groupBox27.Name = "groupBox27";
@@ -1254,19 +1409,19 @@ namespace DB_Kurs.Формы
       this.groupBox27.TabStop = false;
       this.groupBox27.Text = "Код рабочего центра";
       // 
-      // comboBox4
+      // operations_wc_id_cb
       // 
-      this.comboBox4.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox4.FormattingEnabled = true;
-      this.comboBox4.Location = new System.Drawing.Point(3, 16);
-      this.comboBox4.Name = "comboBox4";
-      this.comboBox4.Size = new System.Drawing.Size(243, 21);
-      this.comboBox4.TabIndex = 0;
+      this.operations_wc_id_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_wc_id_cb.FormattingEnabled = true;
+      this.operations_wc_id_cb.Location = new System.Drawing.Point(3, 16);
+      this.operations_wc_id_cb.Name = "operations_wc_id_cb";
+      this.operations_wc_id_cb.Size = new System.Drawing.Size(243, 21);
+      this.operations_wc_id_cb.TabIndex = 0;
       // 
       // groupBox28
       // 
       this.tableLayoutPanel10.SetColumnSpan(this.groupBox28, 2);
-      this.groupBox28.Controls.Add(this.textBox20);
+      this.groupBox28.Controls.Add(this.operations_id_tb);
       this.groupBox28.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox28.Location = new System.Drawing.Point(3, 3);
       this.groupBox28.Name = "groupBox28";
@@ -1275,36 +1430,110 @@ namespace DB_Kurs.Формы
       this.groupBox28.TabStop = false;
       this.groupBox28.Text = "Код:";
       // 
-      // textBox20
+      // operations_id_tb
       // 
-      this.textBox20.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox20.Location = new System.Drawing.Point(3, 16);
-      this.textBox20.Name = "textBox20";
-      this.textBox20.Size = new System.Drawing.Size(243, 20);
-      this.textBox20.TabIndex = 0;
+      this.operations_id_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_id_tb.Location = new System.Drawing.Point(3, 16);
+      this.operations_id_tb.Name = "operations_id_tb";
+      this.operations_id_tb.ReadOnly = true;
+      this.operations_id_tb.Size = new System.Drawing.Size(243, 20);
+      this.operations_id_tb.TabIndex = 0;
       // 
-      // button10
+      // operations_add_btn
       // 
-      this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button10.Location = new System.Drawing.Point(3, 541);
-      this.button10.Name = "button10";
-      this.button10.Size = new System.Drawing.Size(121, 64);
-      this.button10.TabIndex = 2;
-      this.button10.Text = "Добавить";
-      this.button10.UseVisualStyleBackColor = true;
+      this.operations_add_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_add_btn.Location = new System.Drawing.Point(3, 541);
+      this.operations_add_btn.Name = "operations_add_btn";
+      this.operations_add_btn.Size = new System.Drawing.Size(121, 64);
+      this.operations_add_btn.TabIndex = 2;
+      this.operations_add_btn.Text = "Добавить";
+      this.operations_add_btn.UseVisualStyleBackColor = true;
+      this.operations_add_btn.Click += new System.EventHandler(this.OperationsAddClick);
       // 
-      // dataGridView4
+      // operations_save_btn
       // 
-      this.dataGridView4.AllowUserToAddRows = false;
-      this.dataGridView4.AllowUserToDeleteRows = false;
-      this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView4.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView4.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView4.Name = "dataGridView4";
-      this.dataGridView4.ReadOnly = true;
-      this.dataGridView4.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView4.Size = new System.Drawing.Size(1037, 608);
-      this.dataGridView4.TabIndex = 3;
+      this.tableLayoutPanel10.SetColumnSpan(this.operations_save_btn, 2);
+      this.operations_save_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_save_btn.Enabled = false;
+      this.operations_save_btn.Location = new System.Drawing.Point(3, 471);
+      this.operations_save_btn.Name = "operations_save_btn";
+      this.operations_save_btn.Size = new System.Drawing.Size(249, 64);
+      this.operations_save_btn.TabIndex = 9;
+      this.operations_save_btn.Text = "Сохранить изменения";
+      this.operations_save_btn.UseVisualStyleBackColor = true;
+      // 
+      // operations_datagrid
+      // 
+      this.operations_datagrid.AllowUserToAddRows = false;
+      this.operations_datagrid.AllowUserToDeleteRows = false;
+      this.operations_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.operations_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.operations_id,
+            this.operations_id_wc,
+            this.operations_setup_time,
+            this.operations_pg_time,
+            this.operations_transit_time,
+            this.operations_description,
+            this.operations_next_id});
+      this.operations_datagrid.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.operations_datagrid.Location = new System.Drawing.Point(3, 3);
+      this.operations_datagrid.MultiSelect = false;
+      this.operations_datagrid.Name = "operations_datagrid";
+      this.operations_datagrid.ReadOnly = true;
+      this.operations_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.operations_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+      this.operations_datagrid.Size = new System.Drawing.Size(1037, 608);
+      this.operations_datagrid.TabIndex = 3;
+      this.operations_datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OperationsCellClick);
+      // 
+      // operations_id
+      // 
+      this.operations_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.operations_id.HeaderText = "Код";
+      this.operations_id.Name = "operations_id";
+      this.operations_id.ReadOnly = true;
+      // 
+      // operations_id_wc
+      // 
+      this.operations_id_wc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.operations_id_wc.HeaderText = "Код рабочего центра";
+      this.operations_id_wc.Name = "operations_id_wc";
+      this.operations_id_wc.ReadOnly = true;
+      // 
+      // operations_setup_time
+      // 
+      this.operations_setup_time.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.operations_setup_time.HeaderText = "Время наладки(часов)";
+      this.operations_setup_time.Name = "operations_setup_time";
+      this.operations_setup_time.ReadOnly = true;
+      // 
+      // operations_pg_time
+      // 
+      this.operations_pg_time.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.operations_pg_time.HeaderText = "Время обработки(часов)";
+      this.operations_pg_time.Name = "operations_pg_time";
+      this.operations_pg_time.ReadOnly = true;
+      // 
+      // operations_transit_time
+      // 
+      this.operations_transit_time.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.operations_transit_time.HeaderText = "Время перехода(часов)";
+      this.operations_transit_time.Name = "operations_transit_time";
+      this.operations_transit_time.ReadOnly = true;
+      // 
+      // operations_description
+      // 
+      this.operations_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.operations_description.HeaderText = "Описание";
+      this.operations_description.Name = "operations_description";
+      this.operations_description.ReadOnly = true;
+      // 
+      // operations_next_id
+      // 
+      this.operations_next_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.operations_next_id.HeaderText = "Код следующей операции";
+      this.operations_next_id.Name = "operations_next_id";
+      this.operations_next_id.ReadOnly = true;
       // 
       // tabPage5
       // 
@@ -1323,7 +1552,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
       this.tableLayoutPanel11.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
       this.tableLayoutPanel11.Controls.Add(this.tableLayoutPanel12, 1, 0);
-      this.tableLayoutPanel11.Controls.Add(this.dataGridView5, 0, 0);
+      this.tableLayoutPanel11.Controls.Add(this.outlog_datagrid, 0, 0);
       this.tableLayoutPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel11.Location = new System.Drawing.Point(3, 3);
       this.tableLayoutPanel11.Name = "tableLayoutPanel11";
@@ -1340,20 +1569,22 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
       this.tableLayoutPanel12.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
       this.tableLayoutPanel12.Controls.Add(this.groupBox14, 0, 2);
-      this.tableLayoutPanel12.Controls.Add(this.button11, 1, 5);
+      this.tableLayoutPanel12.Controls.Add(this.outlog_delete_btn, 1, 6);
       this.tableLayoutPanel12.Controls.Add(this.groupBox18, 0, 1);
       this.tableLayoutPanel12.Controls.Add(this.groupBox29, 0, 0);
-      this.tableLayoutPanel12.Controls.Add(this.button12, 0, 5);
+      this.tableLayoutPanel12.Controls.Add(this.outlog_add_btn, 0, 6);
       this.tableLayoutPanel12.Controls.Add(this.groupBox30, 0, 3);
+      this.tableLayoutPanel12.Controls.Add(this.outlog_save_btn, 0, 5);
       this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel12.Location = new System.Drawing.Point(1046, 3);
       this.tableLayoutPanel12.Name = "tableLayoutPanel12";
-      this.tableLayoutPanel12.RowCount = 6;
+      this.tableLayoutPanel12.RowCount = 7;
       this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+      this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel12.Size = new System.Drawing.Size(255, 608);
       this.tableLayoutPanel12.TabIndex = 6;
@@ -1361,7 +1592,7 @@ namespace DB_Kurs.Формы
       // groupBox14
       // 
       this.tableLayoutPanel12.SetColumnSpan(this.groupBox14, 2);
-      this.groupBox14.Controls.Add(this.comboBox10);
+      this.groupBox14.Controls.Add(this.outlog_wc_id_cb);
       this.groupBox14.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox14.Location = new System.Drawing.Point(3, 103);
       this.groupBox14.Name = "groupBox14";
@@ -1370,29 +1601,30 @@ namespace DB_Kurs.Формы
       this.groupBox14.TabStop = false;
       this.groupBox14.Text = "Код рабочего центра";
       // 
-      // comboBox10
+      // outlog_wc_id_cb
       // 
-      this.comboBox10.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox10.FormattingEnabled = true;
-      this.comboBox10.Location = new System.Drawing.Point(3, 16);
-      this.comboBox10.Name = "comboBox10";
-      this.comboBox10.Size = new System.Drawing.Size(243, 21);
-      this.comboBox10.TabIndex = 2;
+      this.outlog_wc_id_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.outlog_wc_id_cb.FormattingEnabled = true;
+      this.outlog_wc_id_cb.Location = new System.Drawing.Point(3, 16);
+      this.outlog_wc_id_cb.Name = "outlog_wc_id_cb";
+      this.outlog_wc_id_cb.Size = new System.Drawing.Size(243, 21);
+      this.outlog_wc_id_cb.TabIndex = 2;
       // 
-      // button11
+      // outlog_delete_btn
       // 
-      this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button11.Location = new System.Drawing.Point(130, 541);
-      this.button11.Name = "button11";
-      this.button11.Size = new System.Drawing.Size(122, 64);
-      this.button11.TabIndex = 3;
-      this.button11.Text = "Удалить";
-      this.button11.UseVisualStyleBackColor = true;
+      this.outlog_delete_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.outlog_delete_btn.Enabled = false;
+      this.outlog_delete_btn.Location = new System.Drawing.Point(130, 541);
+      this.outlog_delete_btn.Name = "outlog_delete_btn";
+      this.outlog_delete_btn.Size = new System.Drawing.Size(122, 64);
+      this.outlog_delete_btn.TabIndex = 3;
+      this.outlog_delete_btn.Text = "Удалить";
+      this.outlog_delete_btn.UseVisualStyleBackColor = true;
       // 
       // groupBox18
       // 
       this.tableLayoutPanel12.SetColumnSpan(this.groupBox18, 2);
-      this.groupBox18.Controls.Add(this.comboBox9);
+      this.groupBox18.Controls.Add(this.outlog_worder_id_cb);
       this.groupBox18.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox18.Location = new System.Drawing.Point(3, 53);
       this.groupBox18.Name = "groupBox18";
@@ -1401,19 +1633,19 @@ namespace DB_Kurs.Формы
       this.groupBox18.TabStop = false;
       this.groupBox18.Text = "Код производственного заказа";
       // 
-      // comboBox9
+      // outlog_worder_id_cb
       // 
-      this.comboBox9.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox9.FormattingEnabled = true;
-      this.comboBox9.Location = new System.Drawing.Point(3, 16);
-      this.comboBox9.Name = "comboBox9";
-      this.comboBox9.Size = new System.Drawing.Size(243, 21);
-      this.comboBox9.TabIndex = 1;
+      this.outlog_worder_id_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.outlog_worder_id_cb.FormattingEnabled = true;
+      this.outlog_worder_id_cb.Location = new System.Drawing.Point(3, 16);
+      this.outlog_worder_id_cb.Name = "outlog_worder_id_cb";
+      this.outlog_worder_id_cb.Size = new System.Drawing.Size(243, 21);
+      this.outlog_worder_id_cb.TabIndex = 1;
       // 
       // groupBox29
       // 
       this.tableLayoutPanel12.SetColumnSpan(this.groupBox29, 2);
-      this.groupBox29.Controls.Add(this.textBox19);
+      this.groupBox29.Controls.Add(this.outlog_id_tb);
       this.groupBox29.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox29.Location = new System.Drawing.Point(3, 3);
       this.groupBox29.Name = "groupBox29";
@@ -1422,28 +1654,29 @@ namespace DB_Kurs.Формы
       this.groupBox29.TabStop = false;
       this.groupBox29.Text = "Код компонента:";
       // 
-      // textBox19
+      // outlog_id_tb
       // 
-      this.textBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox19.Location = new System.Drawing.Point(3, 16);
-      this.textBox19.Name = "textBox19";
-      this.textBox19.Size = new System.Drawing.Size(243, 20);
-      this.textBox19.TabIndex = 0;
+      this.outlog_id_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.outlog_id_tb.Location = new System.Drawing.Point(3, 16);
+      this.outlog_id_tb.Name = "outlog_id_tb";
+      this.outlog_id_tb.ReadOnly = true;
+      this.outlog_id_tb.Size = new System.Drawing.Size(243, 20);
+      this.outlog_id_tb.TabIndex = 0;
       // 
-      // button12
+      // outlog_add_btn
       // 
-      this.button12.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button12.Location = new System.Drawing.Point(3, 541);
-      this.button12.Name = "button12";
-      this.button12.Size = new System.Drawing.Size(121, 64);
-      this.button12.TabIndex = 2;
-      this.button12.Text = "Добавить";
-      this.button12.UseVisualStyleBackColor = true;
+      this.outlog_add_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.outlog_add_btn.Location = new System.Drawing.Point(3, 541);
+      this.outlog_add_btn.Name = "outlog_add_btn";
+      this.outlog_add_btn.Size = new System.Drawing.Size(121, 64);
+      this.outlog_add_btn.TabIndex = 2;
+      this.outlog_add_btn.Text = "Добавить";
+      this.outlog_add_btn.UseVisualStyleBackColor = true;
       // 
       // groupBox30
       // 
       this.tableLayoutPanel12.SetColumnSpan(this.groupBox30, 2);
-      this.groupBox30.Controls.Add(this.textBox13);
+      this.groupBox30.Controls.Add(this.outlog_time_tb);
       this.groupBox30.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox30.Location = new System.Drawing.Point(3, 153);
       this.groupBox30.Name = "groupBox30";
@@ -1452,26 +1685,73 @@ namespace DB_Kurs.Формы
       this.groupBox30.TabStop = false;
       this.groupBox30.Text = "Затраченное время(часов)";
       // 
-      // textBox13
+      // outlog_time_tb
       // 
-      this.textBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox13.Location = new System.Drawing.Point(3, 16);
-      this.textBox13.Name = "textBox13";
-      this.textBox13.Size = new System.Drawing.Size(243, 20);
-      this.textBox13.TabIndex = 1;
+      this.outlog_time_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.outlog_time_tb.Location = new System.Drawing.Point(3, 16);
+      this.outlog_time_tb.Name = "outlog_time_tb";
+      this.outlog_time_tb.Size = new System.Drawing.Size(243, 20);
+      this.outlog_time_tb.TabIndex = 1;
       // 
-      // dataGridView5
+      // outlog_save_btn
       // 
-      this.dataGridView5.AllowUserToAddRows = false;
-      this.dataGridView5.AllowUserToDeleteRows = false;
-      this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView5.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView5.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView5.Name = "dataGridView5";
-      this.dataGridView5.ReadOnly = true;
-      this.dataGridView5.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView5.Size = new System.Drawing.Size(1037, 608);
-      this.dataGridView5.TabIndex = 3;
+      this.tableLayoutPanel12.SetColumnSpan(this.outlog_save_btn, 2);
+      this.outlog_save_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.outlog_save_btn.Enabled = false;
+      this.outlog_save_btn.Location = new System.Drawing.Point(3, 471);
+      this.outlog_save_btn.Name = "outlog_save_btn";
+      this.outlog_save_btn.Size = new System.Drawing.Size(249, 64);
+      this.outlog_save_btn.TabIndex = 6;
+      this.outlog_save_btn.Text = "Сохранить изменения";
+      this.outlog_save_btn.UseVisualStyleBackColor = true;
+      // 
+      // outlog_datagrid
+      // 
+      this.outlog_datagrid.AllowUserToAddRows = false;
+      this.outlog_datagrid.AllowUserToDeleteRows = false;
+      this.outlog_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.outlog_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.outlog_id_comp,
+            this.outlog_worder_id,
+            this.outlog_wc_id,
+            this.outlog_time});
+      this.outlog_datagrid.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.outlog_datagrid.Location = new System.Drawing.Point(3, 3);
+      this.outlog_datagrid.MultiSelect = false;
+      this.outlog_datagrid.Name = "outlog_datagrid";
+      this.outlog_datagrid.ReadOnly = true;
+      this.outlog_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.outlog_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+      this.outlog_datagrid.Size = new System.Drawing.Size(1037, 608);
+      this.outlog_datagrid.TabIndex = 3;
+      // 
+      // outlog_id_comp
+      // 
+      this.outlog_id_comp.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.outlog_id_comp.HeaderText = "Код компонента";
+      this.outlog_id_comp.Name = "outlog_id_comp";
+      this.outlog_id_comp.ReadOnly = true;
+      // 
+      // outlog_worder_id
+      // 
+      this.outlog_worder_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.outlog_worder_id.HeaderText = "Код производственного заказа";
+      this.outlog_worder_id.Name = "outlog_worder_id";
+      this.outlog_worder_id.ReadOnly = true;
+      // 
+      // outlog_wc_id
+      // 
+      this.outlog_wc_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.outlog_wc_id.HeaderText = "Код рабочего центра";
+      this.outlog_wc_id.Name = "outlog_wc_id";
+      this.outlog_wc_id.ReadOnly = true;
+      // 
+      // outlog_time
+      // 
+      this.outlog_time.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.outlog_time.HeaderText = "Затраченное время(часов)";
+      this.outlog_time.Name = "outlog_time";
+      this.outlog_time.ReadOnly = true;
       // 
       // tabPage6
       // 
@@ -1717,7 +1997,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
       this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
       this.tableLayoutPanel15.Controls.Add(this.tableLayoutPanel16, 1, 0);
-      this.tableLayoutPanel15.Controls.Add(this.dataGridView7, 0, 0);
+      this.tableLayoutPanel15.Controls.Add(this.tmap_datagrid, 0, 0);
       this.tableLayoutPanel15.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel15.Location = new System.Drawing.Point(0, 0);
       this.tableLayoutPanel15.Name = "tableLayoutPanel15";
@@ -1734,18 +2014,20 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
       this.tableLayoutPanel16.Controls.Add(this.groupBox35, 0, 3);
       this.tableLayoutPanel16.Controls.Add(this.groupBox36, 0, 2);
-      this.tableLayoutPanel16.Controls.Add(this.button15, 1, 4);
+      this.tableLayoutPanel16.Controls.Add(this.tmap_delete_btn, 1, 5);
       this.tableLayoutPanel16.Controls.Add(this.groupBox37, 0, 1);
       this.tableLayoutPanel16.Controls.Add(this.groupBox38, 0, 0);
-      this.tableLayoutPanel16.Controls.Add(this.button16, 0, 4);
+      this.tableLayoutPanel16.Controls.Add(this.tmap_add_btn, 0, 5);
+      this.tableLayoutPanel16.Controls.Add(this.tmap_save_btn, 0, 4);
       this.tableLayoutPanel16.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel16.Location = new System.Drawing.Point(1051, 3);
       this.tableLayoutPanel16.Name = "tableLayoutPanel16";
-      this.tableLayoutPanel16.RowCount = 5;
+      this.tableLayoutPanel16.RowCount = 6;
       this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+      this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel16.Size = new System.Drawing.Size(256, 614);
       this.tableLayoutPanel16.TabIndex = 6;
@@ -1753,28 +2035,28 @@ namespace DB_Kurs.Формы
       // groupBox35
       // 
       this.tableLayoutPanel16.SetColumnSpan(this.groupBox35, 2);
-      this.groupBox35.Controls.Add(this.textBox23);
+      this.groupBox35.Controls.Add(this.tmap_description_tb);
       this.groupBox35.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox35.Location = new System.Drawing.Point(3, 153);
       this.groupBox35.Name = "groupBox35";
-      this.groupBox35.Size = new System.Drawing.Size(250, 388);
+      this.groupBox35.Size = new System.Drawing.Size(250, 318);
       this.groupBox35.TabIndex = 11;
       this.groupBox35.TabStop = false;
       this.groupBox35.Text = "Описание";
       // 
-      // textBox23
+      // tmap_description_tb
       // 
-      this.textBox23.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox23.Location = new System.Drawing.Point(3, 16);
-      this.textBox23.Multiline = true;
-      this.textBox23.Name = "textBox23";
-      this.textBox23.Size = new System.Drawing.Size(244, 369);
-      this.textBox23.TabIndex = 1;
+      this.tmap_description_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tmap_description_tb.Location = new System.Drawing.Point(3, 16);
+      this.tmap_description_tb.Multiline = true;
+      this.tmap_description_tb.Name = "tmap_description_tb";
+      this.tmap_description_tb.Size = new System.Drawing.Size(244, 299);
+      this.tmap_description_tb.TabIndex = 1;
       // 
       // groupBox36
       // 
       this.tableLayoutPanel16.SetColumnSpan(this.groupBox36, 2);
-      this.groupBox36.Controls.Add(this.comboBox13);
+      this.groupBox36.Controls.Add(this.tmap_id_operation_cb);
       this.groupBox36.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox36.Location = new System.Drawing.Point(3, 103);
       this.groupBox36.Name = "groupBox36";
@@ -1783,29 +2065,31 @@ namespace DB_Kurs.Формы
       this.groupBox36.TabStop = false;
       this.groupBox36.Text = "Код начальной операции";
       // 
-      // comboBox13
+      // tmap_id_operation_cb
       // 
-      this.comboBox13.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox13.FormattingEnabled = true;
-      this.comboBox13.Location = new System.Drawing.Point(3, 16);
-      this.comboBox13.Name = "comboBox13";
-      this.comboBox13.Size = new System.Drawing.Size(244, 21);
-      this.comboBox13.TabIndex = 1;
+      this.tmap_id_operation_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tmap_id_operation_cb.FormattingEnabled = true;
+      this.tmap_id_operation_cb.Location = new System.Drawing.Point(3, 16);
+      this.tmap_id_operation_cb.Name = "tmap_id_operation_cb";
+      this.tmap_id_operation_cb.Size = new System.Drawing.Size(244, 21);
+      this.tmap_id_operation_cb.TabIndex = 1;
       // 
-      // button15
+      // tmap_delete_btn
       // 
-      this.button15.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button15.Location = new System.Drawing.Point(131, 547);
-      this.button15.Name = "button15";
-      this.button15.Size = new System.Drawing.Size(122, 64);
-      this.button15.TabIndex = 3;
-      this.button15.Text = "Удалить";
-      this.button15.UseVisualStyleBackColor = true;
+      this.tmap_delete_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tmap_delete_btn.Enabled = false;
+      this.tmap_delete_btn.Location = new System.Drawing.Point(131, 547);
+      this.tmap_delete_btn.Name = "tmap_delete_btn";
+      this.tmap_delete_btn.Size = new System.Drawing.Size(122, 64);
+      this.tmap_delete_btn.TabIndex = 3;
+      this.tmap_delete_btn.Text = "Удалить";
+      this.tmap_delete_btn.UseVisualStyleBackColor = true;
+      this.tmap_delete_btn.Click += new System.EventHandler(this.TechnologMapDeleteClick);
       // 
       // groupBox37
       // 
       this.tableLayoutPanel16.SetColumnSpan(this.groupBox37, 2);
-      this.groupBox37.Controls.Add(this.comboBox14);
+      this.groupBox37.Controls.Add(this.tmap_status_cb);
       this.groupBox37.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox37.Location = new System.Drawing.Point(3, 53);
       this.groupBox37.Name = "groupBox37";
@@ -1814,23 +2098,23 @@ namespace DB_Kurs.Формы
       this.groupBox37.TabStop = false;
       this.groupBox37.Text = "Состояние";
       // 
-      // comboBox14
+      // tmap_status_cb
       // 
-      this.comboBox14.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox14.FormattingEnabled = true;
-      this.comboBox14.Items.AddRange(new object[] {
+      this.tmap_status_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tmap_status_cb.FormattingEnabled = true;
+      this.tmap_status_cb.Items.AddRange(new object[] {
             "В разработке",
             "Сертифицирована",
             "Закрыта"});
-      this.comboBox14.Location = new System.Drawing.Point(3, 16);
-      this.comboBox14.Name = "comboBox14";
-      this.comboBox14.Size = new System.Drawing.Size(244, 21);
-      this.comboBox14.TabIndex = 1;
+      this.tmap_status_cb.Location = new System.Drawing.Point(3, 16);
+      this.tmap_status_cb.Name = "tmap_status_cb";
+      this.tmap_status_cb.Size = new System.Drawing.Size(244, 21);
+      this.tmap_status_cb.TabIndex = 1;
       // 
       // groupBox38
       // 
       this.tableLayoutPanel16.SetColumnSpan(this.groupBox38, 2);
-      this.groupBox38.Controls.Add(this.textBox24);
+      this.groupBox38.Controls.Add(this.tmap_id_tb);
       this.groupBox38.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox38.Location = new System.Drawing.Point(3, 3);
       this.groupBox38.Name = "groupBox38";
@@ -1839,36 +2123,86 @@ namespace DB_Kurs.Формы
       this.groupBox38.TabStop = false;
       this.groupBox38.Text = "Код:";
       // 
-      // textBox24
+      // tmap_id_tb
       // 
-      this.textBox24.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox24.Location = new System.Drawing.Point(3, 16);
-      this.textBox24.Name = "textBox24";
-      this.textBox24.Size = new System.Drawing.Size(244, 20);
-      this.textBox24.TabIndex = 0;
+      this.tmap_id_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tmap_id_tb.Location = new System.Drawing.Point(3, 16);
+      this.tmap_id_tb.Name = "tmap_id_tb";
+      this.tmap_id_tb.ReadOnly = true;
+      this.tmap_id_tb.Size = new System.Drawing.Size(244, 20);
+      this.tmap_id_tb.TabIndex = 0;
       // 
-      // button16
+      // tmap_add_btn
       // 
-      this.button16.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button16.Location = new System.Drawing.Point(3, 547);
-      this.button16.Name = "button16";
-      this.button16.Size = new System.Drawing.Size(122, 64);
-      this.button16.TabIndex = 2;
-      this.button16.Text = "Добавить";
-      this.button16.UseVisualStyleBackColor = true;
+      this.tmap_add_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tmap_add_btn.Location = new System.Drawing.Point(3, 547);
+      this.tmap_add_btn.Name = "tmap_add_btn";
+      this.tmap_add_btn.Size = new System.Drawing.Size(122, 64);
+      this.tmap_add_btn.TabIndex = 2;
+      this.tmap_add_btn.Text = "Добавить";
+      this.tmap_add_btn.UseVisualStyleBackColor = true;
+      this.tmap_add_btn.Click += new System.EventHandler(this.TechnologMapAddClick);
       // 
-      // dataGridView7
+      // tmap_save_btn
       // 
-      this.dataGridView7.AllowUserToAddRows = false;
-      this.dataGridView7.AllowUserToDeleteRows = false;
-      this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView7.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView7.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView7.Name = "dataGridView7";
-      this.dataGridView7.ReadOnly = true;
-      this.dataGridView7.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView7.Size = new System.Drawing.Size(1042, 614);
-      this.dataGridView7.TabIndex = 3;
+      this.tableLayoutPanel16.SetColumnSpan(this.tmap_save_btn, 2);
+      this.tmap_save_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tmap_save_btn.Enabled = false;
+      this.tmap_save_btn.Location = new System.Drawing.Point(3, 477);
+      this.tmap_save_btn.Name = "tmap_save_btn";
+      this.tmap_save_btn.Size = new System.Drawing.Size(250, 64);
+      this.tmap_save_btn.TabIndex = 12;
+      this.tmap_save_btn.Text = "Сохранить изменения";
+      this.tmap_save_btn.UseVisualStyleBackColor = true;
+      // 
+      // tmap_datagrid
+      // 
+      this.tmap_datagrid.AllowUserToAddRows = false;
+      this.tmap_datagrid.AllowUserToDeleteRows = false;
+      this.tmap_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.tmap_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tmap_id,
+            this.tmap_status,
+            this.tmap_operation_id,
+            this.tmap_description});
+      this.tmap_datagrid.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.tmap_datagrid.Location = new System.Drawing.Point(3, 3);
+      this.tmap_datagrid.MultiSelect = false;
+      this.tmap_datagrid.Name = "tmap_datagrid";
+      this.tmap_datagrid.ReadOnly = true;
+      this.tmap_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.tmap_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+      this.tmap_datagrid.Size = new System.Drawing.Size(1042, 614);
+      this.tmap_datagrid.TabIndex = 3;
+      this.tmap_datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TechnologMapCellClick);
+      // 
+      // tmap_id
+      // 
+      this.tmap_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.tmap_id.HeaderText = "Код";
+      this.tmap_id.Name = "tmap_id";
+      this.tmap_id.ReadOnly = true;
+      // 
+      // tmap_status
+      // 
+      this.tmap_status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.tmap_status.HeaderText = "Состояние";
+      this.tmap_status.Name = "tmap_status";
+      this.tmap_status.ReadOnly = true;
+      // 
+      // tmap_operation_id
+      // 
+      this.tmap_operation_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.tmap_operation_id.HeaderText = "Код начальной операции";
+      this.tmap_operation_id.Name = "tmap_operation_id";
+      this.tmap_operation_id.ReadOnly = true;
+      // 
+      // tmap_description
+      // 
+      this.tmap_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.tmap_description.HeaderText = "Описание";
+      this.tmap_description.Name = "tmap_description";
+      this.tmap_description.ReadOnly = true;
       // 
       // tabPage8
       // 
@@ -2049,7 +2383,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
       this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
       this.tableLayoutPanel17.Controls.Add(this.tableLayoutPanel18, 1, 0);
-      this.tableLayoutPanel17.Controls.Add(this.dataGridView9, 0, 0);
+      this.tableLayoutPanel17.Controls.Add(this.wcenter_datagrid, 0, 0);
       this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel17.Location = new System.Drawing.Point(0, 0);
       this.tableLayoutPanel17.Name = "tableLayoutPanel17";
@@ -2065,57 +2399,61 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel18.ColumnCount = 2;
       this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
       this.tableLayoutPanel18.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-      this.tableLayoutPanel18.Controls.Add(this.button17, 1, 3);
+      this.tableLayoutPanel18.Controls.Add(this.wcenter_delete_btn, 1, 4);
       this.tableLayoutPanel18.Controls.Add(this.groupBox39, 0, 2);
       this.tableLayoutPanel18.Controls.Add(this.groupBox40, 0, 0);
-      this.tableLayoutPanel18.Controls.Add(this.button18, 0, 3);
+      this.tableLayoutPanel18.Controls.Add(this.wcenter_add_btn, 0, 4);
       this.tableLayoutPanel18.Controls.Add(this.groupBox41, 0, 1);
+      this.tableLayoutPanel18.Controls.Add(this.wcenter_save_btn, 0, 3);
       this.tableLayoutPanel18.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel18.Location = new System.Drawing.Point(1051, 3);
       this.tableLayoutPanel18.Name = "tableLayoutPanel18";
-      this.tableLayoutPanel18.RowCount = 4;
+      this.tableLayoutPanel18.RowCount = 5;
       this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
       this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
+      this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel18.Size = new System.Drawing.Size(256, 614);
       this.tableLayoutPanel18.TabIndex = 4;
       // 
-      // button17
+      // wcenter_delete_btn
       // 
-      this.button17.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button17.Location = new System.Drawing.Point(131, 547);
-      this.button17.Name = "button17";
-      this.button17.Size = new System.Drawing.Size(122, 64);
-      this.button17.TabIndex = 3;
-      this.button17.Text = "Удалить";
-      this.button17.UseVisualStyleBackColor = true;
+      this.wcenter_delete_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.wcenter_delete_btn.Enabled = false;
+      this.wcenter_delete_btn.Location = new System.Drawing.Point(131, 547);
+      this.wcenter_delete_btn.Name = "wcenter_delete_btn";
+      this.wcenter_delete_btn.Size = new System.Drawing.Size(122, 64);
+      this.wcenter_delete_btn.TabIndex = 3;
+      this.wcenter_delete_btn.Text = "Удалить";
+      this.wcenter_delete_btn.UseVisualStyleBackColor = true;
+      this.wcenter_delete_btn.Click += new System.EventHandler(this.WorkCenterDeleteClick);
       // 
       // groupBox39
       // 
       this.tableLayoutPanel18.SetColumnSpan(this.groupBox39, 2);
-      this.groupBox39.Controls.Add(this.textBox25);
+      this.groupBox39.Controls.Add(this.wcenter_description_tb);
       this.groupBox39.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox39.Location = new System.Drawing.Point(3, 103);
       this.groupBox39.Name = "groupBox39";
-      this.groupBox39.Size = new System.Drawing.Size(250, 438);
+      this.groupBox39.Size = new System.Drawing.Size(250, 368);
       this.groupBox39.TabIndex = 1;
       this.groupBox39.TabStop = false;
       this.groupBox39.Text = "Описание:";
       // 
-      // textBox25
+      // wcenter_description_tb
       // 
-      this.textBox25.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox25.Location = new System.Drawing.Point(3, 16);
-      this.textBox25.Multiline = true;
-      this.textBox25.Name = "textBox25";
-      this.textBox25.Size = new System.Drawing.Size(244, 419);
-      this.textBox25.TabIndex = 0;
+      this.wcenter_description_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.wcenter_description_tb.Location = new System.Drawing.Point(3, 16);
+      this.wcenter_description_tb.Multiline = true;
+      this.wcenter_description_tb.Name = "wcenter_description_tb";
+      this.wcenter_description_tb.Size = new System.Drawing.Size(244, 349);
+      this.wcenter_description_tb.TabIndex = 0;
       // 
       // groupBox40
       // 
       this.tableLayoutPanel18.SetColumnSpan(this.groupBox40, 2);
-      this.groupBox40.Controls.Add(this.textBox26);
+      this.groupBox40.Controls.Add(this.wcenter_id_tb);
       this.groupBox40.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox40.Location = new System.Drawing.Point(3, 3);
       this.groupBox40.Name = "groupBox40";
@@ -2124,28 +2462,30 @@ namespace DB_Kurs.Формы
       this.groupBox40.TabStop = false;
       this.groupBox40.Text = "Код";
       // 
-      // textBox26
+      // wcenter_id_tb
       // 
-      this.textBox26.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox26.Location = new System.Drawing.Point(3, 16);
-      this.textBox26.Name = "textBox26";
-      this.textBox26.Size = new System.Drawing.Size(244, 20);
-      this.textBox26.TabIndex = 0;
+      this.wcenter_id_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.wcenter_id_tb.Location = new System.Drawing.Point(3, 16);
+      this.wcenter_id_tb.Name = "wcenter_id_tb";
+      this.wcenter_id_tb.ReadOnly = true;
+      this.wcenter_id_tb.Size = new System.Drawing.Size(244, 20);
+      this.wcenter_id_tb.TabIndex = 0;
       // 
-      // button18
+      // wcenter_add_btn
       // 
-      this.button18.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button18.Location = new System.Drawing.Point(3, 547);
-      this.button18.Name = "button18";
-      this.button18.Size = new System.Drawing.Size(122, 64);
-      this.button18.TabIndex = 2;
-      this.button18.Text = "Добавить";
-      this.button18.UseVisualStyleBackColor = true;
+      this.wcenter_add_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.wcenter_add_btn.Location = new System.Drawing.Point(3, 547);
+      this.wcenter_add_btn.Name = "wcenter_add_btn";
+      this.wcenter_add_btn.Size = new System.Drawing.Size(122, 64);
+      this.wcenter_add_btn.TabIndex = 2;
+      this.wcenter_add_btn.Text = "Добавить";
+      this.wcenter_add_btn.UseVisualStyleBackColor = true;
+      this.wcenter_add_btn.Click += new System.EventHandler(this.WorkCenterAddClick);
       // 
       // groupBox41
       // 
       this.tableLayoutPanel18.SetColumnSpan(this.groupBox41, 2);
-      this.groupBox41.Controls.Add(this.textBox27);
+      this.groupBox41.Controls.Add(this.wcenter_power_tb);
       this.groupBox41.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox41.Location = new System.Drawing.Point(3, 53);
       this.groupBox41.Name = "groupBox41";
@@ -2154,26 +2494,67 @@ namespace DB_Kurs.Формы
       this.groupBox41.TabStop = false;
       this.groupBox41.Text = "Мощность";
       // 
-      // textBox27
+      // wcenter_power_tb
       // 
-      this.textBox27.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox27.Location = new System.Drawing.Point(3, 16);
-      this.textBox27.Name = "textBox27";
-      this.textBox27.Size = new System.Drawing.Size(244, 20);
-      this.textBox27.TabIndex = 1;
+      this.wcenter_power_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.wcenter_power_tb.Location = new System.Drawing.Point(3, 16);
+      this.wcenter_power_tb.Name = "wcenter_power_tb";
+      this.wcenter_power_tb.Size = new System.Drawing.Size(244, 20);
+      this.wcenter_power_tb.TabIndex = 1;
       // 
-      // dataGridView9
+      // wcenter_save_btn
       // 
-      this.dataGridView9.AllowUserToAddRows = false;
-      this.dataGridView9.AllowUserToDeleteRows = false;
-      this.dataGridView9.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView9.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView9.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView9.Name = "dataGridView9";
-      this.dataGridView9.ReadOnly = true;
-      this.dataGridView9.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView9.Size = new System.Drawing.Size(1042, 614);
-      this.dataGridView9.TabIndex = 3;
+      this.tableLayoutPanel18.SetColumnSpan(this.wcenter_save_btn, 2);
+      this.wcenter_save_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.wcenter_save_btn.Enabled = false;
+      this.wcenter_save_btn.Location = new System.Drawing.Point(3, 477);
+      this.wcenter_save_btn.Name = "wcenter_save_btn";
+      this.wcenter_save_btn.Size = new System.Drawing.Size(250, 64);
+      this.wcenter_save_btn.TabIndex = 5;
+      this.wcenter_save_btn.Text = "Сохранить изменения";
+      this.wcenter_save_btn.UseVisualStyleBackColor = true;
+      this.wcenter_save_btn.Click += new System.EventHandler(this.WorkCenterSaveClick);
+      // 
+      // wcenter_datagrid
+      // 
+      this.wcenter_datagrid.AllowUserToAddRows = false;
+      this.wcenter_datagrid.AllowUserToDeleteRows = false;
+      this.wcenter_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.wcenter_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.wcenter_id,
+            this.wcenter_power,
+            this.wcenter_description});
+      this.wcenter_datagrid.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.wcenter_datagrid.Location = new System.Drawing.Point(3, 3);
+      this.wcenter_datagrid.MultiSelect = false;
+      this.wcenter_datagrid.Name = "wcenter_datagrid";
+      this.wcenter_datagrid.ReadOnly = true;
+      this.wcenter_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.wcenter_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+      this.wcenter_datagrid.Size = new System.Drawing.Size(1042, 614);
+      this.wcenter_datagrid.TabIndex = 3;
+      this.wcenter_datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.WorkCenterCellClick);
+      // 
+      // wcenter_id
+      // 
+      this.wcenter_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.wcenter_id.HeaderText = "Код";
+      this.wcenter_id.Name = "wcenter_id";
+      this.wcenter_id.ReadOnly = true;
+      // 
+      // wcenter_power
+      // 
+      this.wcenter_power.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.wcenter_power.HeaderText = "Мощность";
+      this.wcenter_power.Name = "wcenter_power";
+      this.wcenter_power.ReadOnly = true;
+      // 
+      // wcenter_description
+      // 
+      this.wcenter_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.wcenter_description.HeaderText = "Описание";
+      this.wcenter_description.Name = "wcenter_description";
+      this.wcenter_description.ReadOnly = true;
       // 
       // tabPage10
       // 
@@ -2191,7 +2572,7 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 80F));
       this.tableLayoutPanel19.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
       this.tableLayoutPanel19.Controls.Add(this.tableLayoutPanel20, 1, 0);
-      this.tableLayoutPanel19.Controls.Add(this.dataGridView10, 0, 0);
+      this.tableLayoutPanel19.Controls.Add(this.worder_datagrid, 0, 0);
       this.tableLayoutPanel19.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel19.Location = new System.Drawing.Point(0, 0);
       this.tableLayoutPanel19.Name = "tableLayoutPanel19";
@@ -2212,14 +2593,16 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel20.Controls.Add(this.groupBox46, 0, 4);
       this.tableLayoutPanel20.Controls.Add(this.groupBox47, 0, 3);
       this.tableLayoutPanel20.Controls.Add(this.groupBox48, 0, 2);
-      this.tableLayoutPanel20.Controls.Add(this.button19, 1, 8);
+      this.tableLayoutPanel20.Controls.Add(this.worder_delete_btn, 1, 9);
       this.tableLayoutPanel20.Controls.Add(this.groupBox49, 0, 1);
       this.tableLayoutPanel20.Controls.Add(this.groupBox50, 0, 0);
-      this.tableLayoutPanel20.Controls.Add(this.button20, 0, 8);
+      this.tableLayoutPanel20.Controls.Add(this.worder_add_btn, 0, 9);
+      this.tableLayoutPanel20.Controls.Add(this.worder_save_btn, 0, 8);
+      this.tableLayoutPanel20.Controls.Add(this.worder_cancel_btn, 1, 8);
       this.tableLayoutPanel20.Dock = System.Windows.Forms.DockStyle.Fill;
       this.tableLayoutPanel20.Location = new System.Drawing.Point(1051, 3);
       this.tableLayoutPanel20.Name = "tableLayoutPanel20";
-      this.tableLayoutPanel20.RowCount = 9;
+      this.tableLayoutPanel20.RowCount = 10;
       this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
@@ -2229,36 +2612,35 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
       this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
       this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
-      this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-      this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+      this.tableLayoutPanel20.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 70F));
       this.tableLayoutPanel20.Size = new System.Drawing.Size(256, 614);
       this.tableLayoutPanel20.TabIndex = 5;
       // 
       // groupBox43
       // 
       this.tableLayoutPanel20.SetColumnSpan(this.groupBox43, 2);
-      this.groupBox43.Controls.Add(this.textBox28);
+      this.groupBox43.Controls.Add(this.worder_description_tb);
       this.groupBox43.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox43.Location = new System.Drawing.Point(3, 353);
       this.groupBox43.Name = "groupBox43";
-      this.groupBox43.Size = new System.Drawing.Size(250, 188);
+      this.groupBox43.Size = new System.Drawing.Size(250, 118);
       this.groupBox43.TabIndex = 9;
       this.groupBox43.TabStop = false;
       this.groupBox43.Text = "Описание";
       // 
-      // textBox28
+      // worder_description_tb
       // 
-      this.textBox28.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox28.Location = new System.Drawing.Point(3, 16);
-      this.textBox28.Multiline = true;
-      this.textBox28.Name = "textBox28";
-      this.textBox28.Size = new System.Drawing.Size(244, 169);
-      this.textBox28.TabIndex = 0;
+      this.worder_description_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_description_tb.Location = new System.Drawing.Point(3, 16);
+      this.worder_description_tb.Multiline = true;
+      this.worder_description_tb.Name = "worder_description_tb";
+      this.worder_description_tb.Size = new System.Drawing.Size(244, 99);
+      this.worder_description_tb.TabIndex = 0;
       // 
       // groupBox44
       // 
       this.tableLayoutPanel20.SetColumnSpan(this.groupBox44, 2);
-      this.groupBox44.Controls.Add(this.textBox29);
+      this.groupBox44.Controls.Add(this.worder_value_tb);
       this.groupBox44.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox44.Location = new System.Drawing.Point(3, 303);
       this.groupBox44.Name = "groupBox44";
@@ -2267,58 +2649,63 @@ namespace DB_Kurs.Формы
       this.groupBox44.TabStop = false;
       this.groupBox44.Text = "Количество";
       // 
-      // textBox29
+      // worder_value_tb
       // 
-      this.textBox29.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox29.Location = new System.Drawing.Point(3, 16);
-      this.textBox29.Name = "textBox29";
-      this.textBox29.Size = new System.Drawing.Size(244, 20);
-      this.textBox29.TabIndex = 0;
+      this.worder_value_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_value_tb.Location = new System.Drawing.Point(3, 16);
+      this.worder_value_tb.Name = "worder_value_tb";
+      this.worder_value_tb.Size = new System.Drawing.Size(244, 20);
+      this.worder_value_tb.TabIndex = 0;
       // 
       // groupBox45
       // 
       this.tableLayoutPanel20.SetColumnSpan(this.groupBox45, 2);
-      this.groupBox45.Controls.Add(this.dateTimePicker2);
+      this.groupBox45.Controls.Add(this.worder_end_time_dp);
       this.groupBox45.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox45.Location = new System.Drawing.Point(3, 253);
       this.groupBox45.Name = "groupBox45";
       this.groupBox45.Size = new System.Drawing.Size(250, 44);
       this.groupBox45.TabIndex = 7;
       this.groupBox45.TabStop = false;
-      this.groupBox45.Text = "Дата окончания";
+      this.groupBox45.Text = "Время окончания";
       // 
-      // dateTimePicker2
+      // worder_end_time_dp
       // 
-      this.dateTimePicker2.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dateTimePicker2.Location = new System.Drawing.Point(3, 16);
-      this.dateTimePicker2.Name = "dateTimePicker2";
-      this.dateTimePicker2.Size = new System.Drawing.Size(244, 20);
-      this.dateTimePicker2.TabIndex = 1;
+      this.worder_end_time_dp.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_end_time_dp.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+      this.worder_end_time_dp.Location = new System.Drawing.Point(3, 16);
+      this.worder_end_time_dp.Name = "worder_end_time_dp";
+      this.worder_end_time_dp.ShowUpDown = true;
+      this.worder_end_time_dp.Size = new System.Drawing.Size(244, 20);
+      this.worder_end_time_dp.TabIndex = 1;
       // 
       // groupBox46
       // 
       this.tableLayoutPanel20.SetColumnSpan(this.groupBox46, 2);
-      this.groupBox46.Controls.Add(this.dateTimePicker1);
+      this.groupBox46.Controls.Add(this.worder_start_time_dp);
       this.groupBox46.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox46.Location = new System.Drawing.Point(3, 203);
       this.groupBox46.Name = "groupBox46";
       this.groupBox46.Size = new System.Drawing.Size(250, 44);
       this.groupBox46.TabIndex = 6;
       this.groupBox46.TabStop = false;
-      this.groupBox46.Text = "Дата начала";
+      this.groupBox46.Text = "Время начала";
       // 
-      // dateTimePicker1
+      // worder_start_time_dp
       // 
-      this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dateTimePicker1.Location = new System.Drawing.Point(3, 16);
-      this.dateTimePicker1.Name = "dateTimePicker1";
-      this.dateTimePicker1.Size = new System.Drawing.Size(244, 20);
-      this.dateTimePicker1.TabIndex = 0;
+      this.worder_start_time_dp.CustomFormat = "";
+      this.worder_start_time_dp.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_start_time_dp.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+      this.worder_start_time_dp.Location = new System.Drawing.Point(3, 16);
+      this.worder_start_time_dp.Name = "worder_start_time_dp";
+      this.worder_start_time_dp.ShowUpDown = true;
+      this.worder_start_time_dp.Size = new System.Drawing.Size(244, 20);
+      this.worder_start_time_dp.TabIndex = 0;
       // 
       // groupBox47
       // 
       this.tableLayoutPanel20.SetColumnSpan(this.groupBox47, 2);
-      this.groupBox47.Controls.Add(this.comboBox16);
+      this.groupBox47.Controls.Add(this.worder_status_cb);
       this.groupBox47.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox47.Location = new System.Drawing.Point(3, 153);
       this.groupBox47.Name = "groupBox47";
@@ -2327,24 +2714,24 @@ namespace DB_Kurs.Формы
       this.groupBox47.TabStop = false;
       this.groupBox47.Text = "Состояние";
       // 
-      // comboBox16
+      // worder_status_cb
       // 
-      this.comboBox16.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox16.FormattingEnabled = true;
-      this.comboBox16.Items.AddRange(new object[] {
+      this.worder_status_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_status_cb.FormattingEnabled = true;
+      this.worder_status_cb.Items.AddRange(new object[] {
             "Плановый",
             "Утвержденный ",
             "Запущенный ",
             "Завершенный"});
-      this.comboBox16.Location = new System.Drawing.Point(3, 16);
-      this.comboBox16.Name = "comboBox16";
-      this.comboBox16.Size = new System.Drawing.Size(244, 21);
-      this.comboBox16.TabIndex = 0;
+      this.worder_status_cb.Location = new System.Drawing.Point(3, 16);
+      this.worder_status_cb.Name = "worder_status_cb";
+      this.worder_status_cb.Size = new System.Drawing.Size(244, 21);
+      this.worder_status_cb.TabIndex = 0;
       // 
       // groupBox48
       // 
       this.tableLayoutPanel20.SetColumnSpan(this.groupBox48, 2);
-      this.groupBox48.Controls.Add(this.comboBox19);
+      this.groupBox48.Controls.Add(this.worder_user_id_cb);
       this.groupBox48.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox48.Location = new System.Drawing.Point(3, 103);
       this.groupBox48.Name = "groupBox48";
@@ -2353,29 +2740,30 @@ namespace DB_Kurs.Формы
       this.groupBox48.TabStop = false;
       this.groupBox48.Text = "Код сотрудника";
       // 
-      // comboBox19
+      // worder_user_id_cb
       // 
-      this.comboBox19.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox19.FormattingEnabled = true;
-      this.comboBox19.Location = new System.Drawing.Point(3, 16);
-      this.comboBox19.Name = "comboBox19";
-      this.comboBox19.Size = new System.Drawing.Size(244, 21);
-      this.comboBox19.TabIndex = 2;
+      this.worder_user_id_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_user_id_cb.FormattingEnabled = true;
+      this.worder_user_id_cb.Location = new System.Drawing.Point(3, 16);
+      this.worder_user_id_cb.Name = "worder_user_id_cb";
+      this.worder_user_id_cb.Size = new System.Drawing.Size(244, 21);
+      this.worder_user_id_cb.TabIndex = 2;
       // 
-      // button19
+      // worder_delete_btn
       // 
-      this.button19.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button19.Location = new System.Drawing.Point(131, 547);
-      this.button19.Name = "button19";
-      this.button19.Size = new System.Drawing.Size(122, 64);
-      this.button19.TabIndex = 3;
-      this.button19.Text = "Удалить";
-      this.button19.UseVisualStyleBackColor = true;
+      this.worder_delete_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_delete_btn.Enabled = false;
+      this.worder_delete_btn.Location = new System.Drawing.Point(131, 547);
+      this.worder_delete_btn.Name = "worder_delete_btn";
+      this.worder_delete_btn.Size = new System.Drawing.Size(122, 64);
+      this.worder_delete_btn.TabIndex = 3;
+      this.worder_delete_btn.Text = "Удалить";
+      this.worder_delete_btn.UseVisualStyleBackColor = true;
       // 
       // groupBox49
       // 
       this.tableLayoutPanel20.SetColumnSpan(this.groupBox49, 2);
-      this.groupBox49.Controls.Add(this.comboBox18);
+      this.groupBox49.Controls.Add(this.worder_id_nomenclature_cb);
       this.groupBox49.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox49.Location = new System.Drawing.Point(3, 53);
       this.groupBox49.Name = "groupBox49";
@@ -2384,19 +2772,19 @@ namespace DB_Kurs.Формы
       this.groupBox49.TabStop = false;
       this.groupBox49.Text = "Номенклатурная позиция";
       // 
-      // comboBox18
+      // worder_id_nomenclature_cb
       // 
-      this.comboBox18.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.comboBox18.FormattingEnabled = true;
-      this.comboBox18.Location = new System.Drawing.Point(3, 16);
-      this.comboBox18.Name = "comboBox18";
-      this.comboBox18.Size = new System.Drawing.Size(244, 21);
-      this.comboBox18.TabIndex = 2;
+      this.worder_id_nomenclature_cb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_id_nomenclature_cb.FormattingEnabled = true;
+      this.worder_id_nomenclature_cb.Location = new System.Drawing.Point(3, 16);
+      this.worder_id_nomenclature_cb.Name = "worder_id_nomenclature_cb";
+      this.worder_id_nomenclature_cb.Size = new System.Drawing.Size(244, 21);
+      this.worder_id_nomenclature_cb.TabIndex = 2;
       // 
       // groupBox50
       // 
       this.tableLayoutPanel20.SetColumnSpan(this.groupBox50, 2);
-      this.groupBox50.Controls.Add(this.textBox34);
+      this.groupBox50.Controls.Add(this.worder_id_tb);
       this.groupBox50.Dock = System.Windows.Forms.DockStyle.Fill;
       this.groupBox50.Location = new System.Drawing.Point(3, 3);
       this.groupBox50.Name = "groupBox50";
@@ -2405,36 +2793,126 @@ namespace DB_Kurs.Формы
       this.groupBox50.TabStop = false;
       this.groupBox50.Text = "Код:";
       // 
-      // textBox34
+      // worder_id_tb
       // 
-      this.textBox34.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.textBox34.Location = new System.Drawing.Point(3, 16);
-      this.textBox34.Name = "textBox34";
-      this.textBox34.Size = new System.Drawing.Size(244, 20);
-      this.textBox34.TabIndex = 0;
+      this.worder_id_tb.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_id_tb.Location = new System.Drawing.Point(3, 16);
+      this.worder_id_tb.Name = "worder_id_tb";
+      this.worder_id_tb.ReadOnly = true;
+      this.worder_id_tb.Size = new System.Drawing.Size(244, 20);
+      this.worder_id_tb.TabIndex = 0;
       // 
-      // button20
+      // worder_add_btn
       // 
-      this.button20.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.button20.Location = new System.Drawing.Point(3, 547);
-      this.button20.Name = "button20";
-      this.button20.Size = new System.Drawing.Size(122, 64);
-      this.button20.TabIndex = 2;
-      this.button20.Text = "Добавить";
-      this.button20.UseVisualStyleBackColor = true;
+      this.worder_add_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_add_btn.Location = new System.Drawing.Point(3, 547);
+      this.worder_add_btn.Name = "worder_add_btn";
+      this.worder_add_btn.Size = new System.Drawing.Size(122, 64);
+      this.worder_add_btn.TabIndex = 2;
+      this.worder_add_btn.Text = "Добавить";
+      this.worder_add_btn.UseVisualStyleBackColor = true;
       // 
-      // dataGridView10
+      // worder_save_btn
       // 
-      this.dataGridView10.AllowUserToAddRows = false;
-      this.dataGridView10.AllowUserToDeleteRows = false;
-      this.dataGridView10.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-      this.dataGridView10.Dock = System.Windows.Forms.DockStyle.Fill;
-      this.dataGridView10.Location = new System.Drawing.Point(3, 3);
-      this.dataGridView10.Name = "dataGridView10";
-      this.dataGridView10.ReadOnly = true;
-      this.dataGridView10.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-      this.dataGridView10.Size = new System.Drawing.Size(1042, 614);
-      this.dataGridView10.TabIndex = 3;
+      this.worder_save_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_save_btn.Enabled = false;
+      this.worder_save_btn.Location = new System.Drawing.Point(3, 477);
+      this.worder_save_btn.Name = "worder_save_btn";
+      this.worder_save_btn.Size = new System.Drawing.Size(122, 64);
+      this.worder_save_btn.TabIndex = 10;
+      this.worder_save_btn.Text = "Сохранить изменения";
+      this.worder_save_btn.UseVisualStyleBackColor = true;
+      // 
+      // worder_cancel_btn
+      // 
+      this.worder_cancel_btn.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_cancel_btn.Enabled = false;
+      this.worder_cancel_btn.Location = new System.Drawing.Point(131, 477);
+      this.worder_cancel_btn.Name = "worder_cancel_btn";
+      this.worder_cancel_btn.Size = new System.Drawing.Size(122, 64);
+      this.worder_cancel_btn.TabIndex = 11;
+      this.worder_cancel_btn.Text = "Откатить";
+      this.worder_cancel_btn.UseVisualStyleBackColor = true;
+      // 
+      // worder_datagrid
+      // 
+      this.worder_datagrid.AllowUserToAddRows = false;
+      this.worder_datagrid.AllowUserToDeleteRows = false;
+      this.worder_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+      this.worder_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.worder_id,
+            this.worder_id_nomenclature,
+            this.worder_user_id,
+            this.worder_status,
+            this.worder_start_time,
+            this.worder_end_time,
+            this.worder_value,
+            this.worder_description});
+      this.worder_datagrid.Dock = System.Windows.Forms.DockStyle.Fill;
+      this.worder_datagrid.Location = new System.Drawing.Point(3, 3);
+      this.worder_datagrid.MultiSelect = false;
+      this.worder_datagrid.Name = "worder_datagrid";
+      this.worder_datagrid.ReadOnly = true;
+      this.worder_datagrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+      this.worder_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+      this.worder_datagrid.Size = new System.Drawing.Size(1042, 614);
+      this.worder_datagrid.TabIndex = 3;
+      // 
+      // worder_id
+      // 
+      this.worder_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.worder_id.HeaderText = "Код";
+      this.worder_id.Name = "worder_id";
+      this.worder_id.ReadOnly = true;
+      // 
+      // worder_id_nomenclature
+      // 
+      this.worder_id_nomenclature.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.worder_id_nomenclature.HeaderText = "Номенклатурная позиция";
+      this.worder_id_nomenclature.Name = "worder_id_nomenclature";
+      this.worder_id_nomenclature.ReadOnly = true;
+      // 
+      // worder_user_id
+      // 
+      this.worder_user_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.worder_user_id.HeaderText = "Код сотрудника";
+      this.worder_user_id.Name = "worder_user_id";
+      this.worder_user_id.ReadOnly = true;
+      // 
+      // worder_status
+      // 
+      this.worder_status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.worder_status.HeaderText = "Состояние";
+      this.worder_status.Name = "worder_status";
+      this.worder_status.ReadOnly = true;
+      // 
+      // worder_start_time
+      // 
+      this.worder_start_time.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.worder_start_time.HeaderText = "Время начала";
+      this.worder_start_time.Name = "worder_start_time";
+      this.worder_start_time.ReadOnly = true;
+      // 
+      // worder_end_time
+      // 
+      this.worder_end_time.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.worder_end_time.HeaderText = "Время окончания";
+      this.worder_end_time.Name = "worder_end_time";
+      this.worder_end_time.ReadOnly = true;
+      // 
+      // worder_value
+      // 
+      this.worder_value.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.worder_value.HeaderText = "Количество";
+      this.worder_value.Name = "worder_value";
+      this.worder_value.ReadOnly = true;
+      // 
+      // worder_description
+      // 
+      this.worder_description.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+      this.worder_description.HeaderText = "Описание";
+      this.worder_description.Name = "worder_description";
+      this.worder_description.ReadOnly = true;
       // 
       // Main
       // 
@@ -2458,7 +2936,6 @@ namespace DB_Kurs.Формы
       this.tableLayoutPanel4.ResumeLayout(false);
       this.groupBox12.ResumeLayout(false);
       this.groupBox10.ResumeLayout(false);
-      this.groupBox10.PerformLayout();
       this.groupBox9.ResumeLayout(false);
       this.groupBox9.PerformLayout();
       this.groupBox8.ResumeLayout(false);
@@ -2483,7 +2960,7 @@ namespace DB_Kurs.Формы
       this.groupBox20.ResumeLayout(false);
       this.groupBox21.ResumeLayout(false);
       this.groupBox21.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.specification_datagrid)).EndInit();
       this.tabPage3.ResumeLayout(false);
       this.tableLayoutPanel7.ResumeLayout(false);
       this.tableLayoutPanel8.ResumeLayout(false);
@@ -2492,7 +2969,7 @@ namespace DB_Kurs.Формы
       this.groupBox16.ResumeLayout(false);
       this.groupBox17.ResumeLayout(false);
       this.groupBox17.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.sof_components_datagrid)).EndInit();
       this.tabPage4.ResumeLayout(false);
       this.tableLayoutPanel9.ResumeLayout(false);
       this.tableLayoutPanel10.ResumeLayout(false);
@@ -2508,7 +2985,7 @@ namespace DB_Kurs.Формы
       this.groupBox27.ResumeLayout(false);
       this.groupBox28.ResumeLayout(false);
       this.groupBox28.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.operations_datagrid)).EndInit();
       this.tabPage5.ResumeLayout(false);
       this.tableLayoutPanel11.ResumeLayout(false);
       this.tableLayoutPanel12.ResumeLayout(false);
@@ -2518,7 +2995,7 @@ namespace DB_Kurs.Формы
       this.groupBox29.PerformLayout();
       this.groupBox30.ResumeLayout(false);
       this.groupBox30.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.outlog_datagrid)).EndInit();
       this.tabPage6.ResumeLayout(false);
       this.tableLayoutPanel13.ResumeLayout(false);
       this.tableLayoutPanel14.ResumeLayout(false);
@@ -2538,7 +3015,7 @@ namespace DB_Kurs.Формы
       this.groupBox37.ResumeLayout(false);
       this.groupBox38.ResumeLayout(false);
       this.groupBox38.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.tmap_datagrid)).EndInit();
       this.tabPage8.ResumeLayout(false);
       this.tableLayoutPanel2.ResumeLayout(false);
       ((System.ComponentModel.ISupportInitialize)(this.warehouse_datagrid)).EndInit();
@@ -2556,7 +3033,7 @@ namespace DB_Kurs.Формы
       this.groupBox40.PerformLayout();
       this.groupBox41.ResumeLayout(false);
       this.groupBox41.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView9)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.wcenter_datagrid)).EndInit();
       this.tabPage10.ResumeLayout(false);
       this.tableLayoutPanel19.ResumeLayout(false);
       this.tableLayoutPanel20.ResumeLayout(false);
@@ -2571,7 +3048,7 @@ namespace DB_Kurs.Формы
       this.groupBox49.ResumeLayout(false);
       this.groupBox50.ResumeLayout(false);
       this.groupBox50.PerformLayout();
-      ((System.ComponentModel.ISupportInitialize)(this.dataGridView10)).EndInit();
+      ((System.ComponentModel.ISupportInitialize)(this.worder_datagrid)).EndInit();
       this.ResumeLayout(false);
 
     }
@@ -2581,24 +3058,24 @@ namespace DB_Kurs.Формы
     private System.Windows.Forms.TabPage tabPage1;
     private System.Windows.Forms.DataGridView nomenclature_datagrid;
     private System.Windows.Forms.TabPage tabPage2;
-    private System.Windows.Forms.DataGridView dataGridView2;
+    private System.Windows.Forms.DataGridView specification_datagrid;
     private System.Windows.Forms.TabPage tabPage3;
-    private System.Windows.Forms.DataGridView dataGridView3;
+    private System.Windows.Forms.DataGridView sof_components_datagrid;
     private System.Windows.Forms.TabPage tabPage4;
-    private System.Windows.Forms.DataGridView dataGridView4;
+    private System.Windows.Forms.DataGridView operations_datagrid;
     private System.Windows.Forms.TabPage tabPage5;
-    private System.Windows.Forms.DataGridView dataGridView5;
+    private System.Windows.Forms.DataGridView outlog_datagrid;
     private System.Windows.Forms.TabPage tabPage6;
     private System.Windows.Forms.DataGridView stock_datagrid;
     private System.Windows.Forms.TabPage tabPage7;
-    private System.Windows.Forms.DataGridView dataGridView7;
+    private System.Windows.Forms.DataGridView tmap_datagrid;
     private System.Windows.Forms.TabPage tabPage8;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
     private System.Windows.Forms.DataGridView warehouse_datagrid;
     private System.Windows.Forms.TabPage tabPage9;
-    private System.Windows.Forms.DataGridView dataGridView9;
+    private System.Windows.Forms.DataGridView wcenter_datagrid;
     private System.Windows.Forms.TabPage tabPage10;
-    private System.Windows.Forms.DataGridView dataGridView10;
+    private System.Windows.Forms.DataGridView worder_datagrid;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
     private System.Windows.Forms.Button warehouse_delete_btn;
     private System.Windows.Forms.GroupBox groupBox2;
@@ -2632,55 +3109,52 @@ namespace DB_Kurs.Формы
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel6;
     private System.Windows.Forms.GroupBox groupBox13;
-    private System.Windows.Forms.TextBox textBox10;
+    private System.Windows.Forms.TextBox specification_description_tb;
     private System.Windows.Forms.GroupBox groupBox19;
-    private System.Windows.Forms.ComboBox comboBox8;
-    private System.Windows.Forms.Button button5;
+    private System.Windows.Forms.ComboBox specification_sof_components_cb;
+    private System.Windows.Forms.Button specification_delete_btn;
     private System.Windows.Forms.GroupBox groupBox20;
-    private System.Windows.Forms.ComboBox comboBox7;
+    private System.Windows.Forms.ComboBox specification_status_cb;
     private System.Windows.Forms.GroupBox groupBox21;
-    private System.Windows.Forms.TextBox textBox16;
-    private System.Windows.Forms.Button button6;
+    private System.Windows.Forms.TextBox specification_id_tb;
+    private System.Windows.Forms.Button specification_add_btn;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel8;
     private System.Windows.Forms.GroupBox groupBox15;
-    private System.Windows.Forms.TextBox textBox11;
-    private System.Windows.Forms.Button button7;
+    private System.Windows.Forms.TextBox sof_components_value_tb;
+    private System.Windows.Forms.Button sof_components_delete_btn;
     private System.Windows.Forms.GroupBox groupBox16;
-    private System.Windows.Forms.ComboBox comboBox5;
+    private System.Windows.Forms.ComboBox sof_components_id_nomenclature_cb;
     private System.Windows.Forms.GroupBox groupBox17;
-    private System.Windows.Forms.TextBox textBox12;
-    private System.Windows.Forms.Button button8;
+    private System.Windows.Forms.TextBox sof_components_id_tb;
+    private System.Windows.Forms.Button sof_components_add_btn;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
     private System.Windows.Forms.GroupBox groupBox22;
-    private System.Windows.Forms.ComboBox comboBox6;
+    private System.Windows.Forms.ComboBox operations_next_id_cb;
     private System.Windows.Forms.GroupBox groupBox23;
-    private System.Windows.Forms.TextBox textBox15;
+    private System.Windows.Forms.TextBox operations_description_tb;
     private System.Windows.Forms.GroupBox groupBox24;
-    private System.Windows.Forms.TextBox textBox17;
     private System.Windows.Forms.GroupBox groupBox25;
-    private System.Windows.Forms.TextBox textBox14;
     private System.Windows.Forms.GroupBox groupBox26;
-    private System.Windows.Forms.TextBox textBox18;
-    private System.Windows.Forms.Button button9;
+    private System.Windows.Forms.Button operations_delete_btn;
     private System.Windows.Forms.GroupBox groupBox27;
-    private System.Windows.Forms.ComboBox comboBox4;
+    private System.Windows.Forms.ComboBox operations_wc_id_cb;
     private System.Windows.Forms.GroupBox groupBox28;
-    private System.Windows.Forms.TextBox textBox20;
-    private System.Windows.Forms.Button button10;
+    private System.Windows.Forms.TextBox operations_id_tb;
+    private System.Windows.Forms.Button operations_add_btn;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel11;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel12;
     private System.Windows.Forms.GroupBox groupBox14;
-    private System.Windows.Forms.ComboBox comboBox10;
-    private System.Windows.Forms.Button button11;
+    private System.Windows.Forms.ComboBox outlog_wc_id_cb;
+    private System.Windows.Forms.Button outlog_delete_btn;
     private System.Windows.Forms.GroupBox groupBox18;
-    private System.Windows.Forms.ComboBox comboBox9;
+    private System.Windows.Forms.ComboBox outlog_worder_id_cb;
     private System.Windows.Forms.GroupBox groupBox29;
-    private System.Windows.Forms.TextBox textBox19;
-    private System.Windows.Forms.Button button12;
+    private System.Windows.Forms.TextBox outlog_id_tb;
+    private System.Windows.Forms.Button outlog_add_btn;
     private System.Windows.Forms.GroupBox groupBox30;
-    private System.Windows.Forms.TextBox textBox13;
+    private System.Windows.Forms.TextBox outlog_time_tb;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel13;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel14;
     private System.Windows.Forms.GroupBox groupBox31;
@@ -2696,45 +3170,45 @@ namespace DB_Kurs.Формы
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel15;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel16;
     private System.Windows.Forms.GroupBox groupBox35;
-    private System.Windows.Forms.TextBox textBox23;
+    private System.Windows.Forms.TextBox tmap_description_tb;
     private System.Windows.Forms.GroupBox groupBox36;
-    private System.Windows.Forms.ComboBox comboBox13;
-    private System.Windows.Forms.Button button15;
+    private System.Windows.Forms.ComboBox tmap_id_operation_cb;
+    private System.Windows.Forms.Button tmap_delete_btn;
     private System.Windows.Forms.GroupBox groupBox37;
-    private System.Windows.Forms.ComboBox comboBox14;
+    private System.Windows.Forms.ComboBox tmap_status_cb;
     private System.Windows.Forms.GroupBox groupBox38;
-    private System.Windows.Forms.TextBox textBox24;
-    private System.Windows.Forms.Button button16;
+    private System.Windows.Forms.TextBox tmap_id_tb;
+    private System.Windows.Forms.Button tmap_add_btn;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel17;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel18;
-    private System.Windows.Forms.Button button17;
+    private System.Windows.Forms.Button wcenter_delete_btn;
     private System.Windows.Forms.GroupBox groupBox39;
-    private System.Windows.Forms.TextBox textBox25;
+    private System.Windows.Forms.TextBox wcenter_description_tb;
     private System.Windows.Forms.GroupBox groupBox40;
-    private System.Windows.Forms.TextBox textBox26;
-    private System.Windows.Forms.Button button18;
+    private System.Windows.Forms.TextBox wcenter_id_tb;
+    private System.Windows.Forms.Button wcenter_add_btn;
     private System.Windows.Forms.GroupBox groupBox41;
-    private System.Windows.Forms.TextBox textBox27;
+    private System.Windows.Forms.TextBox wcenter_power_tb;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel19;
     private System.Windows.Forms.TableLayoutPanel tableLayoutPanel20;
     private System.Windows.Forms.GroupBox groupBox43;
-    private System.Windows.Forms.TextBox textBox28;
+    private System.Windows.Forms.TextBox worder_description_tb;
     private System.Windows.Forms.GroupBox groupBox44;
-    private System.Windows.Forms.TextBox textBox29;
+    private System.Windows.Forms.TextBox worder_value_tb;
     private System.Windows.Forms.GroupBox groupBox45;
-    private System.Windows.Forms.DateTimePicker dateTimePicker2;
+    private System.Windows.Forms.DateTimePicker worder_end_time_dp;
     private System.Windows.Forms.GroupBox groupBox46;
-    private System.Windows.Forms.DateTimePicker dateTimePicker1;
+    private System.Windows.Forms.DateTimePicker worder_start_time_dp;
     private System.Windows.Forms.GroupBox groupBox47;
-    private System.Windows.Forms.ComboBox comboBox16;
+    private System.Windows.Forms.ComboBox worder_status_cb;
     private System.Windows.Forms.GroupBox groupBox48;
-    private System.Windows.Forms.ComboBox comboBox19;
-    private System.Windows.Forms.Button button19;
+    private System.Windows.Forms.ComboBox worder_user_id_cb;
+    private System.Windows.Forms.Button worder_delete_btn;
     private System.Windows.Forms.GroupBox groupBox49;
-    private System.Windows.Forms.ComboBox comboBox18;
+    private System.Windows.Forms.ComboBox worder_id_nomenclature_cb;
     private System.Windows.Forms.GroupBox groupBox50;
-    private System.Windows.Forms.TextBox textBox34;
-    private System.Windows.Forms.Button button20;
+    private System.Windows.Forms.TextBox worder_id_tb;
+    private System.Windows.Forms.Button worder_add_btn;
     private System.Windows.Forms.Button warehouse_save_btn;
     private System.Windows.Forms.Button stock_save_btn;
     private System.Windows.Forms.DataGridViewTextBoxColumn stock_id;
@@ -2757,6 +3231,50 @@ namespace DB_Kurs.Формы
     private System.Windows.Forms.GroupBox groupBox42;
     private System.Windows.Forms.ComboBox nomenclature_woff_method_cb;
     private System.Windows.Forms.Button nomenclature_save_btn;
-    private System.Windows.Forms.TextBox nomenclature_waiting_period_tb;
+    private System.Windows.Forms.Button specification_save_btn;
+    private System.Windows.Forms.DataGridViewTextBoxColumn specification_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn specification_status;
+    private System.Windows.Forms.DataGridViewTextBoxColumn specification_set_of_components;
+    private System.Windows.Forms.DataGridViewTextBoxColumn specification_description;
+    private System.Windows.Forms.DataGridViewTextBoxColumn sof_components_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn sof_components_id_nomenclature;
+    private System.Windows.Forms.DataGridViewTextBoxColumn sof_components_value;
+    private System.Windows.Forms.Button sof_components_save_btn;
+    private System.Windows.Forms.DataGridViewTextBoxColumn wcenter_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn wcenter_power;
+    private System.Windows.Forms.DataGridViewTextBoxColumn wcenter_description;
+    private System.Windows.Forms.Button wcenter_save_btn;
+    private System.Windows.Forms.Button operations_save_btn;
+    private System.Windows.Forms.DataGridViewTextBoxColumn operations_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn operations_id_wc;
+    private System.Windows.Forms.DataGridViewTextBoxColumn operations_setup_time;
+    private System.Windows.Forms.DataGridViewTextBoxColumn operations_pg_time;
+    private System.Windows.Forms.DataGridViewTextBoxColumn operations_transit_time;
+    private System.Windows.Forms.DataGridViewTextBoxColumn operations_description;
+    private System.Windows.Forms.DataGridViewTextBoxColumn operations_next_id;
+    private System.Windows.Forms.Button outlog_save_btn;
+    private System.Windows.Forms.DataGridViewTextBoxColumn outlog_id_comp;
+    private System.Windows.Forms.DataGridViewTextBoxColumn outlog_worder_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn outlog_wc_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn outlog_time;
+    private System.Windows.Forms.DataGridViewTextBoxColumn tmap_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn tmap_status;
+    private System.Windows.Forms.DataGridViewTextBoxColumn tmap_operation_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn tmap_description;
+    private System.Windows.Forms.Button tmap_save_btn;
+    private System.Windows.Forms.Button worder_save_btn;
+    private System.Windows.Forms.Button worder_cancel_btn;
+    private System.Windows.Forms.DateTimePicker nomenclature_waiting_period_dp;
+    private System.Windows.Forms.DataGridViewTextBoxColumn worder_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn worder_id_nomenclature;
+    private System.Windows.Forms.DataGridViewTextBoxColumn worder_user_id;
+    private System.Windows.Forms.DataGridViewTextBoxColumn worder_status;
+    private System.Windows.Forms.DataGridViewTextBoxColumn worder_start_time;
+    private System.Windows.Forms.DataGridViewTextBoxColumn worder_end_time;
+    private System.Windows.Forms.DataGridViewTextBoxColumn worder_value;
+    private System.Windows.Forms.DataGridViewTextBoxColumn worder_description;
+    private System.Windows.Forms.TextBox operations_transit_time_tb;
+    private System.Windows.Forms.TextBox operations_pg_time_tb;
+    private System.Windows.Forms.TextBox operations_setup_time_tb;
   }
 }

@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DB_Kurs.Формы
@@ -96,13 +93,16 @@ namespace DB_Kurs.Формы
     }
     private void StockParamsChanged(object sender, EventArgs e)
     {
-      if (sender.Equals(stock_value_textbox))
-        new_text = stock_value_textbox.Text;
-      if (sender.Equals(stock_id_warehouse_combobox))
-        new_war_id = (uint)stock_id_warehouse_combobox.SelectedIndex;
-      if (sender.Equals(stock_id_nomenclature_combobox))
-        new_num_id = (uint)stock_id_nomenclature_combobox.SelectedIndex;
-      stock_save_btn.Enabled = ((old_text != new_text || old_num_id != new_num_id || old_war_id != new_war_id) && stock_id_textbox.Text != null)? true : false;
+      if (stock_id_textbox.Text.Length != 0)
+      {
+        if (sender.Equals(stock_value_textbox))
+          new_text = stock_value_textbox.Text;
+        if (sender.Equals(stock_id_warehouse_combobox))
+          new_war_id = (uint)stock_id_warehouse_combobox.SelectedIndex;
+        if (sender.Equals(stock_id_nomenclature_combobox))
+          new_num_id = (uint)stock_id_nomenclature_combobox.SelectedIndex;
+        stock_save_btn.Enabled = ((old_text != new_text || old_num_id != new_num_id || old_war_id != new_war_id) && stock_id_textbox.Text != null) ? true : false;
+      }
     }
   }
 }

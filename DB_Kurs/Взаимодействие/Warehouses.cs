@@ -21,8 +21,11 @@ namespace DB_Kurs.Формы
     }
     private void WarehouseDiscriptionChanged(object sender, EventArgs e)
     {
-      new_text = warehouse_discription_textbox.Text;
-      warehouse_save_btn.Enabled = (old_text != new_text) ? true : false;
+      if (warehouse_id_textbox.Text.Length != 0)
+      {
+        new_text = warehouse_discription_textbox.Text;
+        warehouse_save_btn.Enabled = (old_text != new_text) ? true : false;
+      }
     }
     private void WarehouseAddClick(object sender, EventArgs e)
     {

@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace DB_Kurs.Формы
 {
@@ -20,6 +21,24 @@ namespace DB_Kurs.Формы
       nomenclature_datagrid[nomenclature_write_off_mode.Index, nomenclature_datagrid.Rows.Count - 1].Value = nomenclature.material_write_off_mode;
       NomenclatureCellClick(this, new DataGridViewCellEventArgs(nomenclature_id.Index, nomenclature_datagrid.Rows.Count - 1));
     }
+    private void NomenclatureParamsChanged(object sender, EventArgs e)
+    {
+      nomenclature_save_btn.Enabled = true;
+    }
+    private void NomenclatureSaveClick(object sender, EventArgs e)
+    {
+
+    }
+
+    private void NomenclatureAddClick(object sender, EventArgs e)
+    {
+
+    }
+
+    private void NomenclatureDeleteClick(object sender, EventArgs e)
+    {
+
+    }
     private void NomenclatureCellClick(object sender, DataGridViewCellEventArgs e)
     {
       if (e.RowIndex >= 0 && e.ColumnIndex >= 0 && e.RowIndex < nomenclature_datagrid.RowCount)
@@ -34,7 +53,7 @@ namespace DB_Kurs.Формы
         nomenclature_marriage_rate_tb.Text = nomenclature_datagrid[nomenclature_marriage_rate.Index, row].Value.ToString();
         nomenclature_ado_level_tb.Text = nomenclature_datagrid[nomenclature_additional_order_level.Index, row].Value.ToString();
         nomenclature_ado_value_tb.Text = nomenclature_datagrid[nomenclature_additional_order_value.Index, row].Value.ToString();
-        nomenclature_waiting_period_tb.Text = nomenclature_datagrid[nomenclature_waiting_period.Index, row].Value.ToString();
+        nomenclature_waiting_period_dp.Text = nomenclature_datagrid[nomenclature_waiting_period.Index, row].Value.ToString();
         nomenclature_proute_cb.SelectedIndex =
         nomenclature_proute_cb.Items.IndexOf(nomenclature_datagrid[nomenclature_production_route.Index, row].Value.ToString());
         nomenclature_specification_cb.SelectedIndex =
@@ -51,7 +70,7 @@ namespace DB_Kurs.Формы
         nomenclature_marriage_rate_tb.Clear();
         nomenclature_ado_level_tb.Clear();
         nomenclature_ado_value_tb.Clear();
-        nomenclature_waiting_period_tb.Clear();
+        nomenclature_waiting_period_dp.Value = System.DateTime.Today;
         nomenclature_rw_method_cb.SelectedIndex = -1;
         nomenclature_proute_cb.SelectedIndex = -1;
         nomenclature_specification_cb.SelectedIndex = -1;

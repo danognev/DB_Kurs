@@ -19,7 +19,6 @@ namespace DB_Kurs.Mysql
         {
             this.stock = new HashSet<stock>();
             this.working_order = new HashSet<working_order>();
-            this.set_of_components = new HashSet<set_of_components>();
         }
     
         public int id { get; set; }
@@ -31,7 +30,7 @@ namespace DB_Kurs.Mysql
         public Nullable<int> additional_order_value { get; set; }
         public Nullable<System.TimeSpan> waiting_period { get; set; }
         public Nullable<int> production_route { get; set; }
-        public int specification { get; set; }
+        public Nullable<int> specification { get; set; }
         public Nullable<int> material_write_off_mode { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -39,7 +38,5 @@ namespace DB_Kurs.Mysql
         public virtual specification specification1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<working_order> working_order { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<set_of_components> set_of_components { get; set; }
     }
 }

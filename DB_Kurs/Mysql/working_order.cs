@@ -14,9 +14,15 @@ namespace DB_Kurs.Mysql
     
     public partial class working_order
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public working_order()
+        {
+            this.output_log = new HashSet<output_log>();
+        }
+    
         public int id { get; set; }
-        public int nomenclature { get; set; }
-        public int user_id { get; set; }
+        public Nullable<int> nomenclature { get; set; }
+        public Nullable<int> user_id { get; set; }
         public string status { get; set; }
         public Nullable<System.DateTime> start_date { get; set; }
         public Nullable<System.DateTime> end_date { get; set; }
@@ -24,6 +30,8 @@ namespace DB_Kurs.Mysql
         public string description { get; set; }
     
         public virtual nomenclature nomenclature1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<output_log> output_log { get; set; }
         public virtual users users { get; set; }
     }
 }

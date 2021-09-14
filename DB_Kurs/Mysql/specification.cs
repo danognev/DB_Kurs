@@ -27,5 +27,6 @@ namespace DB_Kurs.Mysql
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<nomenclature> nomenclature { get; set; }
+        public virtual set_of_components set_of_components1 { get; set; }
     }
 }
