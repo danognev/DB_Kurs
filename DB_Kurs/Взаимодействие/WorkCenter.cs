@@ -39,12 +39,19 @@ namespace DB_Kurs.Формы
       wcenter_datagrid[wcenter_description.Index, this.row].Value = row.description;
       wcenter_datagrid[wcenter_power.Index, this.row].Value = row.power;
       db.SaveChanges();
+      wcenter_save_btn.Enabled = false;
     }
     private void WorkCenterDeleteClick(object sender, EventArgs e)
     {
       var row = db.work_center.Where(x => x.id.ToString() == wcenter_id_tb.Text.ToString()).First();
       db.work_center.Remove(row);
       db.SaveChanges();
+      for (int i = 0; i < operations_datagrid.RowCount; i++)
+       if (operations_datagrid[operations_id_wc.Index, i].Value.ToString() == wcenter_id_tb.Text)
+        operations_datagrid.Rows.RemoveAt(i);
+       else continue;
+      if (operations_wc_id_cb.Items.Contains(wcenter_id_tb.Text))
+       operations_wc_id_cb.Items.Remove(operations_wc_id_cb.Items.IndexOf(wcenter_id_tb.Text));
       wcenter_datagrid.Rows.RemoveAt(this.row);
       this.row--;
       if (this.row < 0 && wcenter_datagrid.RowCount > 0)

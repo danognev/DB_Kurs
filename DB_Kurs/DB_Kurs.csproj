@@ -159,6 +159,9 @@
     <Compile Include="Взаимодействие\Operations.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Взаимодействие\OutputLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Взаимодействие\SetOfComponents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +178,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Взаимодействие\WorkCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Взаимодействие\WorkingOrder.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Окна\Login.cs">

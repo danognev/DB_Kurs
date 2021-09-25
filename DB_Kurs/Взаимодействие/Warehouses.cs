@@ -39,6 +39,11 @@ namespace DB_Kurs.Формы
       var row = db.warehouse.Where(x => x.id.ToString() == warehouse_id_textbox.Text.ToString()).First();
       db.warehouse.Remove(row);
       db.SaveChanges();
+      for (int i = 0; i < stock_datagrid.RowCount; i++)
+       if (stock_datagrid[stock_id_warehouse.Index, i].Value.ToString() == warehouse_id_textbox.Text)
+        stock_datagrid.Rows.RemoveAt(i);
+      if (stock_id_warehouse_combobox.Items.Contains(warehouse_id_textbox.Text))
+       stock_id_warehouse_combobox.Items.Remove(stock_id_warehouse_combobox.Items.IndexOf(warehouse_id_textbox.Text));
       warehouse_datagrid.Rows.RemoveAt(this.row);
       this.row--;
       if (this.row < 0 && warehouse_datagrid.RowCount > 0)

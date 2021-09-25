@@ -418,6 +418,7 @@ namespace DB_Kurs.Формы
       this.nomenclature_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
       this.nomenclature_datagrid.Size = new System.Drawing.Size(1043, 614);
       this.nomenclature_datagrid.TabIndex = 0;
+      this.nomenclature_datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.NomenclatureCellClick);
       // 
       // nomenclature_id
       // 
@@ -556,7 +557,6 @@ namespace DB_Kurs.Формы
       this.nomenclature_specification_cb.Name = "nomenclature_specification_cb";
       this.nomenclature_specification_cb.Size = new System.Drawing.Size(243, 21);
       this.nomenclature_specification_cb.TabIndex = 1;
-      this.nomenclature_specification_cb.SelectedIndexChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox10
       // 
@@ -579,7 +579,6 @@ namespace DB_Kurs.Формы
       this.nomenclature_waiting_period_dp.ShowUpDown = true;
       this.nomenclature_waiting_period_dp.Size = new System.Drawing.Size(243, 20);
       this.nomenclature_waiting_period_dp.TabIndex = 0;
-      this.nomenclature_waiting_period_dp.ValueChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox9
       // 
@@ -600,7 +599,6 @@ namespace DB_Kurs.Формы
       this.nomenclature_ado_value_tb.Name = "nomenclature_ado_value_tb";
       this.nomenclature_ado_value_tb.Size = new System.Drawing.Size(243, 20);
       this.nomenclature_ado_value_tb.TabIndex = 0;
-      this.nomenclature_ado_value_tb.TextChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox8
       // 
@@ -621,7 +619,6 @@ namespace DB_Kurs.Формы
       this.nomenclature_ado_level_tb.Name = "nomenclature_ado_level_tb";
       this.nomenclature_ado_level_tb.Size = new System.Drawing.Size(243, 20);
       this.nomenclature_ado_level_tb.TabIndex = 0;
-      this.nomenclature_ado_level_tb.TextChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox7
       // 
@@ -642,7 +639,6 @@ namespace DB_Kurs.Формы
       this.nomenclature_marriage_rate_tb.Name = "nomenclature_marriage_rate_tb";
       this.nomenclature_marriage_rate_tb.Size = new System.Drawing.Size(243, 20);
       this.nomenclature_marriage_rate_tb.TabIndex = 0;
-      this.nomenclature_marriage_rate_tb.TextChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox6
       // 
@@ -668,7 +664,6 @@ namespace DB_Kurs.Формы
       this.nomenclature_rw_method_cb.Name = "nomenclature_rw_method_cb";
       this.nomenclature_rw_method_cb.Size = new System.Drawing.Size(243, 21);
       this.nomenclature_rw_method_cb.TabIndex = 0;
-      this.nomenclature_rw_method_cb.SelectedIndexChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox5
       // 
@@ -689,7 +684,6 @@ namespace DB_Kurs.Формы
       this.nomenclature_unit_tb.Name = "nomenclature_unit_tb";
       this.nomenclature_unit_tb.Size = new System.Drawing.Size(243, 20);
       this.nomenclature_unit_tb.TabIndex = 0;
-      this.nomenclature_unit_tb.TextChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // nomenclature_delete_btn
       // 
@@ -723,7 +717,6 @@ namespace DB_Kurs.Формы
       this.nomenclature_name_tb.Name = "nomenclature_name_tb";
       this.nomenclature_name_tb.Size = new System.Drawing.Size(243, 25);
       this.nomenclature_name_tb.TabIndex = 0;
-      this.nomenclature_name_tb.TextChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox4
       // 
@@ -777,7 +770,6 @@ namespace DB_Kurs.Формы
       this.nomenclature_proute_cb.Name = "nomenclature_proute_cb";
       this.nomenclature_proute_cb.Size = new System.Drawing.Size(243, 21);
       this.nomenclature_proute_cb.TabIndex = 1;
-      this.nomenclature_proute_cb.SelectedIndexChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // groupBox42
       // 
@@ -802,7 +794,6 @@ namespace DB_Kurs.Формы
       this.nomenclature_woff_method_cb.Name = "nomenclature_woff_method_cb";
       this.nomenclature_woff_method_cb.Size = new System.Drawing.Size(243, 21);
       this.nomenclature_woff_method_cb.TabIndex = 0;
-      this.nomenclature_woff_method_cb.SelectedIndexChanged += new System.EventHandler(this.NomenclatureParamsChanged);
       // 
       // nomenclature_save_btn
       // 
@@ -921,6 +912,7 @@ namespace DB_Kurs.Формы
       this.specification_delete_btn.TabIndex = 3;
       this.specification_delete_btn.Text = "Удалить";
       this.specification_delete_btn.UseVisualStyleBackColor = true;
+      this.specification_delete_btn.Click += new System.EventHandler(this.SpecificationDeleteClick);
       // 
       // groupBox20
       // 
@@ -977,6 +969,7 @@ namespace DB_Kurs.Формы
       this.specification_add_btn.TabIndex = 2;
       this.specification_add_btn.Text = "Добавить";
       this.specification_add_btn.UseVisualStyleBackColor = true;
+      this.specification_add_btn.Click += new System.EventHandler(this.SpecificationAddClick);
       // 
       // specification_save_btn
       // 
@@ -989,6 +982,7 @@ namespace DB_Kurs.Формы
       this.specification_save_btn.TabIndex = 12;
       this.specification_save_btn.Text = "Сохранить изменения";
       this.specification_save_btn.UseVisualStyleBackColor = true;
+      this.specification_save_btn.Click += new System.EventHandler(this.SpecificationSaveClick);
       // 
       // specification_datagrid
       // 
@@ -1120,6 +1114,7 @@ namespace DB_Kurs.Формы
       this.sof_components_delete_btn.TabIndex = 3;
       this.sof_components_delete_btn.Text = "Удалить";
       this.sof_components_delete_btn.UseVisualStyleBackColor = true;
+      this.sof_components_delete_btn.Click += new System.EventHandler(this.SetOfComponentsDeleteClick);
       // 
       // groupBox16
       // 
@@ -1172,6 +1167,7 @@ namespace DB_Kurs.Формы
       this.sof_components_add_btn.TabIndex = 2;
       this.sof_components_add_btn.Text = "Добавить";
       this.sof_components_add_btn.UseVisualStyleBackColor = true;
+      this.sof_components_add_btn.Click += new System.EventHandler(this.SetOfComponentsAddClick);
       // 
       // sof_components_save_btn
       // 
@@ -1184,6 +1180,7 @@ namespace DB_Kurs.Формы
       this.sof_components_save_btn.TabIndex = 5;
       this.sof_components_save_btn.Text = "Сохранить изменения";
       this.sof_components_save_btn.UseVisualStyleBackColor = true;
+      this.sof_components_save_btn.Click += new System.EventHandler(this.SetOfComponentsSaveClick);
       // 
       // sof_components_datagrid
       // 
@@ -1396,6 +1393,7 @@ namespace DB_Kurs.Формы
       this.operations_delete_btn.TabIndex = 3;
       this.operations_delete_btn.Text = "Удалить";
       this.operations_delete_btn.UseVisualStyleBackColor = true;
+      this.operations_delete_btn.Click += new System.EventHandler(this.OperationsDeleteClick);
       // 
       // groupBox27
       // 
@@ -1461,6 +1459,7 @@ namespace DB_Kurs.Формы
       this.operations_save_btn.TabIndex = 9;
       this.operations_save_btn.Text = "Сохранить изменения";
       this.operations_save_btn.UseVisualStyleBackColor = true;
+      this.operations_save_btn.Click += new System.EventHandler(this.OperationsSaveClick);
       // 
       // operations_datagrid
       // 
@@ -1620,6 +1619,7 @@ namespace DB_Kurs.Формы
       this.outlog_delete_btn.TabIndex = 3;
       this.outlog_delete_btn.Text = "Удалить";
       this.outlog_delete_btn.UseVisualStyleBackColor = true;
+      this.outlog_delete_btn.Click += new System.EventHandler(this.OutputLogDeleteClick);
       // 
       // groupBox18
       // 
@@ -1672,6 +1672,7 @@ namespace DB_Kurs.Формы
       this.outlog_add_btn.TabIndex = 2;
       this.outlog_add_btn.Text = "Добавить";
       this.outlog_add_btn.UseVisualStyleBackColor = true;
+      this.outlog_add_btn.Click += new System.EventHandler(this.OutputLogAddClick);
       // 
       // groupBox30
       // 
@@ -1704,6 +1705,7 @@ namespace DB_Kurs.Формы
       this.outlog_save_btn.TabIndex = 6;
       this.outlog_save_btn.Text = "Сохранить изменения";
       this.outlog_save_btn.UseVisualStyleBackColor = true;
+      this.outlog_save_btn.Click += new System.EventHandler(this.OutputLogSaveClick);
       // 
       // outlog_datagrid
       // 
@@ -1724,6 +1726,7 @@ namespace DB_Kurs.Формы
       this.outlog_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
       this.outlog_datagrid.Size = new System.Drawing.Size(1037, 608);
       this.outlog_datagrid.TabIndex = 3;
+      this.outlog_datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.OutputLogCellClick);
       // 
       // outlog_id_comp
       // 
@@ -2154,6 +2157,7 @@ namespace DB_Kurs.Формы
       this.tmap_save_btn.TabIndex = 12;
       this.tmap_save_btn.Text = "Сохранить изменения";
       this.tmap_save_btn.UseVisualStyleBackColor = true;
+      this.tmap_save_btn.Click += new System.EventHandler(this.TechnologMapSaveClick);
       // 
       // tmap_datagrid
       // 
@@ -2720,8 +2724,8 @@ namespace DB_Kurs.Формы
       this.worder_status_cb.FormattingEnabled = true;
       this.worder_status_cb.Items.AddRange(new object[] {
             "Плановый",
-            "Утвержденный ",
-            "Запущенный ",
+            "Утвержденный",
+            "Запущенный",
             "Завершенный"});
       this.worder_status_cb.Location = new System.Drawing.Point(3, 16);
       this.worder_status_cb.Name = "worder_status_cb";
@@ -2759,6 +2763,7 @@ namespace DB_Kurs.Формы
       this.worder_delete_btn.TabIndex = 3;
       this.worder_delete_btn.Text = "Удалить";
       this.worder_delete_btn.UseVisualStyleBackColor = true;
+      this.worder_delete_btn.Click += new System.EventHandler(this.WorkingOrderDeleteClick);
       // 
       // groupBox49
       // 
@@ -2811,6 +2816,7 @@ namespace DB_Kurs.Формы
       this.worder_add_btn.TabIndex = 2;
       this.worder_add_btn.Text = "Добавить";
       this.worder_add_btn.UseVisualStyleBackColor = true;
+      this.worder_add_btn.Click += new System.EventHandler(this.WorkingOrderAddClick);
       // 
       // worder_save_btn
       // 
@@ -2822,6 +2828,7 @@ namespace DB_Kurs.Формы
       this.worder_save_btn.TabIndex = 10;
       this.worder_save_btn.Text = "Сохранить изменения";
       this.worder_save_btn.UseVisualStyleBackColor = true;
+      this.worder_save_btn.Click += new System.EventHandler(this.WorkingOrderSaveClick);
       // 
       // worder_cancel_btn
       // 
@@ -2833,6 +2840,7 @@ namespace DB_Kurs.Формы
       this.worder_cancel_btn.TabIndex = 11;
       this.worder_cancel_btn.Text = "Откатить";
       this.worder_cancel_btn.UseVisualStyleBackColor = true;
+      this.worder_cancel_btn.Click += new System.EventHandler(this.WorkingOrderCancelClick);
       // 
       // worder_datagrid
       // 
@@ -2857,6 +2865,7 @@ namespace DB_Kurs.Формы
       this.worder_datagrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
       this.worder_datagrid.Size = new System.Drawing.Size(1042, 614);
       this.worder_datagrid.TabIndex = 3;
+      this.worder_datagrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.WorkingOrderCellClick);
       // 
       // worder_id
       // 

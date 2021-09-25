@@ -19,7 +19,7 @@
           <Property Name="waiting_period" Type="time" Precision="0" />
           <Property Name="production_route" Type="int" />
           <Property Name="specification" Type="int" />
-          <Property Name="material_write_off_mode" Type="int" />
+          <Property Name="material_write_off_mode" Type="text" />
         </EntityType>
         <EntityType Name="operations">
           <Key>
@@ -63,7 +63,7 @@
           <Key>
             <PropertyRef Name="id" />
           </Key>
-          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="id_warehouse" Type="int" Nullable="false" />
           <Property Name="id_nomenclature" Type="int" Nullable="false" />
           <Property Name="value" Type="int" />
@@ -108,8 +108,8 @@
           <Property Name="nomenclature" Type="int" />
           <Property Name="user_id" Type="int" />
           <Property Name="status" Type="char" MaxLength="20" />
-          <Property Name="start_date" Type="datetime" Precision="0" />
-          <Property Name="end_date" Type="datetime" Precision="0" />
+          <Property Name="start_date" Type="time" Precision="0" />
+          <Property Name="end_date" Type="time" Precision="0" />
           <Property Name="value" Type="int" />
           <Property Name="description" Type="text" />
         </EntityType>
@@ -306,7 +306,7 @@
           <Property Name="waiting_period" Type="Time" />
           <Property Name="production_route" Type="Int32" />
           <Property Name="specification" Type="Int32" />
-          <Property Name="material_write_off_mode" Type="Int32" />
+          <Property Name="material_write_off_mode" Type="String" />
           <NavigationProperty Name="stock" Relationship="Self.Relationship17" FromRole="nomenclature" ToRole="stock" />
           <NavigationProperty Name="specification1" Relationship="Self.Relationship2" FromRole="nomenclature" ToRole="specification" />
           <NavigationProperty Name="working_order" Relationship="Self.Relationship20" FromRole="nomenclature" ToRole="working_order" />
@@ -331,7 +331,7 @@
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="working_order_id" Type="Int32" />
-          <Property Name="work_center_id" Type="Int32" />
+          <Property Name="work_center_id" Type="Int32" Nullable="true" />
           <Property Name="elapsed_time" Type="Int32" />
           <NavigationProperty Name="work_center" Relationship="Self.Relationship19" FromRole="output_log" ToRole="work_center" />
           <NavigationProperty Name="working_order" Relationship="Self.Relationship30" FromRole="output_log" ToRole="working_order" />
@@ -412,8 +412,8 @@
           <Property Name="nomenclature" Type="Int32" />
           <Property Name="user_id" Type="Int32" />
           <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
-          <Property Name="start_date" Type="DateTime" />
-          <Property Name="end_date" Type="DateTime" />
+          <Property Name="start_date" Type="Time" />
+          <Property Name="end_date" Type="Time" />
           <Property Name="value" Type="Int32" />
           <Property Name="description" Type="String" MaxLength="65535" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="nomenclature1" Relationship="Self.Relationship20" FromRole="working_order" ToRole="nomenclature" />
@@ -436,7 +436,6 @@
         </Association>
         <Association Name="Relationship2">
           <End Role="specification" Type="Self.specification" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
           </End>
           <End Role="nomenclature" Type="Self.nomenclature" Multiplicity="*" />
           <ReferentialConstraint>
@@ -450,7 +449,6 @@
         </Association>
         <Association Name="Relationship20">
           <End Role="nomenclature" Type="Self.nomenclature" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
           </End>
           <End Role="working_order" Type="Self.working_order" Multiplicity="*" />
           <ReferentialConstraint>
@@ -492,7 +490,6 @@
         </Association>
         <Association Name="Relationship19">
           <End Role="work_center" Type="Self.work_center" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
           </End>
           <End Role="output_log" Type="Self.output_log" Multiplicity="*" />
           <ReferentialConstraint>
@@ -544,7 +541,6 @@
         </Association>
         <Association Name="Relationship21">
           <End Role="users" Type="Self.users" Multiplicity="0..1">
-            <OnDelete Action="Cascade" />
           </End>
           <End Role="working_order" Type="Self.working_order" Multiplicity="*" />
           <ReferentialConstraint>

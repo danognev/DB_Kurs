@@ -24,8 +24,8 @@ namespace DB_Kurs.Mysql
         public Nullable<int> nomenclature { get; set; }
         public Nullable<int> user_id { get; set; }
         public string status { get; set; }
-        public Nullable<System.DateTime> start_date { get; set; }
-        public Nullable<System.DateTime> end_date { get; set; }
+        public Nullable<System.TimeSpan> start_date { get; set; }
+        public Nullable<System.TimeSpan> end_date { get; set; }
         public Nullable<int> value { get; set; }
         public string description { get; set; }
     

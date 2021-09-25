@@ -19,6 +19,31 @@ namespace DB_Kurs.Формы
       tmap_datagrid[tmap_description.Index, tmap_datagrid.Rows.Count - 1].Value = tmap.description;
       TechnologMapCellClick(this, new DataGridViewCellEventArgs(tmap_id.Index, tmap_datagrid.Rows.Count - 1));
     }
+    private void TechnologMapSaveClick(object sender, EventArgs e)
+    {
+      try
+      {
+        var tmap = db.technolog_map.Where(x => x.id.ToString() == tmap_id_tb.Text).First();
+        if (tmap_id_operation_cb.SelectedIndex == -1)
+          throw new Exception("Необходимо выбрать код начальной операции!");
+        else tmap.id_initial_operation = int.Parse(tmap_id_operation_cb.SelectedItem.ToString());
+        if (tmap_status_cb.SelectedIndex == -1)
+          throw new Exception("Необходимо выбрать состояние!");
+        else tmap.status = tmap_status_cb.SelectedItem.ToString();
+        if (tmap_description_tb.Text.Length == 0)
+          throw new Exception("Поле Описание не может быть пустым!");
+        else tmap.description = tmap_description_tb.Text;
+        db.SaveChanges();
+        tmap_datagrid[tmap_operation_id.Index, row].Value = tmap.id_initial_operation;
+        tmap_datagrid[tmap_status.Index, row].Value = tmap.status;
+        tmap_datagrid[tmap_description.Index, row].Value = tmap.description;
+        tmap_save_btn.Enabled = false;
+      }
+      catch (Exception ex)
+      {
+        MessageBox.Show(ex.Message, "Ошибка сохранения");
+      }
+    }
     private void TechnologMapAddClick(object sender, EventArgs e)
     {
       try {
@@ -72,7 +97,7 @@ namespace DB_Kurs.Формы
         tmap_status_cb.SelectedIndex = -1;
         tmap_delete_btn.Enabled = false;
       }
-      tmap_save_btn.Enabled = false;
+      tmap_save_btn.Enabled = true;
     }
   }
 }

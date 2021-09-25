@@ -31,7 +31,7 @@ namespace DB_Kurs.Mysql
         public Nullable<System.TimeSpan> waiting_period { get; set; }
         public Nullable<int> production_route { get; set; }
         public Nullable<int> specification { get; set; }
-        public Nullable<int> material_write_off_mode { get; set; }
+        public string material_write_off_mode { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<stock> stock { get; set; }
